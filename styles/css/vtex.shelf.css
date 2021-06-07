@@ -1,102 +1,38 @@
-.slide {
-    margin: 0 .5rem;
-    overflow: visible;
-}
+/* Vitrina PDP */
 
-.container--vitrinaHome {
-    padding-bottom: 0 !important;
-}
-.title--vitrinaHome,
-.title--pdpProductosRelacionados,
-.title--ProductosNotFound {
-    font-size: 19px;
-    color: #402117;
-    font-weight: 500;
-    text-align: center;
+.relatedProducts--pdpProductosRelacionados {
+    width: 100%;
     position: relative;
-    display: inline-block;
-    width: fit-content;
-    transform: translateX(-50%);
-    left: 50%;
-    z-index: 1;
-    padding-left: 3.7rem;
+    margin-bottom: 1rem;
 }
-
-.arrow {
-    top: 34%;
-}
-
-.container--vitrinaHome {
-    display: block;
-}
-
-.caretIcon--vitrinaHome {
-    font-size: 1.7em;
-    color: #402117;
-    font-weight: 800;
-    text-align: left; 
-    position: relative;
-    display: flex;
-    width: fit-content;
-    overflow: visible;
-    z-index: 1;
-    margin: 0 auto;
-    padding-left: 3.7rem;
-    justify-content: center;
-    align-items: center;
-}
-
-.title--vitrinaHome::after {
-    content: 'Recomendados';
-    position: absolute;
-    top: 56%;
-    left: 102%;
-    transform: translateY(-50%);
-    font-weight: 700;
-    font-size: 19px;
-}
-
- 
-.title--vitrinaHome::before,
-.title--pdpProductosRelacionados::before,
-.title--ProductosNotFound::before {
+.relatedProducts--pdpProductosRelacionados::before {
     content: '';
-    background-image: url(assets/img/bg-titulos-rosado.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: -1;
-    width: 50px;
-    height: 45px;
     position: absolute;
+    display: block;
+    height: 1px;
+    background-color: red;
+    width: 100%;
     left: 0;
-    top: 50%;
+    top: 2%;
     transform: translateY(-50%);
 }
-
-.caretIcon--vitrinaHome {
-    padding: .3rem;
-    width: 20px;
-    height: 20px;
-    box-sizing: border-box;
+.title--pdpProductosRelacionados {
+    font-size: 1.2em;
+    color: #1f1f1f;
+    font-weight: 800;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0 1rem;
     background: #fff;
-    border-radius: 50px;
-    box-shadow: 1px 1px 3px rgb(51 51 51 / 30%);
+    position: relative;
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.title--vitrinaHome {
-    margin-left: -5rem;
-}
-
-@media (max-width: 991.1px) {
-    .container--vitrinaHome {
-        display: block !important;
-    }
-
-    .title--vitrinaHome { 
-        margin-left: -5rem !important;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
+@media screen and (min-width:80rem) {
+    .slide--pdpProductosRelacionados {
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }

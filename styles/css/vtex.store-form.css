@@ -1,6 +1,36 @@
 .formSubmitButton {
-    margin-top: 20px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    text-align: right;
+}
+
+.formSubmitButton--submit-contacto :global(.vtex-button) {
+    display: block;
+    width: 100%;
+    margin-top: 2rem;
+    background-color: #ad0215;
+    border-radius: 0;
+    padding: .7rem;
+}
+
+.formSubmitButton--submit-contacto :global(.vtex-button__label) {
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.formSubmitButton--submit-newsletter {
+    text-align: center;
+}
+
+.formSubmitButton :global(.vtex-button) {
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 0;
+    margin-top: 1rem;
+}
+
+.formSubmitButton :global(.vtex-button__label) {
+    text-transform: lowercase;
+    color: red;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
 }

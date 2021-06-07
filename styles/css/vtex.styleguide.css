@@ -1,6 +1,64 @@
-.input {
-    background-color: #f9f9f9;
-    font-size: .95em;
+.newsletter .form .inputGroup .input {
+    background-color: #fff;
+    color: red;
+    border: 0;
+    border-radius: 0;
+}
+
+.searchBarContainer .autoCompleteOuterContainer :global(.vtex-styleguide-9-x-input) {
+    background-color: transparent !important;
+}
+
+.searchBarContainer .input {
+    max-width: 20px;
+}
+
+
+/*TopBar*/
+
+.searchBarContainer .input {
+    color: #727273;
+    border-radius: 0;
+    background: red !important;
+}
+
+.searchBarInnerContainer .input {
+    background-color: transparent;
     font-weight: 700;
-    color: #444;
+    border-radius: 0;
+    border: 0;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.input::placeholder {
+    color: #fff;
+}
+
+.newsletter .imput {
+    height: 47px;
+    font-size: 13px;
+}
+
+
+/*Contacto*/
+
+.contentItem .input {
+    border-radius: 0;
+    border: 1px solid #666;
+}
+
+.flexRow--row-newsletter-presonal .flexRowContent--row-newsletter-presonal .input {
+    background: transparent !important;
+}
+
+
+/* Versión mobile */
+
+@media (max-width: 1025px) {
+    .searchBarInnerContainer .input {
+        max-width: none;
+    }
 }

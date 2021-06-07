@@ -1,17 +1,38 @@
 .menuIcon {
-    width: 12px;
+    color: #fff;
+}
+
+.drawer--drawerGeneralContainer {
+    background-color: #1f1f1f;
+}
+
+.drawer--drawerGeneralContainer.opened--drawerGeneralContainer {
+    background-color: #1f1f1f !important;
+}
+
+.opened--drawerGeneralContainer {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.menuContainerNav--drawerContainer {
+    width: 99% !important;
+}
+
+.closeIcon--drawerGeneralContainer {
+    color: #fff;
+    width: 23px;
+}
+
+.closeIconButton {
+    padding: 0;
+}
+
+.closeIcon {
+    color: #fff;
 }
 
 .childrenContainer--drawerGeneralContainer {
     display: flex;
     flex-direction: column;
-}
-
-.closeIcon {
-    color: #44261c;
-    width: 20px;
-}
-
-.closeIconButton {
-    padding-left: .5rem;
 }

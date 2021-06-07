@@ -1,8 +1,24 @@
+/*Elementos Display none*/
+.homeIcon {
+    display: none !important;
+}
+
 /*PLP*/
+/*breadcrumb*/
+/* .homeLink, .arrow {
+
+} */
+
+.link {
+    color: #000000;
+    font-size: 13px;
+}
+
 .container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    background: #e9e9e9;
+    width: auto!important;
+    padding-left: 15px;
+    padding-right: 15px;
 }   
 
 .homeLink {
@@ -12,21 +28,13 @@
 }
 
 .homeLink::before {
-    content: "Home";
+    content: "Inicio";
     display: inline-block;
     justify-content: center;
     align-items: center;
 }
 
-.homeIcon {
-    display: none !important;
-}
-
-.link {
-    color: #441e13;
-}
-
-.caretIcon{
-    overflow: visible!important;
-    margin-bottom: 4px;
+.caretIcon {
+    color: #E1251B;
+    margin: 0 8px;
 }

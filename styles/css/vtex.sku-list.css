@@ -1,0 +1,67 @@
+/*PDP*/
+
+.skuImage,
+.sellerName,
+.sellerInventoryWrapper {
+    display: none!important;
+}
+
+
+/* .selectedSkuContentWrapper {
+    border: none;
+} */
+
+
+/* .skuContentWrapper :global(.vtex-button),
+.quantitySelectorContainer {
+    display: inline-block;
+} */
+
+.skuName {
+    color: #000000;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 7px;
+}
+
+.specificationsTableContainer {
+    padding-left: 0;
+}
+
+.inventoryContainer,
+.currencyContainer {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.priceContainer,
+.inventoryContainer {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.quantitySelectorContainer {
+    margin-bottom: 0;
+}
+
+
+/*MEDIA QUERY*/
+
+
+/*PDP*/
+
+@media (max-width:80rem) {
+    .skuName {
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 1025px) {
+    .vtex-sku-list-1-x-skuName {
+        font-size: 19px;
+        margin-bottom: 0;
+    }
+}

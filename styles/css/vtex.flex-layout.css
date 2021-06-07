@@ -1,779 +1,748 @@
-/* Logo */
-
-.flexCol--logoCol {
-    display: flex;
-    justify-content: center;
+.flexRowContent--menu-link,
+.flexRowContent--main-header {
+    padding: 0 0.5rem;
 }
 
-
-/* Header */
-
-.flexRow--main-header {
-    border-bottom: 1px solid #ccc;
+@media screen and (min-width: 40em) {
+    .flexRowContent--menu-link,
+    .flexRowContent--main-header {
+        padding: 0 1rem;
+    }
 }
 
-.flexCol--wrapperMenuNav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media screen and (min-width: 80rem) {
+    .flexRowContent--menu-link,
+    .flexRowContent--main-header {
+        padding: 0 0.25rem;
+    }
+    .flexRow--rowSearchBread,
+    .flexRow--rowSearchTitle,
+    .flexRow--rowSearchResult {
+        padding-left: 4rem;
+        padding-right: 4rem;
+        max-width: 102rem;
+    }
+    .flexRow--rowSearchBread {
+        margin: 15px 0 30px;
+    }
+    .flexCol--productosRecomendados {
+        margin-bottom: 30px!important;
+    }
 }
 
-.flexRowContent--centerBannersRow {
-    justify-content: center;
+.flexRowContent--menu-link {
+    background-color: #03044e;
+    color: #fff;
 }
 
-.flexCol--colNina {
-    padding: 0 2rem;
-}
-
-.flexCol--colNino {
-    border-right: 1px solid #ccc;
-    padding: 0 2rem;
-}
-
-.flexColChild--colNina,
-.flexColChild--colNino {
-    height: auto !important;
-    margin-bottom: 2rem;
+.flexRowContent--main-header {
+    background-color: #1f1f1f;
 }
 
 .flexRowContent--main-header-mobile {
-    display: flex;
     align-items: center;
-    border-bottom: 1px solid rgb(204 204 204 / 0.3);
+    padding: 0.625rem 0.5rem;
+    background-color: #1f1f1f;
 }
 
-.flexRowContent--rowSeo {
-    display: flex;
-    flex-direction: column;
-    margin: 0 0 3rem 0;
+.flexRowContent--menu-link :global(.vtex-menu-2-x-styledLink) {
+    color: #ffffff;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 800;
 }
 
-.flexRow--footer-general {
-    background: url(https://pillin.vteximg.com.br/arquivos/background-footer.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top right;
-    padding-top: 8rem;
-}
-
-.flexRowContent--rowMainFooter {
-    padding: 0 12rem;
-}
-
-.flexRowContent--row-partner-footer,
-.flexColChild--col-partner-footer,
-.poweredBy--logo-vtex,
-.flexCol--col-partner-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.flexCol--col-partner-footer {
-    flex-direction: inherit;
-}
-
-.flexRowContent--row-partner-footer {
-    padding: 1.7rem 0;
-    border-top: .7px solid #4021178a;
-    margin-top: 2rem;
-}
-
-.flexRow--infoIcons {
-    margin: 3rem 10rem;
-}
-
-.flexRowContent--infoIcons-mobile {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 1.5rem 0;
-}
-
-.flexRowContent--infoIcons-mobile .stretchChildrenWidth {
-    width: 50% !important;
-    margin: 1rem 0;
-}
-
-.flexCol--topBar-leftCol,
-.flexCol--topBar-rightCol,
-.flexColChild--topBar-leftCol,
-.flexColChild--topBar-rightCol {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.flexCol--topBar-rightCol {
-    justify-content: flex-end;
-}
-
-.flexRow--notification-bar {
-    background-color: #ede3ce;
-    padding: .4rem;
-}
-
-.flexRow--rowHomeShelf {
-    margin: 3rem 0 1rem 0;
-}
-
-.flexColChild--colSearchTitle {
-    max-width: 96rem;
-    margin: 0 auto;
-    width: 100%;
-}
-
-.flexColChild--catColMenuNavEscri {
-    height: auto !important;
-}
-
-.flexRow--clubPillin {
-    margin: 4rem 0;
-    padding: 3rem 0 7rem 0;
-    background-image: url(https://pillin.vteximg.com.br/arquivos/bg-clubPillin.jpg);
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.flexCol--summaryBusquedaNombrePrice {
-    justify-content: center;
-}
-
-.flexCol--linkListMobile {
-    background: #ede3ce;
-    margin-top: 3rem;
-}
-
-.flexColChild--linkListMobile {
-    padding: .3rem 0 .3rem 1.5rem;
-    border-top: .7px solid rgb(63 32 22 / 50%);
-}
-
-.flexColChild--linkListMobile:first-child {
-    border-top: 0;
-}
-
-.flexRow--rowDrawer {
-    border-bottom: 1px solid rgb(67 36 26 / 0.4);
-    width: 100%;
-    margin-bottom: 2.5rem;
-}
-
-.flexRowContent--rowDrawer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.flexRow--rowDrawer .stretchChildrenWidth {
-    width: auto !important;
-    justify-content: flex-start;
-}
-
-.flexCol--colDrawer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.flexCol--vestuario-wrapper,
-.flexCol--calzado-wrapper,
-.flexCol--accesorios-wrapper {
-    margin-right: 2rem;
-    border-radius: 7px;
-    padding: 8rem 2.5rem 7rem 2.5rem;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.flexCol--accesorios-wrapper {
-    margin-right: 0;
-}
-
-.flexCol--vestuario-wrapper {
-    background-image: url(assets/img/BN_Caluga_vestuario.jpg);
-}
-
-.flexCol--calzado-wrapper {
-    background-image: url(assets/img/BN_Caluga_calzado.jpg);
-}
-
-.flexCol--accesorios-wrapper {
-    background-image: url(assets/img/BN_Caluga_accesorios.jpg);
-}
-
-.flexColChild--summaryBusquedaNombrePrice :global(.vtex-store-components-3-x-priceContainer) {
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    margin: 0;
-}
-
-.flexColChild--summaryBusquedaNombrePrice :global(.vtex-store-components-3-x-sellingPriceValue) {
+.flexRowContent--main-header :global(.vtex-menu-2-x-styledLink) {
+    color: #fff;
     font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 
-.flexCol--summaryBusquedaNombrePrice .flexColChild--summaryBusquedaNombrePrice:last-child {
-    display: none;
+.flexRow--deals {
+    background-color: #a7afbd;
+    padding: 14px 0px;
 }
 
-
-/*PDP*/
-
-.flexCol--btn-Stock {
-    display: none!important;
-}
-
-.flexRow--Row-BreadCrumb {
-    border-bottom: 1px solid #dddddd;
-}
-
-.flexCol--colSimuladorEntrega,
-.flexRowContent--Row-BreadCrumb {
-    display: flex;
-    justify-content: flex-start;
+.flexRow--deals .stretchChildrenWidth {
     align-items: center;
-    flex-direction: inherit;
 }
 
-.flexRowContent--rowQuantityBuy .stretchChildrenWidth {
-    display: flex;
-    justify-content: flex-start;
+.flexRow--deals .flexCol {
+    align-items: center;
+}
+
+.flexCol--filterCol {
+    max-width: 500px;
+    min-width: 230px;
+}
+
+.flexCol--productCountCol {
     align-items: flex-start;
 }
 
-.flexCol--colAddToCart {
-    width: 60%!important;
+.flexCol--orderByCol {
+    align-items: flex-start;
+    margin-left: 4rem;
 }
 
-.flexRowContent--rowQuantityBuyDesktop .stretchChildrenWidth:nth-child(2n) {
-    justify-content: flex-start!important;
+.flexCol--orderByMobileCol {
+    width: 42%;
+}
+
+.flexCol--filterMobileCol {
+    width: 38%;
+}
+
+.flexCol--switcherMobileCol {
+    width: 20%;
+}
+
+.flexRow--quickviewMainRow {
+    display: flex;
+    max-height: 100%;
+}
+
+.flexColChild--quickviewDetails:first-child {
+    overflow-y: auto;
+    height: 66% !important;
+    overflow-x: hidden;
+}
+
+.flexColChild--quickviewDetails:last-child {
+    height: 34% !important;
+}
+
+.flexRow--addToCartRow {
+    padding-bottom: 1rem;
+}
+
+.flexColChild--formReseller,
+.flexColChild--formResellerCompanyBlock,
+.flexColChild--formResellerCompany {
+    padding: 0 0.5rem 0.5rem;
+}
+
+.flexRowContent--formResellerCompanyBlock .stretchChildrenWidth {
+    display: initial;
+}
+
+.flexRowContent--formResellerCompanyBlock .stretchChildrenWidth .flexCol--formResellerCompany {
+    height: initial;
 }
 
 
 /*PLP*/
 
-.flexRow--rowBreadCrumbDesktop {
-    border-bottom: 1px solid #dddddd;
-    margin-left: auto;
-    margin-right: auto;
-    width: 95%;
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
+.flexRowContent--rowSearchBread .stretchChildrenWidth {
+    justify-content: flex-start;
 }
 
-.flexRowContent--rowBreadCrumbMobile {
-    margin: 5px 0 10px 0;
+.flexRowContent--row-ventas-por .stretchChildrenWidth:first-child {
+    margin-right: 0.5rem;
+}
+
+.flexRowContent--row-ventas-por .stretchChildrenWidth:last-child {
+    margin-left: 0.5rem;
+}
+
+.flexRowContent--orderByAndSwitcher {
+    justify-content: start;
 }
 
 
-/*Banner y titulo*/
+/*Titulos de detalle de producto PDP*/
 
-.flexRowContent--rowBannerSearchTitle {
+.flexRow--rowSpecifications,
+.flexRow--rowSearchTitle {
+    display: none !important
+}
+
+.flexRow--skuListHeader {
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.flexRowContent--rowItemMainDesktop {
+    align-items: center;
+    border-bottom: 1px solid #c4c4c4;
+    display: flex;
+    padding: 10px 0;
+}
+
+.flexColChild--colBuyButton :global(.vtex-button) {
+    height: 33px;
+    min-height: 33px;
+    border-radius: 0;
+}
+
+.flexRow--rowDescription,
+.flexRow--rowSpecifications,
+.flexRow--colBuyButton {
+    padding: 1rem;
+}
+
+.flexRowContent--rowSkuName {
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+
+/*Version Mobile*/
+
+.flexRowContent--skuListHeaderMobile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+
+/* Footer */
+
+.flexRow--row-footerMain {
+    background-color: #1f1f1f;
+    padding: 3rem 0 0 0;
+}
+
+.flexRow--row-lastFooter {
+    background-color: #1f1f1f;
+    padding: 1.5rem 0;
+}
+
+.flexColChild--col-footerMain {
+    align-items: center;
+    height: auto !important;
+}
+
+.flexCol--col-footerMain {
+    align-items: center;
+}
+
+.flexRowContent--row-footerMain {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 2rem;
+}
+
+.flexCol--lastFooter-partners {
+    display: flex;
+    flex-direction: revert;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexColChild--lastFooter-webpay {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.flexColChild--lastFooter-partners {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Top Bar */
+
+.flexRow--row-topBar {
+    background: #474747;
+    margin: 0.7rem 0.7rem 0 0.7rem;
+}
+
+.flexRowContent--row-topBar .stretchChildrenWidth {
+    padding: 0 2rem;
     position: relative;
 }
 
-.flexCol--colSearchTitle {
-    position: absolute !important;
-    left: 0;
-    top: 0;
-}
-
-
-/*Búsqueda Vacía*/
-
-.flexRow--BuscaVacia {
-    background: url(https://pillin.vteximg.com.br/arquivos/BN_W_BuscaVacia.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    opacity: .95;
-    padding: 2rem;
-}
-
-.flexRowContent--BuscaVacia {
+.flexRowContent--row-topBar .stretchChildrenWidth:first-child {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-}
-
-.flexCol--PalabrasClavesVacia {
-    display: flex;
-    justify-content: flex-start;
-    align-items: stretch;
-    flex-flow: row;
     flex-direction: row;
+    justify-content: flex-end;
+}
+
+.flexRowContent--row-topBar .stretchChildrenWidth:first-child::before {
+    content: "|";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: lighter;
+    color: #fff;
+}
+
+.flexRowContent--row-topBar .stretchChildrenWidth:first-child::before {
+    right: 0;
+}
+
+.flexRowContent--row-topBar {
+    justify-content: flex-end;
+}
+
+.flexRowContent--row-topBar .flexRowContent--row-topBar:first-child {
+    padding: 0 1.8rem;
+}
+
+.flexRowContent--row-InfoBar .stretchChildrenWidth:nth-child(even) {
+    margin: 0 2rem;
+}
+
+
+/*Info Bar*/
+
+.flexRow--row-InfoBar {
+    background: #474747;
+    margin-top: 11px;
+    padding: 0.7rem 0;
+}
+
+.flexRowContent--row-InfoBar .stretchChildrenWidth:last-child :global(.vtex-rich-text-0-x-paragraph--infoBarCol-text) {
+    text-align: right;
+}
+
+
+/*Categorías Home*/
+
+.flexRowContent--row-categoryHome {
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-.flexCol--PalabrasClavesVacia {
-    display: inline-flex;
-    justify-content: flex-start;
+.flexRowContent--row-categoryHome .stretchChildrenWidth {
+    width: 23% !important;
+    border: 1px solid #c4c4c4;
+    margin: 0.5rem;
 }
 
 
-/*Páginas Institucionales*/
+/*Newsletter*/
 
-.flexCol--colBannerPrincipal {
-    min-height: 15rem;
+.flexRow--row-newsletter {
+    background-color: #e1251b;
+    padding: 3rem 0;
 }
 
-.flexRow--rowBannerInstitucionalTitle,
-.flexRow--rowBanner-tcn-Title {
-    width: 100vw;
-    height: auto;
-    display: block;
-    position: relative;
-    padding: 4rem;
-    clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
-}
-
-.flexColChild--colBannerPrincipal::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: url(https://pillin.vteximg.com.br/arquivos/BN_W_Categoria_Nino.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    min-height: 15rem;
-    display: block;
-    opacity: 0.2;
-    clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
-}
-
-.flexRow--rowBannerInstitucionalTitle::before {
-    content: "";
-    background: url(https://pillin.vteximg.com.br/arquivos/BN_W_Categoria_Nino.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    opacity: 0.5;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;
-}
-
-.flexRow--rowBanner-tcn-Title::before {
-    content: "";
-    background: url(https://pillin.vteximg.com.br/arquivos/BN_W_Trabaja-con-Nosotros.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    opacity: 0.5;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;
-}
-
-.flexRowContent--rowContenidoInstitucional {
-    display: flex;
+.flexRowContent--row-newsletter {
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.flexRowContent--rowContenidoInstitucional .stretchChildrenWidth {
-    width: 80% !important;
-}
-
-.flexRowContent--confirmationButtons {
-    margin: 0;
+.flexRowContent--row-socialMedia-newsletter {
+    flex-direction: column;
     margin-top: 1rem;
 }
 
-.flexCol--col-generalInfo {
-    background: #f9f9f9;
-    padding: 3rem;
-    border-radius: 4px;
+.flexRowContent--row-newsletter-suscribeme :global(.vtex-dropdown__label),
+.flexRowContent--row-newsletter-presonal :global(.vtex-input__label) {
+    display: none;
 }
 
-.flexCol--col-resumeInfo {
-    margin-left: 5rem;
+.flexRowContent--row-newsletter-suscribeme :global(.vtex-dropdown__container) {
+    background-color: transparent;
+    border-radius: 0;
+    margin: 1rem .7rem 0 .7rem;
+    border: 1px solid #fff;
+    color: #fff;
 }
 
-.flexRow--row--wrapperNotices {
-    margin-top: 4rem;
+.flexRowContent--row-newsletter-suscribeme :global(.vtex-dropdown__button) {
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #fff;
+    border-radius: 0;
 }
 
-.flexRowContent--confirmationButtons .flexColChild {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.flexRowContent--row-newsletter-presonal :global(.vtex-input-prefix__group) {
+    border: 1px solid #fff;
+    border-radius: 0;
+    margin: 0 .7rem;
+}
+
+.flexRowContent--row-newsletter-presonal :global(.vtex-styleguide-9-x-input) {
+    background-color: transparent;
+    font-weight: 600;
+    letter-spacing: 2px;
+    width: 210px;
+    border-radius: 0;
 }
 
 
 /*Contacto*/
 
-.flexRow--rowFormulariocliente-pillin,
-.flexRow--rowFormularioBeneficiario,
-.flexRow--rowFormularioContacto {
-    width: 100vw;
-    margin-bottom: 0;
-    display: block;
-    padding: 3rem 0;
-    position: relative;
-    background: url(https://i.ibb.co/wwHgbLd/BN-W-Contacto.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+.flexRowContent--row-contacto {
+    flex-direction: column;
 }
 
-.flexRow--rowFormulariocliente-pillin {
-    background-image: url(assets/img/prueba-imagen.jpg) !important;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom right;
+.flexRowContent--row-title-contacto {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
 }
 
-.flexRow--rowFormularioBeneficiario {
-    background-image: url(assets/img/beneficiarios.jpg) !important;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top right;
+.flexRowContent--row-title-contacto .stretchChildrenWidth:first-child {
+    width: 100% !important;
 }
 
-.flexColChild--colFormulariocliente-pillin,
-.flexColChild--colFormularioBeneficiario,
-.flexColChild--colFormularioContacto {
-    background: #fff;
-    border-radius: 2px;
-    box-shadow: 0 0 20px #0000002e;
-    padding: 3rem 5rem 4.5rem 5rem;
-    z-index: 9;
-    margin-left: 2rem;
-    width: 500px;
+.flexRowContent--row-calugasContacto {
+    margin-top: 3rem;
 }
 
-.flexColChild--colFormularioBeneficiario {
-    height: 100% !important;
+.flexRowContent--row-calugasContacto .stretchChildrenWidth {
+    background-color: #1f1f1f;
+    margin: 1rem 2rem;
+    width: 29% !important;
+    padding: 4rem 3rem;
 }
 
-
-/*Tiendas*/
-
-.flexRowContent--rowContentTiendas {
-    position: relative;
+.flexRowContent--row-rrsssContacto {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.flexColChild--colFormTiendas {
-    position: absolute;
-    top: 2rem;
-    left: 5%;
-    background: #fff;
-    border-radius: 2px;
-    box-shadow: 0 0 20px #0000002e;
-    padding: 2rem;
-    width: 35%;
-    z-index: 9;
+.flexRow--row-rrsssContacto {
+    margin: 3rem 0 5rem 0;
 }
 
-.flexCol--mapaTiendas {
-    height: 60vh;
+.flexRowContent--row-redes-contacto {
+    justify-content: center;
+    align-items: center;
 }
 
-.flexRowContent--searchMobileRow {
-    display: flex;
-}
-
-.colProductImage {
-    position: relative;
-}
-
-.flexColChild--filterCol {
-    height: auto!important;
-}
-
-@media (max-width:768px) {
-    .flexRowContent--rowBannerSearchTitle {
-        margin-bottom: 0rem;
-    }
-    .flexRowContent--rowSearchInfo .stretchChildrenWidth {
-        border: 1px solid #441e13;
-        border-radius: 3px;
-        margin: 0 5px;
-        height: 45px;
-    }
-    .filterPopupTitle {
-        font-weight: 800;
-    }
-    .flexColChild--summaryBusquedaNombrePrice {
-        height: auto !important;
-    }
-    .flexRow--row-footer-mobile {
-        padding: 0;
-    }
-    .flexRowContent--rowBanners-mobile {
-        display: flex;
-    }
-    .flexRow--clubPillin-mobile {
-        background-image: url(assets/img/bg-clubPillin.jpg);
-        margin: 4rem 0;
-        padding: 6rem 1rem 7rem 1rem;
-        background-position: center bottom;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .flexCol--vestuario-wrapper,
-    .flexCol--calzado-wrapper,
-    .flexCol--accesorios-wrapper {
-        margin: .3rem 0;
-        padding: 5rem !important;
-    }
-    .flexColChild--colBannerPrincipal::before {
-        background: url(https://pillin.vteximg.com.br/arquivos/BN_W_Categoria_Nino.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-    }
-    .flexColChild--colFormulario,
-    .flexColChild--colFormularioBeneficiario,
-    .flexColChild--colFormularioContacto {
-        position: initial;
-        margin: 0 auto;
-        width: 85%;
-    }
-    .flexRow--rowFormularioBeneficiario,
-    .flexRow--rowFormularioContacto {
-        width: 100vw;
-        height: 100vh;
-        margin-bottom: 10rem;
-        display: block;
-        position: relative;
-        background: url(https://i.ibb.co/z6ctzNJ/BN-M-Contacto.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-    }
-}
-
-.flexColChild--summaryBusquedaNombrePrice {
+.flexColChild--col-ubicacion {
     height: auto !important;
 }
 
-.flexRow--row-footer-mobile {
-    padding: 0;
-}
-
-.flexRowContent--rowBanners-mobile {
+.flexCol--col-fecha-compra-reclamos,
+.flexCol--col-fecha-vencimiento-reclamos {
     display: flex;
-}
-
-.flexRow--clubPillin-mobile {
-    background-image: url(assets/img/bg-clubPillin.jpg);
-    margin: 4rem 0;
-    padding: 6rem 1rem 7rem 1rem;
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.flexColChild--btn-GuiaDeTallas {
-    position: absolute;
-    right: 25px;
-    bottom: 60px;
-}
-
-.flexCol--btn-GuiaDeTallas {
+    flex-direction: row;
     position: relative;
 }
 
-.flexRow--mantencion-m,
-.flexRow--mantencion-d {
+.flexCol--col-fecha-compra-reclamos::before {
+    content: "Fecha de compra";
+    text-transform: uppercase;
+    position: absolute;
+    left: 0;
+    font-size: 14px;
+    top: 0;
+    letter-spacing: 1px;
+}
+
+.flexCol--col-fecha-compra-reclamos .flexColChild--col-fecha-compra-reclamos,
+.flexCol--col-fecha-vencimiento-reclamos .flexColChild--col-fecha-vencimiento-reclamos {
+    width: 33.3%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.flexRow--row-n-m-t {
+    margin-bottom: 2rem;
+}
+
+.flexCol--col-fecha-vencimiento-reclamos::before {
+    content: "Fecha de vencimiento";
+    text-transform: uppercase;
+    position: absolute;
+    left: 0;
+    font-size: 14px;
+    top: 0;
+    letter-spacing: 1px;
+}
+
+.flexRowContent--row-n-m-t .stretchChildrenWidth:nth-child(even) {
+    margin: 0 2rem;
+}
+
+.flexRowContent--row-1-compras-mayor .stretchChildrenWidth:nth-child(even),
+.flexRowContent--row-2-compras-mayor .stretchChildrenWidth:nth-child(even),
+.flexRowContent--row-3-compras-mayor .stretchChildrenWidth:nth-child(even),
+.flexRowContent--row-1-reclamos .stretchChildrenWidth:nth-child(even),
+.flexRowContent--row-3-reclamos .stretchChildrenWidth:nth-child(even),
+.flexRowContent--row-4-reclamos .stretchChildrenWidth:nth-child(even) {
+    margin: 0 2rem;
+}
+
+.flexRowContent--row-1-reclamos,
+.flexRowContent--row-3-reclamos,
+.flexRowContent--row-4-reclamos {
+    margin-bottom: 1.5rem;
+}
+
+.flexRowContent--row-2-reclamos .stretchChildrenWidth {
+    width: 31% !important;
+}
+
+.flexRowContent--row-2-reclamos .stretchChildrenWidth:last-child {
+    margin: 0 2rem;
+}
+
+.flexRowContent--rowMobileImageDetail {
+    align-items: center
+}
+
+.flexRowContent--row-2-compras-mayor,
+.flexRowContent--row-3-compras-mayor {
+    margin-top: 1.5rem;
+}
+
+.flexRowContent--row-4-compras-mayor {
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.flexRowContent--row-4-compras-mayor .stretchChildrenWidth {
+    width: 100% !important;
+}
+
+.flexColChild--col-fecha-compra-reclamos :global(.vtex-input__label),
+.flexColChild--col-fecha-compra-reclamos :global(.vtex-dropdown__label),
+.flexColChild--col-fecha-vencimiento-reclamos :global(.vtex-input__label),
+.flexColChild--col-fecha-vencimiento-reclamos :global(.vtex-dropdown__label) {
+    display: none;
+}
+
+
+/*Terminos y condiciones*/
+
+.flexRowContent--row-tyc {
+    flex-direction: column;
+    padding: 0 7rem;
+}
+
+.flexRowContent--row-tyc .stretchChildrenWidth {
+    width: 100% !important;
+}
+
+
+/*Politicas de privacidad*/
+
+.flexRowContent--row-privacidad {
+    flex-direction: column;
+    padding: 0 7rem;
+}
+
+.flexRowContent--row-privacidad .stretchChildrenWidth {
+    width: 100% !important;
+}
+
+
+/*Preguntas Frecuentes*/
+
+.flexRowContent--row-faqq {
+    flex-direction: column;
+    padding: 0 7rem;
+}
+
+.flexRowContent--row-faqq .stretchChildrenWidth {
+    width: 100% !important;
+}
+
+
+/*La empresa*/
+
+.flexRow--row-inicios :global(.vtex-store-components-3-x-container) {
+    padding: 0;
+}
+
+.flexRow--row-inicios {
+    margin-left: 7rem;
+}
+
+.flexColChild--col-compromiso,
+.flexColChild--col-inicios-text {
+    height: auto !important;
+    margin-right: 5rem;
+}
+
+.flexColChild--col-calidad {
+    height: auto !important;
+    margin-left: 5rem;
+}
+
+.flexColChild--col-compromiso :global(.vtex-rich-text-0-x-wrapper--title-seccion-empresa),
+.flexColChild--col-inicios-text :global(.vtex-rich-text-0-x-wrapper--title-seccion-empresa) {
+    justify-content: left !important;
+}
+
+.flexColChild--col-calidad :global(.vtex-rich-text-0-x-wrapper--title-seccion-empresa) {
+    justify-content: right !important;
+}
+
+.flexRow--row-innovacion,
+.flexRow--row-instalaciones,
+.flexRow--row-somos {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
+    margin: 4rem 0;
+    padding: 5rem;
+    box-sizing: content-box;
 }
 
-.flexRow--mantencion-m {
-    background-image: url(assets/img/mantencion-movil.jpg);
+.flexRow--row-innovacion {
+    background-image: url(assets/img/empresa-bg-innovacion.jpg);
 }
 
-.flexRow--mantencion-d {
-    background-image: url(assets/img/mantencion-escri.jpg);
+.flexRow--row-instalaciones {
+    background-image: url(assets/img/empresa-bg-instalaciones.jpg);
 }
 
-.flexRowContent--mantencion-m,
-.flexRowContent--mantencion-d {
+.flexRow--row-somos {
+    background-image: url(assets/img/empresa-bg-somos.jpg);
+}
+
+.flexCol--col-somos,
+.flexCol--col-instalaciones,
+.flexCol--col-innovacion {
+    background: #fff;
+    padding: 3rem;
+    width: 80%;
+}
+
+
+/*Carrito*/
+
+.flexColChild--colQuantitySelectorMobile {
+    margin-top: 15px;
+}
+
+
+/*Header Mobile MN*/
+
+.flexRow--rowDrawer {
+    width: 100%;
+}
+
+.flexRowContent--rowDrawer {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 2rem;
-    box-sizing: border-box;
-    height: 100vh;
-    position: relative;
+    justify-content: space-between;
+    padding: .7rem 1.3rem;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 1rem;
 }
 
-.flexRowContent--busquedaTalla {
-    flex-direction: column;
-    margin-top: 3rem;
-}
 
-.flexRow--minicart-footer {
-    box-shadow: none !important;
-    border-top: 1px solid #ccc;
-}
-
-.flexCol--miniCart-colPrice {
-    margin-top: 0;
-}
-
-.flexColChild--miniCart-colPrice {
-    line-height: .7;
-    margin-bottom: .2rem;
-}
-
-.flexRowContent--qttyPrice-row {
-    align-items: center;
-}
-
-.flexRowContent--rowPrices {
+/* .flexRowContent--qttyPrice-row {
     display: flex;
-    justify-content: end;
+    flex-direction: column;
 }
 
-.flexCol--colProductImage {
-    position: relative;
-}
+.flexRowContent--qttyPrice-row .stretchChildrenWidth:last-child {
+    margin-top: 1rem;
+} */
 
 
-/*Trabaja con Nosotros*/
+/*MEDIA QUERY*/
 
-.flexRowContent--rowFormulariotcn {
-    width: 50vw;
-    margin: 0 auto;
-}
-
-.flexCol--vestuario-wrapper,
-.flexCol--calzado-wrapper,
-.flexCol--accesorios-wrapper {
-    position: relative;
-    padding: 10rem;
-}
-
-.flexRowContent--titulo-row-insta {
-    margin-top: 3rem;
+.flexRowContent--rowSearchInfoMobile {
+    flex-direction: column;
 }
 
 
-/*Popup*/
+/*PLP*/
 
-.flexRow--row-popup :global(.vtex-store-components-3-x-container) {
-    padding: 0;
-}
-
-.flexCol--colProductImage :global(.vtex-product-highlights-2-x-productHighlightWrapper--collection) {
-    position: absolute;
-    top: 0;
-    left: 25%;
-    z-index: 991;
-}
-
-
-/* MEDIA QUERIES */
-
-@media (max-width: 991.1px) {
-    .flexRowContent--rowMainFooter {
-        padding: 0 2rem;
-        flex-direction: column !important;
+@media screen and (min-width: 64rem) {
+    .flexRowContent--orderByAndSwitcher {
+        padding-left: 4rem;
     }
-    .flexRow--footer-general {
-        padding-top: 5rem;
-        background-image: url(assets/img/bg-footer-movil.png);
+}
+
+@media screen and (max-width: 63rem) {
+    .flexRow--rowSearchBread {
+        display: none!important;
     }
-    .flexRowContent--rowSeo {
+    .flexRow--rowSearchInfoMobile {
+        border-bottom: 1px solid #e9e9e9;
+        padding: 15px 0;
+    }
+    .flexRowContent--orderByAndSwitcher {
+        padding-left: 4rem;
+    }
+}
+
+
+/*Versión Mobile*/
+
+@media (max-width: 1025px) {
+    .flexRow--main-header-mobile {
+        background: #1f1f1f;
+    }
+    .flexRow--row-InfoBar {
         margin-top: 0;
     }
-    .flexCol--colBannersPillin {
-        padding: 0;
+    .flexRowContent--row-InfoBar .stretchChildrenWidth:last-child {
+        display: none;
     }
-    .flexRowContent--rowMainFooter .stretchChildrenWidth {
-        width: 100% !important;
-    }
-    .flexRowContent--rowQuantityBuy {
+    .flexRowContent--row-categoryHome {
         display: flex;
+    }
+    .flexRowContent--row-categoryHome .stretchChildrenWidth {
+        width: 50% !important;
+        border: 1px solid #c4c4c4;
+        margin: 0;
+    }
+    .flexRowContent--row-footerMain .stretchChildrenWidth {
+        padding: 2rem 0;
+        border-bottom: 1px solid #fff;
+    }
+    .flexRow--row-footerMain {
+        background-color: #1f1f1f;
+        padding: 1rem 0 0 0;
+    }
+    .flexColChild--lastFooter-webpay {
         justify-content: center;
-        align-items: stretch;
-        background: white;
-        padding: 5px 15px;
-        margin-bottom: 0;
-        border-top: 1px solid #ffab71;
-        border-bottom: 1px solid #ffab71;
     }
-    .flexCol--col-generalInfo {
-        padding: 1.7rem;
+    .flexRowContent--row-lastFooter .stretchChildrenWidth {
+        margin: 0.7rem 0;
     }
-    .flexCol--col-resumeInfo {
-        margin-left: 0rem;
+    .flexRowContent--row-footerMain {
+        border-bottom: 0;
+        padding-bottom: 0;
+    }
+    .flexRow--row-calidad,
+    .flexRow--row-compromiso,
+    .flexRow--row-inicios {
+        margin: 0 2rem;
+    }
+    .flexColChild--col-calidad {
+        margin-left: auto;
+    }
+    .flexColChild--col-compromiso,
+    .flexColChild--col-inicios-text {
+        margin-right: auto;
+    }
+    .flexRow--row-innovacion,
+    .flexRow--row-instalaciones,
+    .flexRow--row-somos {
+        margin: 6rem 0;
+        padding: 2rem 1rem;
+    }
+    .flexRowContent--row-calidad {
+        flex-direction: column-reverse !important;
+        display: flex;
+    }
+    .flexRowContent--row-faqq,
+    .flexRowContent--row-privacidad,
+    .flexRowContent--row-tyc {
+        flex-direction: column;
+        padding: 0 2rem;
+    }
+    .flexRowContent--row-socialmedia-images {
+        display: flex;
+    }
+    .flexRow--row-shelfTitle {
         margin-top: 2rem;
     }
-    .flexColChild--col-generalInfo {
-        padding: .35rem 0;
+    .flexRowContent--rowImagesAndItems {
+        margin: 0;
     }
-    .flexCol--colProductQuantity {
-        width: 50%;
-    }
-    .flexCol--colAddToCart {
-        width: 100%!important;
-    }
-    .flexColChild--colFormulariocliente-pillin,
-    .flexColChild--colFormularioBeneficiario,
-    .flexColChild--colFormularioContacto {
-        background: #fff;
-        border-radius: 2px;
-        box-shadow: 0 0 20px #0000002e;
-        padding: 3rem 2rem 3.5rem 3rem;
-        z-index: 9;
-        margin-left: 2rem;
-        width: 85%;
-        margin: 0 auto;
-    }
-    .filterPopupTitle {
-        text-align: center;
-    }
-    .flexRowContent--rowFormulariotcn {
-        width: 100%;
-    }
-    .flexColChild--orderByMobileCol {
-        width: 90%;
-        margin: 0 auto;
-    }
-    .flexColChild--btn-GuiaDeTallas {
-        position: static;
-        padding-bottom: 1.5rem;
-        border-bottom: 1px solid #ccc;
-        margin-bottom: 1rem;
-    }
-    .flexRowContent--rowQuantityBuy .stretchChildrenWidth {
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-start;
-    }
-    .flexRowContent--rowQuantityBuy .stretchChildrenWidth:first-child {
-        width: 40% !important;
-    }
-    .flexRowContent--rowQuantityBuy .stretchChildrenWidth:last-child {
-        width: 60% !important;
-    }
-    .flexCol--colAddToCart {
-        width: 90% !important;
+    .flexCol--productosRecomendados {
+        margin: 2rem 0 4rem 0;
     }
 }

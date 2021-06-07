@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Oswald';
+    src: url(assets/fonts/Oswald-Light.ttf), url(assets/fonts/Oswald-Bold.ttf), url(assets/fonts/Oswald-ExtraLight.ttf), url(assets/fonts/Oswald-Medium.ttf), url(assets/fonts/Oswald-Regular.ttf), url(assets/fonts/Oswald-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url(assets/fonts/Lato-Light.ttf), url(assets/fonts/Lato-Bold.ttf), url(assets/fonts/Lato-Thin.ttf), url(assets/fonts/Lato-Regular.ttf), url(assets/fonts/Lato-Black.ttf), url(assets/fonts/Lato-BlackItalic.ttf), url(assets/fonts/Lato-BoldItalic.ttf), url(assets/fonts/Lato-Italic.ttf), url(assets/fonts/Lato-LightItalic.ttf), url(assets/fonts/Lato-ThinItalic.ttf);
+}

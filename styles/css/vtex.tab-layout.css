@@ -1,25 +1,71 @@
-.listContainer--tallaTabList {
-    justify-content: space-evenly;
-    padding: 1rem 0 2.5rem 0;
-    border-top: 1px solid #3f2016;
+.container--contacto {
+    width: 85% !important;
 }
 
-.listItem :global(.vtex-button) {
-    border: 1px solid #3f2016;
+.listContainer {
+    margin-bottom: 3rem;
 }
 
-.listItem :global(.vtex-button__label) {
-    font-weight: 800;
-    padding: .5rem 2rem;
-    font-size: .95em;
+.listContainer--contacto-tab-list :global(.vtex-button) {
+    border-radius: 0;
+    border: 1px solid #1f1f1f;
+    transition: all .5s ease;
 }
 
-.listItemActive :global(.vtex-button__label) {
-    font-weight: 800;
+.listContainer--contacto-tab-list :global(.vtex-button):hover {
+    border-radius: 0;
+    border: 1px solid red;
+    background-color: red;
+    transition: all .5s ease;
 }
 
-@media (max-width: 770px) {
-    .listContainer--tallaTabList {
-        padding: 1rem 0 1.5rem 0;
-    }
+.listContainer--contacto-tab-list :global(.vtex-button__label) {
+    font-family: "Lato";
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    padding: .7rem 1rem !important;
+    display: block;
+    transition: all .5s ease;
+    color: #1f1f1f;
+}
+
+.listContainer--contacto-tab-list :global(.vtex-button__label):hover {
+    transition: all .5s ease;
+    color: #fff;
+}
+
+.listContainer--contacto-tab-list .listItemActive :global(.vtex-button) {
+    border: 1px solid red;
+    background-color: #fff;
+    transition: all .5s ease;
+}
+
+.listContainer--contacto-tab-list .listItemActive :global(.vtex-button):hover {
+    background-color: red;
+    transition: all .5s ease;
+}
+
+.listContainer--contacto-tab-list .listItemActive :global(.vtex-button__label) {
+    color: red;
+    transition: all .5s ease;
+}
+
+.listContainer--contacto-tab-list .listItemActive :global(.vtex-button__label):hover {
+    color: #ffffff;
+    transition: all .5s ease;
+}
+
+.container--contacto .formSubmitButton :global(.vtex-button) {
+    display: block;
+    margin-top: 2rem;
+}
+
+.container--contacto :global(.vtex-dropdown__label),
+.container--contacto :global(.vtex-textarea__label),
+.container--contacto :global(.vtex-input__label) {
+    color: #000;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }

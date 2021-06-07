@@ -1,27 +1,26 @@
 {
-  "store.custom#mantencion": {
-    "path": "/mantencion"
+  "store.custom#empresa": {
+      "path": "/empresa"
   },
 
-  "store.custom#terminos-condiciones": {
-    "path": "/terminos-condiciones"
+  "store.custom#preguntas-frecuentes": {
+      "path": "/preguntas-frecuentes"
   },
 
-  "store.custom#cambios-devoluciones": {
-    "path": "/cambios-devoluciones"
+  "store.custom#politicas-sustentabilidad": {
+      "path": "/politicas-sustentabilidad"
+  },
+
+  "store.custom#temrinos-condiciones": {
+      "path": "/temrinos-condiciones"
+  },
+
+  "store.custom#politicas-privacidad": {
+      "path": "/politicas-privacidad"
   },
 
   "store.custom#contacto": {
-    "path": "/contacto"
-  },
-
-  "store.custom#trabaja-con-nosotros": {
-    "path": "/trabaja-con-nosotros"
-  },
-
-  "store.custom#tiendas": {
-    "path": "/tiendas"
+      "path": "/contacto"
   }
 
-  
 }

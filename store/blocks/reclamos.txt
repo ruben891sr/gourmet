@@ -1,0 +1,283 @@
+ "entity": "reclamo",
+ "schema": "reclamos"
+
+ {
+    "title": "reclamos",
+    "type": "object",
+    "properties": {
+        "nombre": {
+            "type": "string",
+            "title": "Nombre",
+            "description": "Nombre contacto."
+        },
+        "rut": {
+            "type": "string",
+            "title": "RUT",
+            "description": "RUT contacto."
+        },
+        "direccion": {
+            "type": "string",
+            "title": "Dirección Completa",
+            "description": "Dirección Completa."
+        },
+        "mail": {
+            "type": "string",
+            "format": "email",
+            "title": "Email",
+            "description": "Email contacto."
+        },
+        "telefono": {
+            "type": "string",
+            "title": "Teléfono",
+            "description": "Teléfono contacto."
+        },
+        "producto": {
+            "type": "string",
+            "title": "Producto Problemas",
+            "description": "Producto con problemas."
+        },
+        "lote": {
+            "type": "string",
+            "title": "Número de Lote",
+            "description": "Número de Lote Producto con problemas."
+        },
+        "anoVencimiento": {
+            "type": "string",
+            "title": "Año",
+            "description": "Año vencimiento producto."
+        },
+        "diaVencimiento": {
+            "type": "string",
+            "title": "Día Venciiento",
+            "enum": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16",
+                "17",
+                "18",
+                "19",
+                "20",
+                "21",
+                "22",
+                "23",
+                "24",
+                "25",
+                "26",
+                "27",
+                "28",
+                "29",
+                "30",
+                "31"
+            ]
+        },
+        "mesVencimiento": {
+            "type": "string",
+            "title": "Mes Vencimiento",
+            "enum": [
+                "Enero",
+                "Febrero",
+                "Marzo",
+                "Abril",
+                "Mayo",
+                "Junio",
+                "Julio",
+                "Agosto",
+                "Septiembre",
+                "Octubre",
+                "Noviembre",
+                "Diciembre"
+            ]
+        },
+    },
+    "lugarCompra": {
+        "type": "string",
+        "title": "Lugar de Compra",
+        "description": "Lugar de Compra Producto con problemas."
+    },
+    "anoCompra": {
+        "type": "string",
+        "title": "Año",
+        "description": "Año compra producto."
+    },
+    "diaCompra": {
+        "type": "string",
+        "title": "Día Compra",
+        "enum": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"
+        ]
+    },
+    "mesCompra": {
+        "type": "string",
+        "title": "Mes Compra",
+        "enum": [
+            "Enero",
+            "Febrero",
+            "Marzo",
+            "Abril",
+            "Mayo",
+            "Junio",
+            "Julio",
+            "Agosto",
+            "Septiembre",
+            "Octubre",
+            "Noviembre",
+            "Diciembre"
+        ]
+    },
+    "comentario": {
+        "type": "string",
+        "title": "Comentario",
+        "description": "Comentario Reclamo."
+    },
+    "imagen": {
+        "type": "string",
+        "maxLength": 99999,
+        "title": "Imagen producto con problemas"
+    }
+},
+    "required": [
+        "nombre",
+        "rut",
+        "direccion",
+        "mail",
+        "telefono",
+        "producto",
+        "lote",
+        "anoVencimiento",
+        "mesVencimiento",
+        "diaVencimiento",
+        "lugarCompra",
+        "anoCompra",
+        "diaCompra",
+        "mesCompra",
+        "comentario",
+        "imagen"
+    ],
+    "v-triggers": [
+        {
+            "name": "send-reclamo",
+            "active": true,
+            "condition": "",
+            "action": {
+                "type": "email",
+                "provider": "default",
+                "subject": "Reclamo - Contacto vía formulario sitio B2B Gourmet",
+                "to": [
+                    "pascal.contreras@sr-consultores.com"
+                ],
+                "bcc": [
+                    ""
+                ],
+                "replyTo": "pascal.contreras@sr-consultores.com",
+                "body": "Nuevo mensaje recibido desde formulario de contacto Reclamo \n Nombre Conmpleto: {!nombre}  \n  RUT: {!rut} \n Dirección: {!direccion} \n Mail: {!mail} \n Teléfono: {!telefono}  \n Producto con Problemas: {!producto}  \n LOTE: {!lote} \n Fecha Vencimiento: {!diaVencimiento}/{!mesVencimiento}/{!anoVencimiento} \n Lugar de Compra: {!lugarCompra} \n Fecha Compra: {!diaCompra}/{!mesCompra}/{!anoCompra} \n Reclamo: {!comentario} \n Imágen Producto: {!imagen}"
+            }
+        }
+    ],
+    "v-default-fields": [
+        "id",
+        "nombre",
+        "rut",
+        "direccion",
+        "mail",
+        "telefono",
+        "producto",
+        "lote",
+        "anoVencimiento",
+        "mesVencimiento",
+        "diaVencimiento",
+        "lugarCompra",
+        "anoCompra",
+        "diaCompra",
+        "mesCompra",
+        "comentario",
+        "imagen"
+    ],
+    "v-security": {
+        "publicJsonSchema": true,
+        "allowGetAll": true,
+        "publicRead": [
+            "id",
+            "nombre",
+            "rut",
+            "direccion",
+            "mail",
+            "telefono",
+            "producto",
+            "lote",
+            "anoVencimiento",
+            "mesVencimiento",
+            "diaVencimiento",
+            "lugarCompra",
+            "anoCompra",
+            "diaCompra",
+            "mesCompra",
+            "comentario",
+            "imagen"
+        ],
+        "publicWrite": [
+            "id",
+            "nombre",
+            "rut",
+            "direccion",
+            "mail",
+            "telefono",
+            "producto",
+            "lote",
+            "anoVencimiento",
+            "mesVencimiento",
+            "diaVencimiento",
+            "lugarCompra",
+            "anoCompra",
+            "diaCompra",
+            "mesCompra",
+            "comentario",
+            "imagen"
+        ],
+        "publicFilter": [
+            "fieldExample"
+        ]
+    }
+}

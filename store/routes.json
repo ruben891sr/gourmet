@@ -1,0 +1,26 @@
+{
+    "store.custom#empresa": {
+        "path": "/empresa"
+    },
+
+    "store.custom#preguntas-frecuentes": {
+        "path": "/preguntas-frecuentes"
+    },
+
+    "store.custom#politicas-sustentabilidad": {
+        "path": "/politicas-sustentabilidad"
+    },
+
+    "store.custom#temrinos-condiciones": {
+        "path": "/temrinos-condiciones"
+    },
+
+    "store.custom#politicas-privacidad": {
+        "path": "/politicas-privacidad"
+    },
+
+    "store.custom#contacto": {
+        "path": "/contacto"
+    }
+
+}

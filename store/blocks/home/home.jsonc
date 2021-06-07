@@ -1,0 +1,670 @@
+{
+  "store.home": {
+    "blocks": ["responsive-layout.desktop", "responsive-layout.mobile"]
+  },
+
+  // General versiones Mobile Desktop
+  "responsive-layout.desktop": {
+    "children": [
+      "flex-layout.row#infoBar",
+      "list-context.image-list#slider",
+      "__fold__.experimentalLazyAssets",
+      // "flex-layout.row#bn-dcto",
+      "flex-layout.row#category-home-title",
+      "flex-layout.row#category-home",
+      "flex-layout.row#category-home-vertodo",
+      "flex-layout.row#shelf-title",
+      "list-context.product-list#home",
+      // "flex-layout.row#ventas-por",
+      // "flex-layout.row#cotiza",
+      "flex-layout.row#newsletter"
+    ]
+  },
+
+  "responsive-layout.mobile": {
+    "children": [
+      "flex-layout.row#infoBar-mobile",
+      "list-context.image-list#slider",
+      "__fold__.experimentalLazyAssets",
+      // "flex-layout.row#bn-dcto",
+      "flex-layout.row#category-home-title",
+      "flex-layout.row#category-home",
+      "flex-layout.row#shelf-title",
+      "list-context.product-list#home",
+      // "flex-layout.row#ventas-por",
+      // "flex-layout.row#cotiza",
+      "flex-layout.row#newsletter"
+    ]
+  },
+
+  // Info Bar
+  "flex-layout.row#infoBar": {
+    "children": [
+      "rich-text#col-1-infobar",
+      "rich-text#col-2-infobar",
+      "rich-text#col-3-infobar"
+    ],
+    "props": {
+      "blockClass": "row-InfoBar"
+    }
+  },
+  "rich-text#col-1-infobar": {
+    "props": {
+      "text": "Estás en el portal de compras al por mayor de Gourmet. Para poder comprar bajo esta modalidad, debes cumplir con los siguientes requisitos:",
+      "blockClass": "infoBarCol-text"
+    }
+  },
+  "rich-text#col-2-infobar": {
+    "props": {
+      "text": "- Tener RUT empresa\n- Monto mínimo de compras de $50.000\n- Cada producto debe ser comprado por caja ",
+      "blockClass": "infoBarCol-text"
+    }
+  },
+  "rich-text#col-3-infobar": {
+    "props": {
+      "text": "Para ver información de despacho y costos, haz click acá",
+      "blockClass": "infoBarCol-text"
+    }
+  },
+
+  // Desktop - Slider Principal
+  "list-context.image-list#slider": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 550,
+      "blockClass": "sliderImageNew",
+      "images": [
+        {
+          "image": "assets/img/slider-escri-1.jpg",
+          "mobileImage": "assets/img/slider-escri-1-mobile.jpg"
+        },
+        {
+          "image": "assets/img/slider-escri-2.jpg",
+          "mobileImage": "assets/img/slider-escri-2-mobile.jpg"
+        },
+        {
+          "image": "assets/img/slider-escri-3.jpg",
+          "mobileImage": "assets/img/slider-escri-3-mobile.jpg"
+        }
+      ]
+    }
+  },
+
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  },
+
+  // Imagen Promo
+  "flex-layout.row#bn-dcto": {
+    "children": ["image#info-image"],
+    "props": {
+      "fullWidth": false,
+      "blockClass": "row-bn-dcto",
+      "marginTop": 8,
+      "marginBottom": 8
+    }
+  },
+
+  "image#info-image": {
+    "props": {
+      "src": "assets/img/bn-dcto.jpg",
+      "link": "",
+      "width": "100%",
+      "blockClass": "bn-dcto"
+    }
+  },
+
+  // Categorias Home
+  "flex-layout.row#category-home-title": {
+    "children": ["rich-text#category-home-title"],
+    "props": {
+      "blockClass": "row-categoryHomeTitle"
+    }
+  },
+  "rich-text#category-home-title": {
+    "props": {
+      "text": "## Categorías",
+      "blockClass": "shelfTitle"
+    }
+  },
+
+  "flex-layout.row#category-home": {
+    "children": [
+      "info-card#food-service",
+      "info-card#reposteria",
+      "info-card#esencias",
+      "info-card#salsas-postres",
+      "info-card#salsas-condimientadas",
+      "info-card#hiervas-especias",
+      "info-card#caldos",
+      "info-card#cremas-sopas",
+      "info-card#basas-salsas",
+      "info-card#alinos-ensaladas",
+      "info-card#salsa-untar",
+      "info-card#delicatesen"
+      // "info-card#mas-matural",
+    ],
+    "props": {
+      "blockClass": "row-categoryHome"
+    }
+  },
+
+  "info-card#food-service": {
+    "props": {
+      "id": "info-card-food-service",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "assets/img/cat-1-gourmet.jpg",
+      "callToActionText": "Food Service",
+      "callToActionUrl": "/food-service",
+      "callToActionMode": "link",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  },
+  
+  "info-card#mas-matural": {
+    "props": {
+      "id": "info-card-mas-matural",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "assets/img/cat-1-gourmet.jpg",
+      "callToActionText": "Gourmet más natural",
+      "callToActionUrl": "/gourmet-mas-natural",
+      "callToActionMode": "link",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  },
+
+  "info-card#alinos-ensaladas": {
+    "props": {
+      "id": "info-card-alinos-ensaladas",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "assets/img/cat-2-gourmet.jpg",
+      "callToActionText": "Aliños para ensaladas",
+      "callToActionUrl": "alinos-para-ensaladas",
+      "callToActionMode": "link",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  },
+
+  "info-card#basas-salsas": {
+    "props": {
+      "id": "info-card-basas-salsas",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "assets/img/cat-3-gourmet.jpg",
+      "callToActionText": "Bases y salsas deshidratadas",
+      "callToActionUrl": "/bases-y-salsas-deshidratadas",
+      "callToActionMode": "link",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  },
+
+  "info-card#caldos": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "assets/img/cat-4-gourmet.jpg",
+      "callToActionText": "Caldos",
+      "callToActionUrl": "/caldos",
+      "callToActionMode": "link",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  },
+
+  "info-card#cremas-sopas": {
+    "props": {
+      "id": "info-card-cremas-sopas",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "assets/img/cat-5-gourmet.jpg",
+      "callToActionText": "Cremas y sopas",
+      "callToActionUrl": "/cremas-y-sopas",
+      "callToActionMode": "link",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  }, 
+
+  "info-card#delicatesen": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "assets/img/cat-6-gourmet.jpg",
+      "callToActionText": "Productos delicatessen",
+      "callToActionUrl": "/delicatessen-y-otros",
+      "callToActionMode": "link",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  },
+
+  "info-card#esencias": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "assets/img/cat-7-gourmet.jpg",
+      "callToActionText": "Esencias para cocinar",
+      "callToActionUrl": "/esencias",
+      "callToActionMode": "link",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  },
+
+  "info-card#hiervas-especias": {
+    "props": {
+      "id": "info-card-hiervas-especias",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "assets/img/cat-8-gourmet.jpg",
+      "callToActionText": "Hierbas y especias",
+      "callToActionUrl": "/hierbas-y-especias",
+      "callToActionMode": "link",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  },
+
+  "info-card#reposteria": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "assets/img/cat-9-gourmet.jpg",
+      "callToActionText": "Productos de repostería para cocinar",
+      "callToActionUrl": "/productos-de-reposteria-para-cocinar",
+      "callToActionMode": "link",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  },
+
+  "info-card#salsas-condimientadas": {
+    "props": {
+      "id": "info-card-salsas-condimientadas",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "assets/img/cat-10-gourmet.jpg",
+      "callToActionText": "Salsas condimientadas para cocinar",
+      "callToActionUrl": "/salsas-condimentadas-para-cocinar",
+      "callToActionMode": "link",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  },
+
+  "info-card#salsas-postres": {
+    "props": {
+      "id": "info-card-salsas-postres",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "assets/img/cat-11-gourmet.jpg",
+      "callToActionText": "Salsas para postres",
+      "callToActionUrl": "/salsas-para-postres",
+      "callToActionMode": "link",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  },
+
+  "info-card#salsa-untar": {
+    "props": {
+      "id": "info-card-salsa-untar",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "assets/img/cat-12-gourmet.jpg",
+      "callToActionText": "Salsas para untar",
+      "callToActionUrl": "/salsas-para-untar",
+      "callToActionMode": "link",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  },
+
+  "flex-layout.row#category-home-vertodo": {
+    "children": ["rich-text#category-home-vertodo"],
+    "props": {
+      "blockClass": "row-category-vertodo"
+    }
+  },
+  "rich-text#category-home-vertodo": {
+    "props": {
+      "text": "[Ver todos los productos](/138?map=productClusterIds)",
+      "blockClass": "category-vertodo"
+    }
+  },
+
+
+  //Shelf Home
+  "flex-layout.row#shelf-title": {
+    "children": ["rich-text#shelf-title"],
+    "props": {
+      "blockClass": "row-shelfTitle"
+    }
+  },
+
+  "rich-text#shelf-title": {
+    "props": {
+      "text": "## Productos Destacados",
+      "blockClass": "shelfTitle"
+    }
+  },
+
+  "list-context.product-list#home": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+      // "collection": "140"
+    }
+  }, 
+ 
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1 
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+
+  // Ventas por
+  "flex-layout.row#ventas-por": {
+    "children": ["info-card#lote", "info-card#sku"],
+    "props": {
+      "blockClass": "row-ventas-por",
+      "marginTop": 8
+    }
+  },
+
+  "info-card#lote": {
+    "props": {
+      "id": "info-card-lote",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "assets/img/bn-venta-lote.jpg",
+      // "headline": "Ventas por lote",
+      "callToActionText": "Ventas por lote",
+      "callToActionUrl": "/quickorder",
+      "blockClass": "info-card-ventas",
+      "textAlignment": "center"
+    }
+  },
+
+  "info-card#sku": {
+    "props": {
+      "id": "info-card-sku",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "assets/img/bn-venta-sku.jpg",
+      // "headline": "Ventas por sku",
+      "callToActionText": "Ventas por sku",
+      "callToActionUrl": "/quickorder",
+      "blockClass": "info-card-ventas",
+      "textAlignment": "center"
+    }
+  },
+
+  // Cotiza
+  "flex-layout.row#cotiza": {
+    "children": ["info-card#cotiza"],
+    "props": {
+      "blockClass": "row-cotiza",
+      "marginBottom": 8,
+      "marginTop": 8
+    }
+  },
+
+  "info-card#cotiza": {
+    "props": {
+      "id": "info-card-cotiza",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "assets/img/bn-cotiza.jpg",
+      "headline": "Cotiza con nosotros",
+      "callToActionText": "Cotiza ahora",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-cotiza",
+      "textAlignment": "center"
+    }
+  },
+
+  // Newsletter
+  "flex-layout.row#newsletter": {
+    "children": [
+      "rich-text#newsletter-title",
+      "rich-text#newsletter-subtitle",
+      "form#newsletter",
+      "flex-layout.row#social-media-newsletter"
+    ], 
+    "props": {
+      "blockClass": "row-newsletter",
+      "colSizing": "auto"
+    }
+  },
+
+  "rich-text#newsletter-title": {
+    "props": {
+      "text": "## Suscríbete a nuestros newsletter",
+      "blockClass": "newsletter-title"
+    }
+  },
+
+  "rich-text#newsletter-subtitle": {
+    "props": {
+      "text": "y obtén un código con un 10% de descuento en tu primer compra",
+      "blockClass": "newsletter-subtitle"
+    }
+  },
+
+  "form#newsletter": {
+    "props": {
+      "entity": "newsltter",
+      "schema": "newsltter",
+      "blockClass": "form-newsletter"
+    },
+    "children": [
+      "flex-layout.row#row-newsletter-presonal",
+      "flex-layout.row#row-newsletter-suscribeme",
+      "form-submit#submit-newsletter"
+    ],
+    "blocks": ["form-success#newsletter"]
+  },
+
+  "flex-layout.row#row-newsletter-presonal": {
+    "children": [
+      "form-input.text#nombre-newsletter",
+      "form-input.text#apellido-newsletter",
+      "form-input.text#mail-newsletter"
+    ],
+    "props": {
+      "blockClass": "row-newsletter-presonal"
+    }
+  },
+
+  "flex-layout.row#row-newsletter-suscribeme": {
+    "children": ["form-input.dropdown#suscribeme-newsletter"],
+    "props": {
+      "blockClass": "row-newsletter-suscribeme"
+    }
+  },
+
+  "form-input.text#nombre-newsletter": {
+    "props": {
+      "pointer": "#/properties/nombre",
+      "placeholder": "ingresa tu nombre",
+      "blockClass": "newsletter-input"
+    }
+  },
+
+  "form-input.text#apellido-newsletter": {
+    "props": {
+      "pointer": "#/properties/apellido",
+      "placeholder": "ingresa tu apellido",
+      "blockClass": "newsletter-input"
+    }
+  },
+
+  "form-input.text#mail-newsletter": {
+    "props": {
+      "pointer": "#/properties/mail",
+      "placeholder": "ingresa tu email",
+      "blockClass": "newsletter-input"
+    }
+  },
+
+  "form-input.dropdown#suscribeme-newsletter": {
+    "props": {
+      "pointer": "#/properties/suscripcion/properties/selectTipo"
+    }
+  },
+
+  "form-submit#submit-newsletter": {
+    "props": {
+      "label": "Suscribirme",
+      "blockClass": "submit-newsletter"
+    }
+  },
+
+  "form-success#newsletter": {
+    "children": ["rich-text#successSubmit-newsletter"]
+  },
+  "rich-text#successSubmit-newsletter": {
+    "props": {
+      "text": "Datos enviados con éxito!!",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "flex-layout.row#social-media-newsletter": {
+    "children": [
+      "rich-text#text-social-media-newsletter",
+      "flex-layout.row#social-media-images"
+    ],
+    "props": {
+      "blockClass": "row-socialMedia-newsletter",
+      "colSizing": "auto"
+    }
+  },
+
+  "rich-text#text-social-media-newsletter": {
+    "props": {
+      "blockClass": "text-social-media-newsletter",
+      "text": "También estamos en redes sociales. Síguenos y entérate de todas las recetas y novedades"
+    }
+  },
+
+  "flex-layout.row#social-media-images": {
+    "children": [
+      "image#insta-newsletter",
+      "image#face-newsletter",
+      "image#yt-newsletter",
+      "image#pinter-newsletter"
+    ],
+    "props": {
+      "blockClass": "row-socialmedia-images"
+    }
+  },
+
+  "image#insta-newsletter": {
+    "props": {
+      "src": "assets/img/news-insta.png",
+      "width": 20,
+      "blockClass": "newsletter-insta",
+      "link": "https://www.instagram.com/gourmetchile/"
+    }
+  },
+
+  "image#face-newsletter": {
+    "props": {
+      "src": "assets/img/news-face.png",
+      "width": 20,
+      "blockClass": "newsletter-face",
+      "link": "https://www.facebook.com/GourmetChile/"
+    }
+  },
+
+  "image#yt-newsletter": {
+    "props": {
+      "src": "assets/img/news-yt.png",
+      "width": 20,
+      "blockClass": "newsletter-yt",
+      "link": "https://www.youtube.com/channel/UCjJzRDi9jrfyA7GJ1UX4z_Q"
+    }
+  },
+
+  "image#pinter-newsletter": {
+    "props": {
+      "src": "assets/img/news-pinter.png",
+      "width": 20,
+      "blockClass": "newsletter-pinter",
+      "link": "https://www.pinterest.cl/Gourmet_Chile/_created/"
+    }
+  },
+
+  "flex-layout.row#shelf": {
+    "children": ["shelf"]
+    // "children": ["list-context.product-list#demo1"]
+  },
+
+  "rich-text#question": {
+    "props": {
+      "text": "**Esta es una muestra de como sería tu sitio.\nQuieres saber más?**",
+      "blockClass": "question"
+    }
+  },
+
+  "rich-text#link": {
+    "props": {
+      "text": "\n**Contáctanos en**\nwww.sr-consultores.com",
+      "blockClass": "link"
+    }
+  },
+
+  // Info Bar
+  "flex-layout.row#infoBar-mobile": {
+    "children": [
+      "rich-text#col-1-infobar-mobile",
+      "rich-text#col-2-infobar-mobile"
+    ],
+    "props": {
+      "blockClass": "row-InfoBar"
+    }
+  },
+  "rich-text#col-1-infobar-mobile": {
+    "props": {
+      "text": "Para comprar en Gourmet debes cumplir con los siguiente:",
+      "blockClass": "infoBarCol-text"
+    }
+  },
+  "rich-text#col-2-infobar-mobile": {
+    "props": {
+      "text": "- Tener RUT empresa\n- Monto mínimo de compras de $50.000\n- Cada producto debe ser comprado por caja ",
+      "blockClass": "infoBarCol-text"
+    }
+  }
+}

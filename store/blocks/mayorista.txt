@@ -1,0 +1,157 @@
+ "entity": "mayorista",
+ "schema": "inscripcion"
+
+ {
+    "title": "inscripcion",
+    "type": "object",
+    "properties": {
+        "razonSocial": {
+            "type": "string",
+            "title": "Razon Social",
+            "description": "Razon Social contacto."
+        },
+        "rut": {
+            "type": "string",
+            "title": "RUT Empresa",
+            "description": "RUT Empresa contacto."
+        },
+        "nombreFantasia": {
+            "type": "string",
+            "title": "Nombre Fantasía",
+            "description": "Nombre Fantasía contacto."
+        },
+        "direccion": {
+            "type": "string",
+            "title": "Dirección",
+            "description": "Dirección contacto."
+        },
+        "comuna": {
+            "type": "string",
+            "title": "Comuna",
+            "description": "Comuna contacto."
+        },
+        "nombreCompleto": {
+            "type": "string",
+            "title": "Nombre Completo",
+            "description": "Nombre Completo contacto."
+        },
+        "telefono": {
+            "type": "string",
+            "title": "Teléfono",
+            "description": "Teléfono contacto."
+        },
+        "mail": {
+            "type": "string",
+            "format": "email",
+            "title": "Email",
+            "description": "Email contacto."
+        },
+        "direcciónCompleta": {
+            "type": "string",
+            "title": "Dirección Completa",
+            "description": "Dirección Completa contacto."
+        },
+        "tipoNegocio": {
+            "title": "Tipo Negocio",
+            "type": "object",
+            "properties": {
+                "selectTipo": {
+                    "type": "string",
+                    "title": "Tipo Negocio",
+                    "enum": [
+                        "Almacén",
+                        "Repostero",
+                        "Frutos secos - Encurtidos",
+                        "Minimarket",
+                        "Supermercado",
+                        "Mayorista",
+                        "Distribuidor con Fuerza de Venta",
+                        "Delivery",
+                        "HORECA"
+                    ]
+                }
+            },
+            "required": [
+                "selectTipo"
+            ]
+        }
+    },
+    "required": [
+        "razonSocial",
+        "rut",
+        "nombreFantasia",
+        "direccion",
+        "comuna",
+        "nombreCompleto",
+        "telefono",
+        "mail",
+        "direcciónCompleta",
+        "tipoNegocio"
+    ],
+    "v-triggers": [
+        {
+            "name": "send-mayorista",
+            "active": true,
+            "condition": "",
+            "action": {
+                "type": "email",
+                "provider": "default",
+                "subject": "Compras al por Mayor - Contacto vía formulario sitio B2B Gourmet",
+                "to": [
+                    "pascal.contreras@sr-consultores.com"
+                ],
+                "bcc": [
+                    ""
+                ],
+                "replyTo": "pascal.contreras@sr-consultores.com",
+                "body": "Nuevo mensaje recibido desde formulario de contacto Compras al Por Mayor \n Razón Social: {!razonSocial}  \n RUT: {!rut} \n Nombre Fantasía: {!nombreFantasia} \n Dirección: {!direccion} \n Comuna: {!comuna} \n Nombre Completo Contacto: {!nombreCompleto} \n Teléfono: {!telefono} \n Mail: {!mail} \n Dirección Completa: {!direccionCompleta} \n Tipo Negocio: {!tipoNegocio.selectTipo}"
+            }
+        }
+    ],
+    "v-default-fields": [
+        "id",
+        "razonSocial",
+        "rut",
+        "nombreFantasia",
+        "direccion",
+        "comuna",
+        "nombreCompleto",
+        "telefono",
+        "mail",
+        "direcciónCompleta",
+        "tipoNegocio"
+    ],
+    "v-security": {
+        "publicJsonSchema": true,
+        "allowGetAll": true,
+        "publicRead": [
+            "id",
+            "razonSocial",
+            "rut",
+            "nombreFantasia",
+            "direccion",
+            "comuna",
+            "nombreCompleto",
+            "telefono",
+            "mail",
+            "direcciónCompleta",
+            "tipoNegocio"
+        ],
+        "publicWrite": [
+            "id",
+            "razonSocial",
+            "rut",
+            "nombreFantasia",
+            "direccion",
+            "comuna",
+            "nombreCompleto",
+            "telefono",
+            "mail",
+            "direcciónCompleta",
+            "tipoNegocio"
+        ],
+        "publicFilter": [
+            "fieldExample"
+        ]
+    }
+}

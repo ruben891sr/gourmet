@@ -1,119 +1,849 @@
 {
+  // General
   "store.custom#contacto": {
-    "blocks": [
-      "flex-layout.row#form"
-    ]
+    "children": ["flex-layout.row#contacto"]
   },
-
-  "flex-layout.row#form": {
-    "props": {
-      "blockClass": "rowFormularioContacto"
-    },
-    "children": ["flex-layout.col#form"]
-  },
-
-  //Formulario Contacto
-  "flex-layout.col#form": {
-    "props": {
-      "width": "35%",
-      "blockClass": "colFormularioContacto"
-    },
+  "flex-layout.row#contacto": {
     "children": [
-      "form#contacto"
-    ]
-  },
-
-  "form#contacto": {
-    "props": {
-      "entity": "cont",
-      "schema": "formu"
-    },
-    "children": [
-      "rich-text#formTitle",
-      "form-input.text#nombreContacto",
-      "form-input.text#apellidoContacto",
-      "form-input.text#emailContacto",
-      "form-input.text#telefonoContacto",
-      "form-input.dropdown#tipoContacto",
-      "form-input.textarea#mensajeContacto",
-      "form-submit#enviarContacto",
-      "rich-text#nuestrasTiendas"
+      "flex-layout.row#title-contacto",
+      "tab-layout#contacto",
+      "flex-layout.row#calugas-contacto",
+      "flex-layout.row#rrsss-contacto"
     ],
-    "blocks": ["form-success#contacto"]
-  },
-  "form-success#contacto": {
-    "children": ["rich-text#successSubmitContacto"]
-  },
-
-  "rich-text#successSubmitContacto": {
     "props": {
-      "text": "¡Datos enviados exitosamente!",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER"
+      "blockClass": "row-contacto",
+      "colSizing": "auto"
     }
   },
 
-  // Campos de Formulario
-  "rich-text#formTitle": {
+  // Title Contacto
+  "flex-layout.row#title-contacto": {
+    "children": ["rich-text#title-contacto", "rich-text#subtitle-contacto"],
     "props": {
-      "text": "## Contacto",
-      "blockClass": "titleContacto"
+      "blockClass": "row-title-contacto",
+      "colSizing": "auto"
     }
   },
 
-  "form-input.text#nombreContacto": {
+  "rich-text#title-contacto": {
+    "props": {
+      "text": "## Formulario de contacto",
+      "blockClass": "title-contacto"
+    }
+  },
+  "rich-text#subtitle-contacto": {
+    "props": {
+      "text": "### ¿Cuál es el motivo por el cual nos contactas?",
+      "blockClass": "subtitle-contacto"
+    }
+  },
+
+  // Tab Layout
+  "tab-layout#contacto": {
+    "children": ["tab-list#contacto", "tab-content#contacto"],
+    "props": {
+      "blockClass": "contacto",
+      "defaultActiveTabId": "contacto-p"
+    }
+  },
+  // Titulos Pestañas
+  "tab-list#contacto": {
+    "children": [
+      "tab-list.item#pregunta-sugerencia",
+      "tab-list.item#reclamos",
+      "tab-list.item#compras-mayor"
+    ],
+    "props": {
+      "blockClass": "contacto-tab-list"
+    }
+  },
+  "tab-list.item#pregunta-sugerencia": {
+    "props": {
+      "tabId": "contacto-p",
+      "label": "Preguntas/Sugerencias",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#reclamos": {
+    "props": {
+      "tabId": "contacto-r",
+      "label": "Reclamos"
+    }
+  },
+  "tab-list.item#compras-mayor": {
+    "props": {
+      "tabId": "contacto-c",
+      "label": "Compras al por mayor"
+    }
+  },
+  // Contenido de pestañas
+  "tab-content#contacto": {
+    "children": [
+      "tab-content.item#pregunta-sugerencia",
+      "tab-content.item#reclamos",
+      "tab-content.item#compras-mayor"
+    ]
+  },
+  "tab-content.item#pregunta-sugerencia": {
+    "children": ["form#pregunta-sugerencia"],
+    "props": {
+      "tabId": "contacto-p"
+    }
+  },
+  "tab-content.item#reclamos": {
+    "children": ["form#reclamos"],
+    "props": {
+      "tabId": "contacto-r"
+    }
+  },
+  "tab-content.item#compras-mayor": {
+    "children": ["form#compras-mayor"],
+    "props": {
+      "tabId": "contacto-c"
+    }
+  },
+
+  // Form - Preguntas y sugerencias
+  "form#pregunta-sugerencia": {
+    "props": {
+      "entity": "contactos",
+      "schema": "preguntas",
+      "blockClass": "form-ps"
+    },
+    "children": [
+      "flex-layout.row#row-n-m-t",
+      "form-input.textarea#mensaje-pregunta-sugerencia",
+      "form-submit#pregunta-sugerencia"
+    ],
+    "blocks": ["form-success#pregunta-sugerencia"]
+  },
+  // Form - Preguntes y sugerencias - Row Nombre, mail, teléfono
+  "flex-layout.row#row-n-m-t": {
+    "props": {
+      "blockClass": "row-n-m-t"
+    },
+    "children": [
+      "form-input.text#firstName-pregunta-sugerencia",
+      "form-input.text#email-pregunta-sugerencia",
+      "form-input.text#telefono-pregunta-sugerencia"
+    ]
+  },
+  // Form - Preguntes y sugerencias - Nombre
+  "form-input.text#firstName-pregunta-sugerencia": {
     "props": {
       "pointer": "#/properties/nombre",
-      "label": "Nombre"
+      "label": "Nombre Completo"
     }
   },
-
-  "form-input.text#apellidoContacto": {
-    "props": {
-      "pointer": "#/properties/apellido",
-      "label": "Apellido"
-    }
-  },
-
-  "form-input.text#emailContacto": {
+  // Form - Preguntes y sugerencias - Email
+  "form-input.text#email-pregunta-sugerencia": {
     "props": {
       "pointer": "#/properties/mail",
-      "label": "correo electrónico"
+      "label": "Mail"
     }
   },
-
-  "form-input.text#telefonoContacto": {
+  // Form - Preguntes y sugerencias - Teléfono
+  "form-input.text#telefono-pregunta-sugerencia": {
     "props": {
       "pointer": "#/properties/telefono",
       "label": "Teléfono"
     }
   },
-
-  "form-input.dropdown#tipoContacto": {
+  // Form - Preguntes y sugerencias - Mensaje
+  "form-input.textarea#mensaje-pregunta-sugerencia": {
     "props": {
-      "pointer": "#/properties/tipo/properties/selectTipo",
-      "label": "Motivo"
+      "pointer": "#/properties/mensaje",
+      "label": "Ingresa tu pregunta/sugerencia"
+    }
+  },
+  // Form - Preguntes y sugerencias - Submit
+  "form-submit#pregunta-sugerencia": {
+    "props": {
+      "label": "Enviar",
+      "blockClass": "submit-contacto"
+    }
+  },
+  // Form - Preguntas y sugerencias - Form Success
+  "form-success#pregunta-sugerencia": {
+    "children": ["rich-text#successSubmit-pregunta-sugerencia"]
+  },
+  "rich-text#successSubmit-pregunta-sugerencia": {
+    "props": {
+      "text": "Datos enviados con éxito!!",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+ 
+  // Form - Reclamos
+  "form#reclamos": {
+    "props": {
+      "entity": "reclamo",
+      "schema": "reclamos",
+      "blockClass": "form-re"
+    },
+    "children": [
+      "rich-text#formTitle-reclamos",
+      "flex-layout.row#row-1-reclamos",
+      "flex-layout.row#row-2-reclamos",
+      "rich-text#title-info-producto-reclamos",
+      "flex-layout.row#row-3-reclamos",
+      "flex-layout.row#row-4-reclamos",      
+      "form-input.textarea#comentario-reclamos",
+      "form-submit#reclamos"
+    ],
+    "blocks": ["form-success#reclamos"]
+  },
+  // Form - Reclamos - Titulo Formulario
+  "rich-text#formTitle-reclamos": {
+    "props": {
+      "text": "Reclamos"
+    }
+  },
+  // Form - Reclamos - Row 1 (Nombre, Rut, Direccion)
+  "flex-layout.row#row-1-reclamos": {
+    "props":{
+      "blockClass": "row-1-reclamos"
+    },
+    "children": [
+      "form-input.text#firstName-reclamos",
+      "form-input.text#rut-reclamos",
+      "form-input.text#direccion-reclamos"
+    ]
+  },
+  // Form - Reclamos - Row 2 (Email, teléfono)
+  "flex-layout.row#row-2-reclamos": {
+    "props":{
+      "blockClass": "row-2-reclamos"
+    },
+    "children": [
+      "form-input.text#mail-reclamos",
+      "form-input.text#telefono-reclamos"
+    ]
+  },
+  // Form - Reclamos - Row 3 (Producto, Núm Lote, Fecha)
+  "flex-layout.row#row-3-reclamos": {
+    "props":{
+      "blockClass": "row-3-reclamos"
+    },
+    "children": [
+      "form-input.text#producto-reclamos",
+      "form-input.text#lote-reclamos",
+      "flex-layout.col#fecha-vencimiento-reclamos"
+    ]
+  },
+  "flex-layout.col#fecha-vencimiento-reclamos": {
+    "children": [
+      "form-input.dropdown#diaVencimiento-reclamos",
+      "form-input.dropdown#mesVencimiento-reclamos",
+      "form-input.text#anoVencimiento-reclamos"
+    ],
+    "props":{
+      "blockClass": "col-fecha-vencimiento-reclamos"
     }
   },
 
-  "form-input.textarea#mensajeContacto": {
+
+  // Form - Reclamos - Row 4 (Lugar, Fech Compra, Upload)
+  "flex-layout.row#row-4-reclamos": {
+    "props":{
+      "blockClass": "row-3-reclamos"
+    },
+    "children": [
+      "form-input.text#lugarCompra-reclamos",
+      "flex-layout.col#fecha-compra-reclamos",
+      "form-input.upload#imagen-reclamos"
+    ]
+  },
+  "flex-layout.col#fecha-compra-reclamos": {
+    "children": [
+      "form-input.dropdown#diaCompra-reclamos",
+      "form-input.dropdown#mesCompra-reclamos",
+      "form-input.text#anoCompra-reclamos"
+    ],
+    "props":{
+      "blockClass": "col-fecha-compra-reclamos"
+    }
+  },
+
+
+
+
+  // Form - Reclamos - Nombre
+  "form-input.text#firstName-reclamos": {
     "props": {
-      "pointer": "#/properties/mensaje",
+      "pointer": "#/properties/nombre"
+    }
+  },
+  // Form - Reclamos - Rut
+  "form-input.text#rut-reclamos": {
+    "props": {
+      "pointer": "#/properties/rut"
+    }
+  },
+  // Form - Reclamos - Direccion
+  "form-input.text#direccion-reclamos": {
+    "props": {
+      "pointer": "#/properties/direccion"
+    }
+  },
+  // Form - Reclamos - mail
+  "form-input.text#mail-reclamos": {
+    "props": {
+      "pointer": "#/properties/mail"
+    }
+  },
+  // Form - Reclamos - Teléfono
+  "form-input.text#telefono-reclamos": {
+    "props": {
+      "pointer": "#/properties/telefono"
+    }
+  },
+  // Form - Reclamos - Title Info Producto
+  "rich-text#title-info-producto-reclamos": {
+    "props": {
+      "text": "### Información del Producto",
+      "blockClass": "info-producto-form"
+    }
+  },
+  // Form - Reclamos - Producto con problema
+  "form-input.text#producto-reclamos": {
+    "props": {
+      "pointer": "#/properties/producto"
+    }
+  },
+  // Form - Reclamos - Número de lote
+  "form-input.text#lote-reclamos": {
+    "props": {
+      "pointer": "#/properties/lote"
+    }
+  },
+  // Form - Reclamos - Fecha de vencimiento - Año
+  "form-input.text#anoVencimiento-reclamos": {
+    "props": {
+      "pointer": "#/properties/anoVencimiento"
+    }
+  },
+  // Form - Reclamos - Fecha de vencimiento - Mes
+  "form-input.dropdown#mesVencimiento-reclamos": {
+    "props": {
+      "pointer": "#/properties/mesVencimiento"
+    }
+  },
+  // Form - Reclamos - Fecha de vencimiento - Día
+  "form-input.dropdown#diaVencimiento-reclamos": {
+    "props": {
+      "pointer": "#/properties/diaVencimiento"
+    }
+  },
+  // Form - Reclamos - Lugar de compra
+  "form-input.text#lugarCompra-reclamos": {
+    "props": {
+      "pointer": "#/properties/lugarCompra"
+    }
+  },
+  // Form - Reclamos - Fecha de compra - Año
+  "form-input.text#anoCompra-reclamos": {
+    "props": {
+      "pointer": "#/properties/anoCompra"
+    }
+  },
+  // Form - Reclamos - Fecha de compra - Mes
+  "form-input.dropdown#mesCompra-reclamos": {
+    "props": {
+      "pointer": "#/properties/mesCompra"
+    }
+  },
+  // Form - Reclamos - Fecha de compra - Día
+  "form-input.dropdown#diaCompra-reclamos": {
+    "props": {
+      "pointer": "#/properties/diaCompra"
+    }
+  },
+  // Form - Reclamos - Adjuntar imagen
+  "form-input.upload#imagen-reclamos": {
+    "props": {
+      "pointer": "#/properties/imagen"
+    }
+  },
+  // Form - Reclamos - Reclamo
+  "form-input.textarea#comentario-reclamos": {
+    "props": {
+      "pointer": "#/properties/comentario",
       "label": "Descripción"
     }
   },
-
-  "form-submit#enviarContacto": {
+  // Form - Reclamos - Submit
+  "form-submit#reclamos": {
     "props": {
-      "label": "Enviar"
+      "label": "Submit",
+      "blockClass": "submit-contacto"
+    }
+  },
+  // Form - Reclamos - Form Success
+  "form-success#reclamos": {
+    "children": ["rich-text#successSubmit-pregunta-sugerencia"]
+  },
+  "rich-text#successSubmit-reclamos": {
+    "props": {
+      "text": "Datos enviados con éxito!!",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
     }
   },
 
-  "rich-text#nuestrasTiendas": {
+
+
+  // Form - Compras por mayor
+  "form#compras-mayor": {
     "props": {
-      "blockClass": "nuestrasTiendas",
-      "text": "Revisa nuestras tiendas [Aquí](/stores)"
+      "entity": "mayorista",
+      "schema": "inscripcion",
+      "blockClass": "form-cm"
+    },
+    "children": [
+      "rich-text#formTitle-compras-mayor",
+      "flex-layout.row#row-1-compras-mayor", 
+      "flex-layout.row#row-2-compras-mayor",
+      "flex-layout.row#row-3-compras-mayor",
+      "flex-layout.row#row-4-compras-mayor",
+      "form-submit#compras-mayor"
+    ],
+    "blocks": ["form-success#compras-mayor"]
+  },
+  // Titulo Formulario
+  "rich-text#formTitle-compras-mayor": {
+    "props": {
+      "blockClass": "txt-mayorista",
+      "text": "Para comprar al por mayor, complete el siguiente formulario y lo contactaremos a la brevedad. Tenga en cuenta que la compra se hace por cajas cerradas y el valor total de la compra debe ser por un mínimo de $100.000 netos y con factura."
+    }
+  },
+  // Form - Compras por mayor - Row 1 (Razón, Rut, Nombre fantasia)
+  "flex-layout.row#row-1-compras-mayor": {
+    "props": {
+      "blockClass": "row-1-compras-mayor"
+    },
+    "children": [
+      "form-input.text#razon-compras-mayor",
+      "form-input.text#rut-compras-mayor",
+      "form-input.text#nombreFantasia-compras-mayor"
+    ]
+  },
+  // Form - Compras por mayor - Row 2 (Direccion, Comuna, Nombre Completo)
+  "flex-layout.row#row-2-compras-mayor": {
+    "props": {
+      "blockClass": "row-2-compras-mayor"
+    },
+    "children": [
+      "form-input.text#direccion-compras-mayor",
+      "form-input.text#comuna-compras-mayor",
+      "form-input.text#nombreCompleto-compras-mayor"
+    ]
+  },
+  // Form - Compras por mayor - Row 3 (Teléfono, Mail, Direccion Completa)
+  "flex-layout.row#row-3-compras-mayor": {
+    "props": { 
+      "blockClass": "row-3-compras-mayor"
+    },
+    "children": [
+      "form-input.text#telefono-compras-mayor",
+      "form-input.text#mail-compras-mayor",
+      "form-input.text#direcciónCompleta-compras-mayor"
+    ]
+  },
+// Form - Compras por mayor - Row 3 (Checkbox)
+"flex-layout.row#row-4-compras-mayor": {
+  "props": { 
+    "blockClass": "row-4-compras-mayor"
+  },
+  "children": [
+    "rich-text#formTitle-second",
+    "rich-text#formSubTitle-second",
+    "form-input.dropdown#tipoNegocio-compras-mayor"
+  ]
+},
+
+  // Form - Compras por mayor - Razon Social
+  "form-input.text#razon-compras-mayor": {
+    "props": {
+      "pointer": "#/properties/razonSocial"
+    }
+  },
+  // Form - Compras por mayor - Rut
+  "form-input.text#rut-compras-mayor": {
+    "props": {
+      "pointer": "#/properties/rut"
+    }
+  },
+  // Form - Compras por mayor - Nombre Fantasia
+  "form-input.text#nombreFantasia-compras-mayor": {
+    "props": {
+      "pointer": "#/properties/nombreFantasia"
+    }
+  },
+  // Form - Compras por mayor - Direccion
+  "form-input.text#direccion-compras-mayor": {
+    "props": {
+      "pointer": "#/properties/direccion"
+    }
+  },
+  // Form - Compras por mayor - Comuna
+  "form-input.text#comuna-compras-mayor": {
+    "props": {
+      "pointer": "#/properties/comuna"
+    }
+  },
+  // Form - Compras por mayor - Nombre Completo
+  "form-input.text#nombreCompleto-compras-mayor": {
+    "props": {
+      "pointer": "#/properties/nombreCompleto"
+    }
+  },
+  // Form - Compras por mayor - Teléfono
+  "form-input.text#telefono-compras-mayor": {
+    "props": {
+      "pointer": "#/properties/telefono"
+    }
+  },
+  // Form - Compras por mayor - Mail
+  "form-input.text#mail-compras-mayor": {
+    "props": {
+      "pointer": "#/properties/mail"
+    }
+  },
+  // Form - Compras por mayor - Direccion Completa
+  "form-input.text#direcciónCompleta-compras-mayor": {
+    "props": {
+      "pointer": "#/properties/direcciónCompleta"
+    }
+  },
+  // Form - Compras por mayor - Checkbox Title
+  "rich-text#formTitle-second": {
+    "props": {
+      "text": "### Tipo de Negocio - Rol",
+      "blockClass": "formTitle-second"
+    }
+  },
+  // Form - Compras por mayor - Checkbox Sub Title
+  "rich-text#formSubTitle-second": {
+    "props": {
+      "text": "A continuación, seleccione aquellas opciones con las que se identifique su negocio:",
+      "blockClass": "formSubTitle-second" 
+    }
+  },
+  // Form - Compras por mayor - Tipo Negocio
+  "form-input.dropdown#tipoNegocio-compras-mayor": {
+    "props": {
+      "pointer": "#/properties/tipoNegocio/properties/selectTipo"
+    }
+  },
+  // Form - Compras por mayor - Submit
+  "form-submit#compras-mayor": {
+    "props": {
+      "label": "Enviar",
+      "blockClass": "submit-contacto"
+    }
+  },
+  // Form - Compras por mayor - Form Success
+  "form-success#compras-mayor": {
+    "children": ["rich-text#successSubmit-pregunta-sugerencia"]
+  },
+  "rich-text#successSubmit-compras-mayor": {
+    "props": {
+      "text": "Datos enviados con éxito!!",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  // Calugas con info
+  "flex-layout.row#calugas-contacto": {
+    "children": [
+      "flex-layout.col#ubicacion",
+      "flex-layout.col#generales",
+      "flex-layout.col#online"
+    ],
+    "props": {
+      "blockClass": "row-calugasContacto",
+      "colSizing": "auto"
+    }
+  },
+
+  // Calugas Info - Ubicacion
+  "flex-layout.col#ubicacion": {
+    "children": [
+      "rich-text#ubicacion-title",
+      "vtex.menu@2.x:menu#ubicacion-list"
+    ],
+    "props": {
+      "blockClass": "col-ubicacion"
+    }
+  },
+  // Calugas Info - Ubicacion - Title
+  "rich-text#ubicacion-title": {
+    "props": {
+      "text": "#### Ubicación",
+      "blockClass": "rich-title-cal-contacto"
+    }
+  },
+  // Calugas Info - Ubicacion - List
+  "vtex.menu@2.x:menu#ubicacion-list": {
+    "props": {
+      "experimentalOptimizeRendering": true,
+      "blockClass": "list-cal-contacto"
+    },
+    "children": [
+      "menu-item#goodfood",
+      "menu-item#balamceda",
+      "menu-item#santiago"
+    ]
+  },
+  "menu-item#goodfood": {
+    "props": {
+      "blockClass": "menuitem-cal-contacto",
+      "id": "menu-item-goodfood",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.google.com/maps?q=Balmaceda+3050,+Malloco&um=1&ie=UTF-8&sa=X&ved=2ahUKEwiehMeQspXwAhUIpJUCHRyODb4Q_AUoAXoECAEQAw",
+        "noFollow": false,
+        "tagTitle": "goodfood",
+        "text": "Good food S.A"
+      }
+    }
+  },
+  "menu-item#balamceda": {
+    "props": {
+      "blockClass": "menuitem-cal-contacto",
+      "id": "menu-item-balamceda",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.google.com/maps?q=Balmaceda+3050,+Malloco&um=1&ie=UTF-8&sa=X&ved=2ahUKEwiehMeQspXwAhUIpJUCHRyODb4Q_AUoAXoECAEQAw",
+        "noFollow": false,
+        "tagTitle": "balamceda",
+        "text": "Balmaceda 3050, Malloco"
+      }
+    }
+  },
+  "menu-item#santiago": {
+    "props": {
+      "blockClass": "menuitem-cal-contacto",
+      "id": "menu-item-santiago",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.google.com/maps?q=Balmaceda+3050,+Malloco&um=1&ie=UTF-8&sa=X&ved=2ahUKEwiehMeQspXwAhUIpJUCHRyODb4Q_AUoAXoECAEQAw",
+        "noFollow": false,
+        "tagTitle": "santiago",
+        "text": "Santiago, Chile"
+      }
+    }
+  },
+
+  // Calugas Info - Generales
+  "flex-layout.col#generales": {
+    "children": [
+      "rich-text#generales-title",
+      "vtex.menu@2.x:menu#generales-list"
+    ],
+    "props": {
+      "blockClass": "col-ubicacion"
+    }
+  },
+  // Calugas Info - Generales - Title
+  "rich-text#generales-title": {
+    "props": {
+      "text": "#### Consultas generales",
+      "blockClass": "rich-title-cal-contacto"
+    }
+  },
+  // Calugas Info - Generales - List
+  "vtex.menu@2.x:menu#generales-list": {
+    "props": {
+      "experimentalOptimizeRendering": true,
+      "blockClass": "list-cal-contacto"
+    },
+    "children": [
+      "menu-item#cont",
+      "menu-item#numer",
+      "menu-item#horario",
+      "menu-item#horarios"
+    ]
+  },
+  "menu-item#cont": {
+    "props": {
+      "blockClass": "menuitem-cal-contacto",
+      "id": "menu-item-cont",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "mailto:contacto@gourmet.cl",
+        "noFollow": false,
+        "tagTitle": "cont",
+        "text": "contacto@gourmet.cl"
+      }
+    }
+  },
+  "menu-item#numer": {
+    "props": {
+      "blockClass": "menuitem-cal-contacto",
+      "id": "menu-item-numer",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "tel:56229478670",
+        "noFollow": false,
+        "tagTitle": "numer",
+        "text": "+56 2 2947 8670"
+      }
+    }
+  },
+  "menu-item#horario": {
+    "props": {
+      "blockClass": "menuitem-cal-contacto",
+      "id": "menu-item-horario",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": false,
+        "tagTitle": "horario",
+        "text": "Horario de atención"
+      }
+    }
+  },
+  "menu-item#horarios": {
+    "props": {
+      "blockClass": "menuitem-cal-contacto",
+      "id": "menu-item-horarios",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": false,
+        "tagTitle": "horarios",
+        "text": "Lunes a Viernes de 08:30 a 16:30 hrs"
+      }
+    }
+  },
+
+  // Calugas Info - Online
+  "flex-layout.col#online": {
+    "children": ["rich-text#online-title", "vtex.menu@2.x:menu#online-list"],
+    "props": {
+      "blockClass": "col-ubicacion"
+    }
+  },
+  // Calugas Info - Online - Title
+  "rich-text#online-title": {
+    "props": {
+      "text": "#### Consultas compras Online",
+      "blockClass": "rich-title-cal-contacto"
+    }
+  },
+  // Calugas Info - Online - List
+  "vtex.menu@2.x:menu#online-list": {
+    "props": {
+      "experimentalOptimizeRendering": true,
+      "blockClass": "list-cal-contacto"
+    },
+    "children": [
+      "menu-item#compr",
+      "menu-item#numeross",
+      "menu-item#horario",
+      "menu-item#horarios"
+    ]
+  },
+  "menu-item#compr": {
+    "props": {
+      "blockClass": "menuitem-cal-contacto",
+      "id": "menu-item-compr",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "mailto:compras@gourmet.cl",
+        "noFollow": false,
+        "tagTitle": "compr",
+        "text": "compras@gourmet.cl"
+      }
+    }
+  },
+  "menu-item#numeross": {
+    "props": {
+      "blockClass": "menuitem-cal-contacto",
+      "id": "menu-item-numeross",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "tel:56229478616",
+        "noFollow": false,
+        "tagTitle": "numeross",
+        "text": "+56 2 2947 8616"
+      }
+    }
+  },
+
+  // Contacto redes soaciales
+  "flex-layout.row#rrsss-contacto": {
+    "children": ["rich-text#tambien-estamos", "flex-layout.row#redes"],
+    "props": {
+      "blockClass": "row-rrsssContacto"
+    }
+  },
+  "rich-text#tambien-estamos": {
+    "props": {
+      "text": "También estamos en redes sociales. Siguenos y entérate de todas las recetas y novedades",
+      "blockClass": "tambien-estamos"
+    }
+  },
+  "flex-layout.row#redes": {
+    "children": ["image#twitter", "image#face", "image#insta"],
+    "props": {
+      "blockClass": "row-redes-contacto",
+      "colSizing": "auto"
+    }
+  },
+  "image#twitter": {
+    "props": {
+      "src": "assets/img/rrss-tw.png",
+      "blockClass": "image-redes-contacto-twitter",
+      "width": 30,
+      "link": "https://twitter.com/Gourmet_cl"
+    }
+  },
+  "image#face": {
+    "props": {
+      "src": "assets/img/rrss-face.png",
+      "blockClass": "image-redes-contacto-face",
+      "width": 15,
+      "link": "https://www.facebook.com/GourmetChile/"
+    }
+  },
+  "image#insta": {
+    "props": {
+      "src": "assets/img/rrss-insta.png",
+      "blockClass": "image-redes-contacto-insta",
+      "width": 27,
+      "link": "https://www.instagram.com/gourmetchile/"
     }
   }
-
 }

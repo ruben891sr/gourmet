@@ -1,0 +1,449 @@
+{
+  "drawer": {
+    "children": [
+      "flex-layout.row#drawer-search",
+      "vtex.menu@2.x:menu#drawer"
+    ],
+    "props": {
+      "blockClass": "drawerGeneralContainer"
+    },
+    "blocks": ["drawer-header#my-drawer"]
+  },
+
+  "vtex.menu@2.x:menu#drawer": {
+    "children": [
+      "menu-item#reposteria-mobile",
+      "menu-item#hierbas-especias-mobile",
+      "menu-item#basas-salsas-mobile",
+      "menu-item#cremas-sopas-mobile",
+      "menu-item#caldos-mobile",
+      "menu-item#salsas-condimientadas-mobile",
+      "menu-item#alinos-ensaladas-mobile",
+      "menu-item#salsa-untar-mobile",
+      "menu-item#salsas-postres-mobile",
+      "menu-item#delicatesen-mobile",
+      "menu-item#esencias-mobile"
+    ],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "drawerContainer"
+    }
+  },
+
+  "drawer-header#my-drawer": {
+    "children": ["flex-layout.row#drawer-row"],
+    "props": {
+      "colSizing": "auto"
+    }
+  },
+
+  "flex-layout.row#drawer-row": {
+    "children": ["flex-layout.col#logo-drawer", "flex-layout.col#close-drawer"],
+    "props": {
+      "blockClass": "rowDrawer",
+      "colSizing": "auto"
+    }
+  },
+
+  "flex-layout.col#logo-drawer": {
+    "children": ["logo#mobile"],
+    "props": {
+      "width": "50%",
+      "blockClass": "colDrawer"
+    }
+  },
+
+  "flex-layout.col#close-drawer": {
+    "children": ["drawer-close-button"],
+    "props": {
+      "width": "50%",
+      "blockClass": "colDrawer"
+    }
+  },
+
+  "menu-item#gourmet-natural-mobile": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "menu-mobile-item",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "gourmet-natural-mobile",
+        "text": "Gourmet más natural"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#gourmet-natural-mobile"]
+  },
+  "menu-item#regalos-cocina-mobile": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "menu-mobile-item",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "regalos-cocina-mobile",
+        "text": "Regalos para la cocina"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#regalos-cocina-mobile"]
+  },
+  "menu-item#hierbas-especias-mobile": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "menu-mobile-item",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "hierbas-especias-mobile",
+        "text": "Hierbas y especias"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#hierbas-especias-mobile"]
+  },
+  "menu-item#caldos-mobile": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "menu-mobile-item",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "caldos-mobile",
+        "text": "Caldos"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#caldos-mobile"]
+  },
+  "menu-item#basas-salsas-mobile": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "menu-mobile-item",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "basas-salsas-mobile",
+        "text": "Bases y salsas deshidratadas"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#basas-salsas-mobile"]
+  },
+  "menu-item#cremas-sopas-mobile": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "menu-mobile-item",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "cremas-sopas-mobile",
+        "text": "Cremas y sopas"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#cremas-sopas-mobile"]
+  },
+  "menu-item#reposteria-mobile": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "menu-mobile-item",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "reposteria-mobile",
+        "text": "Productos de repostería para cocinar"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#reposteria-mobile"]
+  },
+  "menu-item#salsas-condimientadas-mobile": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "menu-mobile-item",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "salsas-condimientadas-mobile",
+        "text": "Salsas condimientadas para cocinar"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#salsas-condimientadas-mobile"]
+  },
+  "menu-item#alinos-ensaladas-mobile": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "menu-mobile-item",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "alinos-ensaladas-mobile",
+        "text": "Aliños para ensaladas"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#alinos-ensaladas-mobile"]
+  },
+  "menu-item#salsas-postres-mobile": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "menu-mobile-item",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "salsas-postres-mobile",
+        "text": "Salsas para postres"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#salsas-postres-mobile"]
+  },
+  "menu-item#delicatesen-mobile": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "menu-mobile-item",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "delicatesen-mobile",
+        "text": "Delicatesen y otros"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#delicatesen-mobile"]
+  },
+  "menu-item#esencias-mobile": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "menu-mobile-item",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "esencias-mobile",
+        "text": "Esencias"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#esencias-mobile"]
+  },
+
+
+
+
+
+  "vtex.menu@2.x:submenu.accordion#gourmet-natural-mobile": {
+    "children": ["vtex.menu@2.x:menu#gourmet-natural-mobile"]
+  },
+  "vtex.menu@2.x:submenu.accordion#regalos-cocina-mobile": {
+    "children": ["vtex.menu@2.x:menu#regalos-cocina-mobile"]
+  },
+  "vtex.menu@2.x:submenu.accordion#hierbas-especias-mobile": {
+    "children": ["vtex.menu@2.x:menu#hierbas-especias-mobile"]
+  },
+  "vtex.menu@2.x:submenu.accordion#caldos-mobile": {
+    "children": ["vtex.menu@2.x:menu#caldos-mobile"]
+  },
+  "vtex.menu@2.x:submenu.accordion#basas-salsas-mobile": {
+    "children": ["vtex.menu@2.x:menu#basas-salsas-mobile"]
+  },
+  "vtex.menu@2.x:submenu.accordion#cremas-sopas-mobile": {
+    "children": ["vtex.menu@2.x:menu#cremas-sopas-mobile"]
+  },
+  "vtex.menu@2.x:submenu.accordion#reposteria-mobile": {
+    "children": ["vtex.menu@2.x:menu#reposteria-mobile"]
+  },
+  "vtex.menu@2.x:submenu.accordion#salsas-condimientadas-mobile": {
+    "children": ["vtex.menu@2.x:menu#salsas-condimientadas-mobile"]
+  },
+  "vtex.menu@2.x:submenu.accordion#alinos-ensaladas-mobile": {
+    "children": ["vtex.menu@2.x:menu#alinos-ensaladas-mobile"]
+  },
+  "vtex.menu@2.x:submenu.accordion#salsas-postres-mobile": {
+    "children": ["vtex.menu@2.x:menu#salsas-postres-mobile"]
+  },
+  "vtex.menu@2.x:submenu.accordion#delicatesen-mobile": {
+    "children": ["vtex.menu@2.x:menu#delicatesen-mobile"]
+  },
+  "vtex.menu@2.x:submenu.accordion#esencias-mobile": {
+    "children": ["vtex.menu@2.x:menu#esencias-mobile"]
+  },
+
+
+
+
+
+  "vtex.menu@2.x:menu#gourmet-natural-mobile": {
+    "children": [
+      "menu-item#caldos-polvo-mas-natural",
+      "menu-item#hamburguesas-granos-legumbres"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "vtex.menu@2.x:menu#regalos-cocina-mobile": {
+    "children": [
+      "menu-item#articulos-accesorios",
+      "menu-item#accesorios-mesa",
+      "menu-item#delantales-bolsos",
+      "menu-item#packs-regalos"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "vtex.menu@2.x:menu#hierbas-especias-mobile": {
+    "children": [
+      "menu-item#condimentos-premium",
+      "menu-item#hierbas-cocinar",
+      "menu-item#especias-cocinar",
+      "menu-item#pimientas",
+      "menu-item#ajo-cebolla",
+      // "menu-item#sales-cocinar",
+      "menu-item#mezclas-otras"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "vtex.menu@2.x:menu#caldos-mobile": {
+    "children": [
+      "menu-item#caldos-polvo-natural",
+      "menu-item#caldos-concentrados-premium",
+      "menu-item#caldos-polvos",
+      "menu-item#sofrito"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "vtex.menu@2.x:menu#basas-salsas-mobile": {
+    "children": [
+      "menu-item#mix",
+      "menu-item#salsas-deshidratadas",
+      "menu-item#bases-deshidratadas",
+      "menu-item#sazonadores-mexicanos"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "vtex.menu@2.x:menu#cremas-sopas-mobile": {
+    "children": [
+      "menu-item#sopas-familiares",
+      "menu-item#cremas-premium",
+      "menu-item#sopas-uno"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "vtex.menu@2.x:menu#reposteria-mobile": {
+    "children": [
+      "menu-item#mezclas-listas",
+      "menu-item#decoraciones",
+      "menu-item#bases-reposteria",
+      "menu-item#otros-reposteria",
+      "menu-item#chocolate-reposteria",
+      "menu-item#foodservice-reposteria"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "vtex.menu@2.x:menu#salsas-condimientadas-mobile": {
+    "children": [
+      "menu-item#foodservice-salsascondi",
+      "menu-item#productos-primera-foodservice"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "vtex.menu@2.x:menu#alinos-ensaladas-mobile": {
+    "children": [
+      "menu-item#foodservice-alinos"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "vtex.menu@2.x:menu#salsas-postres-mobile": {
+    "children": [
+      "menu-item#foodservice-salsas-postres"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "vtex.menu@2.x:menu#delicatesen-mobile": {
+    "children": [
+      "menu-item#foodservice-delicatesen"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "vtex.menu@2.x:menu#esencias-mobile": {
+    "children": [
+      "menu-item#foodservice-esencias"
+      // "menu-item#primera-foodservice-esencias"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+
+
+
+
+  "menu-item#salsa-untar-mobile": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "menu-mobile-item",
+      "itemProps": {
+        "type": "internal",
+        "href": "/salsas-para-untar",
+        "noFollow": false,
+        "tagTitle": "salsa-untar-mobile",
+        "text": "Salsa para untar"
+      }
+    }
+  },
+
+
+  // Search Bar
+  "flex-layout.row#drawer-search": {
+    "props": {
+      "blockClass": "rowSearchMobile"
+    },
+    "children": [
+      "search-bar#mobile"
+    ]
+  },
+
+  "search-bar#mobile": {
+    "blocks": ["autocomplete-result-list.v2"],
+    "props": {
+      "openAutocompleteOnFocus": true,
+      "__unstableProductOriginVtex": "true",
+      "blockClass": "searchmobile"
+    }
+  }
+}

@@ -1,0 +1,99 @@
+"entity": "newsltter",
+"schema": "newsltter"
+
+{
+    "title": "newsletter",
+    "type": "object",
+    "properties": {
+        "nombre": {
+            "type": "string",
+            "title": "Nombre",
+            "description": "Nombre"
+        },
+        "apellido": {
+            "type": "string",
+            "title": "apellido",
+            "description": "Apellido"
+        },
+        "mail": {
+            "type": "string",
+            "format": "email",
+            "title": "Email",
+            "description": "Correo"
+        },
+
+
+        "suscripcion": {
+            "title": "suscripcion",
+            "type": "object",
+            "properties": {
+                "selectTipo": {
+                    "type": "string",
+                    "title": "Suscribete a",
+                    "enum": [
+                        "Ofertas",
+                        "Recetas y novedades",
+                        "Menú semanal"
+                    ]
+                }
+            },
+            "required": [
+                "selectTipo"
+            ]
+        }
+
+
+    },
+    "required": [
+        "nombre",
+        "apellido",
+        "mail",
+        "suscripcion"
+    ],
+    "v-triggers": [{
+        "name": "send-newsletter",
+        "active": true,
+        "condition": "",
+        "action": {
+            "type": "email",
+            "provider": "default",
+            "subject": "Suscripción Newsletter - Contacto vía formulario sitio B2B Gourmet",
+            "to": [
+                "pascal.contreras@sr-consultores.com"
+            ],
+            "bcc": [
+                ""
+            ],
+            "replyTo": "pascal.contreras@sr-consultores.com",
+            "body": "Nuevo mensaje recibido desde formulario de Newsletter \n Nombre: {!nombre} \n Apellido: {!apellido}  \n  Mail: {!mail} \n suscripcion: {!suscripcion.selectTipo}"
+        }
+    }],
+    "v-default-fields": [
+        "id",
+        "nombre",
+        "apellido",
+        "mail",
+        "suscripcion"
+    ],
+    "v-security": {
+        "publicJsonSchema": true,
+        "allowGetAll": true,
+        "publicRead": [
+            "id",
+            "nombre",
+            "apellido",
+            "mail",
+            "suscripcion"
+        ],
+        "publicWrite": [
+            "id",
+            "nombre",
+            "apellido",
+            "mail",
+            "suscripcion"
+        ],
+        "publicFilter": [
+            "fieldExample"
+        ]
+    }
+}

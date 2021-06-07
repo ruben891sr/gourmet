@@ -1,0 +1,76 @@
+{
+  "store.custom#politicas-privacidad": {
+    "blocks": ["rich-text#tprivacidad-title", "flex-layout.row#privcidad","flex-layout.row#spacer-height"]
+  },
+
+  "flex-layout.row#privcidad": {
+    "children": [
+      "rich-text#tprivacidad-p1",
+      "rich-text#tprivacidad-p2",
+      "rich-text#tprivacidad-p3",
+      "rich-text#tprivacidad-p4",
+      "rich-text#tprivacidad-p5",
+      "rich-text#tprivacidad-p6",
+      "rich-text#tprivacidad-p7",
+      "rich-text#tprivacidad-p8"
+    ],
+    "props": {
+      "blockClass": "row-privacidad"
+    }
+  },
+
+  "rich-text#tprivacidad-title": {
+    "props": {
+      "text": "## Políticas de privacidad",
+      "blockClass": "privacidad-t"
+    }
+  },
+  "rich-text#tprivacidad-p1": {
+    "props": {
+      "text": "GOOD FOOD S.A. (en adelante “GOOD FOOD”) ha puesto a disposición de usted (en adelante también el “Usuario” o los “Usuarios”) el sitio web www.gourmet.cl (en adelante el “sitio web de Gourmet”), que consiste en un sitio web donde se ofrece una variedad de servicios que incluyen la promoción, publicidad e información en general sobre recetas y productos que GOOD FOOD ofrece. Asimismo, contiene un sistema automatizado para la compraventa de productos alimenticios a través del sitio web de Gourmet propiedad de GOOD FOOD y cualquier otra Plataforma o sitio que desarrolle GOOD FOOD en el futuro.",
+      "blockClass": "privacidad-p"
+    }
+  },
+  "rich-text#tprivacidad-p2": {
+    "props": {
+      "text": "La presente Política de Privacidad (en adelante “la Política”) tiene por finalidad describir el tratamiento de sus datos como resultado de la visita a nuestro sitio web y en la utilización de nuestros servicios que ofrece el sitio web de Gourmet.",
+      "blockClass": "privacidad-p"
+    }
+  },
+  "rich-text#tprivacidad-p3": {
+    "props": {
+      "text": "A través de la presente Política, GOOD FOOD, domiciliada en Chile, reconoce como legislación aplicable la Ley N°19.628 sobre protección de la vida privada (Ley de datos personales) y sus posteriores modificaciones. Se entenderá por datos de carácter personal o datos personales, los relativos a cualquier información concerniente a personas naturales, identificadas o identificables. Estos datos serán recopilados por el sólo hecho que usted ha entregado dicha información, como consecuencia de la suscripción de una cuenta personal en el sitio web o por el solo hecho de visitar el mismo.",
+      "blockClass": "privacidad-p"
+    }
+  },
+  "rich-text#tprivacidad-p4": {
+    "props": {
+      "text": "De los datos recolectados por estas vías, GOOD FOOD otorga protección de sus datos, evitando la divulgación de los mismos. Para ello adoptará todos los medios técnicos que estén dentro de su alcance para evitar la pérdida, robo, hurto, alteración, acceso no autorizado y/o una apropiación indebida de los mismos. GOOD FOOD realizará sus mejores esfuerzos para que dicha pérdida no ocurra, debido a que las medidas técnicas de seguridad que se puedan tomar para que esto no ocurra no son infalibles, por tanto GOOD FOOD no puede hacerse cargo en caso que estas medidas de seguridad llegasen a fallar.",
+      "blockClass": "privacidad-p"
+    }
+  },
+  "rich-text#tprivacidad-p5": {
+    "props": {
+      "text": "GOOD FOOD puede, de acuerdo a nuestra legislación vigente, efectuar un tratamiento de datos personales, siempre que lo haga de una manera razonable. Lo anterior puede implicar la recopilación interna y el análisis de datos para prestar un mejor servicio al Usuario, buscar programas de beneficios para los Usuarios o simplemente para fines estadísticos. En todo caso, el tratamiento que se realizará al dato, impide que éste pueda ser asociado a una persona determinada.",
+      "blockClass": "privacidad-p"
+    }
+  },
+  "rich-text#tprivacidad-p6": {
+    "props": {
+      "text": "GOOD FOOD reconoce que dentro de los datos entregados por los Usuarios existen algunos de ellos más sensibles, como por ejemplo, aquellos que se refieren a las características físicas o morales de las personas o a hechos o circunstancias de su vida privada o intimidad, los estados de salud físicos o psíquicos y la vida sexual. Sobre ellos, GOOD FOOD no realizará tratamiento alguno, a menos que el propio Usuario lo autorice al efecto de manera expresa o nuestra legislación así lo permita.",
+      "blockClass": "privacidad-p"
+    }
+  },
+  "rich-text#tprivacidad-p7": {
+    "props": {
+      "text": "Se reconoce como una práctica frecuente, la utilización de cookies y/o herramientas analíticas para la recolección de información. Las cookies y/o herramientas analíticas son archivos que se transfieren desde un Sitio Web al disco duro del computador del Usuario, con el fin de que el Usuario, al ingresar nuevamente al sitio Web, éste lo reconozca y se enriquezca su navegación, customizando la experiencia a cada usuario según sus navegaciones anteriores.",
+      "blockClass": "privacidad-p"
+    }
+  },
+  "rich-text#tprivacidad-p8": {
+    "props": {
+      "text": "GOOD FOOD, de acuerdo a sus términos y condiciones, establece que el sitio web de Gourmet solamente puede ser utilizado por mayores de 18 años de edad que hayan aceptado íntegramente los términos y condiciones. El Usuario que sea menor de edad, pero que cuente con la autorización de sus padres o de su representante legal, podrá utilizar los servicios, siempre y cuando sus padres o representante legal, hayan aceptado íntegramente los presentes términos y condiciones. En consecuencia, GOOD FOOD no tiene por finalidad recopilar o recolectar información relacionada con menores de edad y, en caso que la información proporcionada por el Usuario a GOOD FOOD no sea correcta, puede solicitar su eliminación al siguiente correo electrónico suscripcion@gourmet.cl , eximiendo a GOOD FOOD de cualquier responsabilidad por su uso. Será responsabilidad de los padres, tutores o representantes, la autorización de la información que los menores de edad que se encuentren bajo su cuidado, proporcionen a GOOD FOOD.",
+      "blockClass": "privacidad-p"
+    }
+  }
+}

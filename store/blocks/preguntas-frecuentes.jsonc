@@ -1,0 +1,504 @@
+{
+  "store.custom#preguntas-frecuentes": {
+    "children": [
+      "rich-text#faq-title",
+      "flex-layout.row#faq",
+      "flex-layout.row#spacer-height"
+    ]
+  },
+
+  "flex-layout.row#faq": {
+    "children": [
+      "rich-text#faq3-q",
+      "rich-text#faq3-a",
+      "rich-text#faq4-q",
+      "rich-text#faq4-a",
+      "rich-text#faq5-q",
+      "rich-text#faq5-a",
+      "rich-text#faq6-q",
+      "rich-text#faq6-a",
+      "rich-text#faq7-q",
+      "rich-text#faq7-a",
+      "rich-text#faq8-q",
+      "rich-text#faq8-a",
+      "rich-text#faq9-q",
+      "rich-text#faq9-a",
+      "rich-text#faq10-q",
+      "rich-text#faq10-a",
+      "rich-text#faq11-q",
+      "rich-text#faq11-a",
+      "rich-text#faq12-q",
+      "rich-text#faq12-a",
+      "rich-text#faq13-q",
+      "rich-text#faq13-a",
+      "rich-text#faq14-q",
+      "rich-text#faq14-a", 
+      "rich-text#faq15-q",
+      "rich-text#faq15-a",
+      "rich-text#faq16-q",
+      "rich-text#faq16-a",
+      "rich-text#faq17-q",
+      "rich-text#faq17-a",
+      "rich-text#faq18-q",
+      "rich-text#faq18-a",
+      "rich-text#faq19-q",
+      "rich-text#faq19-a",
+      "rich-text#faq20-q",
+      "rich-text#faq20-a",
+      "rich-text#faq21-q",
+      "rich-text#faq21-a",
+      "rich-text#faq22-q",
+      "rich-text#faq22-a",
+      "rich-text#faq23-q",
+      "rich-text#faq23-a",
+      "rich-text#faq24-q",
+      "rich-text#faq24-a",
+      "rich-text#faq25-q",
+      "rich-text#faq25-a",
+      "rich-text#faq26-q",
+      "rich-text#faq26-a",
+      "rich-text#faq27-q",
+      "rich-text#faq27-a",
+      "rich-text#faq28-q",
+      "rich-text#faq28-a",
+      "rich-text#faq29-q",
+      "rich-text#faq29-a",
+      "rich-text#faq30-q",
+      "rich-text#faq30-a"
+    ],
+    "props": {
+      "blockClass": "row-faqq"
+    }
+  },
+  "rich-text#faq-title": {
+    "props": {
+      "text": "Preguntas Frecuentes", 
+      "blockClass": "faq-title"
+    }
+  },
+
+
+  // faq1
+  "rich-text#faq3-q": {
+    "props": {
+      "text": "¿Cómo me registro en Gourmet.cl?",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq3-a": {
+    "props": {
+      "text": "En Gourmet.cl tenemos dos opciones de registro:\n1. Si solo estás interesado en recibir recetas, novedades, cupones de descuento y tips, puedes inscribirte en nuestro Newsletter Gourmet. Lo único que tienes que hacer es ir al final de cualquier página de nuestro sitio web, buscar el recuadro de “Suscríbete aquí”, ingresar tu mail y ¡listo!\n2. Si además te gustaría tener tu perfil privado, donde puedas guardar recetas y productos favoritos de nuestra página, valorar recetas y acceder de manera rápida para comprar online, puedes hacer click aquí. Llena el formulario, da click en aceptar y recibirás un mail de confirmación de registro. Sigue las instrucciones del mail y listo.",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq4-q": {
+    "props": {
+      "text": "¿Tiene Gourmet una tienda física?",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq4-a": {
+    "props": {
+      "text": "Actualmente Gourmet no tiene una tienda física. Todos nuestros productos alimenticios se pueden encontrar en la mayoría de los supermercados a lo largo de Chile. Hay varios productos que sólo los vendemos online por nuestro sitio web.",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq5-q": {
+    "props": {
+      "text": "¿Puedo comprar sin estar registrado?",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq5-a": {
+    "props": {
+      "text": "Puedes comprar estando o no registrado. Si no estás registrado, una vez que validez tu carro de compra, deberás ingresar tanto tus datos de compra como los de despacho para que podamos emitir tu boleta/factura y enviar tus productos. Una vez que llenes estos datos, podrás continuar con el proceso de compra y te daremos la posibilidad de registrarte en ese momento, sin necesidad de volver a ingresar tu información en el futuro.\n¡Queremos ofrecerte la mejor experiencia al momento de comprar!",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq6-q": {
+    "props": {
+      "text": "¿Puedo comprar en el sitio web si no vivo en Chile?",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq6-a": {
+    "props": {
+      "text": "No. Solo puedes comprar en el sitio web si tu pedido será despachado dentro de Chile continental (de Arica a Punta Arenas) y si lo pagarás por medios de pago chilenos (WebPay Plus o Khipu).",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq7-q": {
+    "props": {
+      "text": "¿Cuáles son las zonas de despacho para las compras?",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq7-a": {
+    "props": {
+      "text": "Los pedidos son despachados a cualquier dirección dentro de Chile continental (de Arica a Punta Arenas) por medio de la empresa de despacho Blue Express. Adicionalmente, puedes enviar tu pedido a cualquier oficina de Blue Express a lo largo de Chile, donde para retirar debes presentar tu cédula de identidad.\nPara ver el listado de oficinas Blue Express, haz click aquí.",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq8-q": {
+    "props": {
+      "text": "¿Cuál será el costo de despacho de mi envío?",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq8-a": {
+    "props": {
+      "text": "El costo de despacho por tu compra dependerá de la cuidad a donde envíes.\nPincha aquí y encontrarás los costos de despacho según tu ciudad. Estos costos son exactamente los mismos ya sea decidas enviar a una dirección particular o a la oficina de Blue Express de tu ciudad.",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq9-q": {
+    "props": {
+      "text": "¿Qué opciones de pago tengo?",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq9-a": {
+    "props": {
+      "text": "En Gourmet.cl tenemos dos plataformas de pago donde puedes optar por la que te sea más cómoda.\nEs importante que sepas que todos los procesos de pago se realizan fuera de la página de Gourmet.cl, por lo que nunca te pediremos ni tendremos acceso a los números de tarjetas de crédito o débito ni a ningún otro dato bancario.\nLas 2 plataformas de pago son:\n1. Khipu: En esta plataforma usas tu cuenta corriente o cuenta vista del banco, y el pago lo realizas mediante transferencia electrónica.\n2. Webpay Plus: En esta plataforma puedes pagar con tarjetas de crédito bancarias y/o redcompra emitidas en Chile.",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq10-q": {
+    "props": {
+      "text": "¿Puedo comprar con factura?",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq10-a": {
+    "props": {
+      "text": "¡Sí! Si tienes giro de empresa, al momento de validar tu carro de compras, puedes optar por la opción de factura. Solo tienes que completar todos los datos de tu empresa y ¡listo!, la compra se generará con factura y ésta te llegará electrónicamente al mail que tú nos señalaste.",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq11-q": {
+    "props": {
+      "text": "¿Puedo pedir un producto para regalo?",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq11-a": {
+    "props": {
+      "text": "¡Claro que puedes! Al momento de validar tu carro de compras, solo tienes que hacer click en la opción “Quiero que sea regalo”. Automáticamente se desplegará un recuadro para que escribas el mensaje que quieras a la persona que quieras sorprender. Envolveremos tu regalo en una linda bolsa Gourmet e imprimiremos tu nota sin costo. Además, el paquete le llegará al destinatario sin información de los precios pagados.\n¡Navega por nuestra página y regala Gourmet!",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq12-q": {
+    "props": {
+      "text": "¿Puedo enviar un producto a una dirección distinta a la mía?",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq12-a": {
+    "props": {
+      "text": "¡Absolutamente! Cuando accedas al carro de compras, tendrás la opción de escribir la dirección a la cual quieres que sean enviado tus productos que puede ser distinta a la tuya. No te olvides de escribir bien el contacto y la dirección a la que irán tus productos, ya que nos basaremos en eso para hacer el despacho.",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq13-q": {
+    "props": {
+      "text": "Estoy comprando y ya ingresé mis datos de pago. ¿Cómo se si se realizó correctamente la compra?",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq13-a": {
+    "props": {
+      "text": "El proceso de pago se realiza fuera de Gourmet.cl, ya sea en las plataformas de WebPay Plus o Khipu según la que hayas escogido. Solo cuando WebPay o Khipu nos confirmen que el pago fue recibido exitosamente, se generará la orden de compra. Cuando esto suceda, el sitio web de Gourmet lleva a una página donde se le notifica al usuario que su compra fue exitosa y se le otorga un número de orden de compra asociada. Adicionalmente, se le envía un email al usuario confirmando que su compra fue exitosa. Si esto no ocurriera, lo más probable es que el proceso de pago no fue exitoso, ya sea por fallas de comunicación, por problemas en las plataformas de pago, etc.\nSi tienes dudas sobre si se te generó o no la compra, escríbenos un mail a compras@gourmet.cl explicándonos el caso y con tu nombre completo para verificar la compra.",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq14-q": {
+    "props": {
+      "text": "Ya compré…¿qué pasa ahora?",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq14-a": {
+    "props": {
+      "text": "Apenas recibimos una compra, comenzamos a procesarla para despacharla lo antes posible. Este proceso puede durar hasta 2 días hábiles, dependiendo de la cantidad de pedidos que recibamos.\nCuando tu pedido está listo, procedemos a despacharlo y facturarlo, por lo que te enviaremos un mail avisándote que tu pedido fue despachado junto con el número de seguimiento del paquete y tu factura adjunta.\nEl tiempo de despacho dependerá de la cuidad a la cual envíes tu pedido. Más abajo, en la pregunta “¿Cuánto se demorará mi pedido en llegar?” puedes ver los tiempos estimados de despacho por cuidad.\nLos despachos se hacen de lunes a viernes (días hábiles) entre 09:00 hrs y 19:00 hrs.",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq15-q": {
+    "props": {
+      "text": "¿Puedo cambiar la dirección que puse en mi compra o hacer cambios en ella una vez que la orden ya ha sido aprobada?",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq15-a": {
+    "props": {
+      "text": "En Gourmet.cl nos esforzamos por procesar tu orden y despacharla lo antes posible, por lo que una vez que tu compra fue aprobada, es difícil realizar cambios en los datos de compra.\nDe todas formas, entendiendo que pueden ocurrir errores involuntarios, te pedimos que te comuniques con nosotros a la brevedad al número (2) 29478691 o nos envíes un mail a compras@gourmet.cl explicándonos tu caso, con el número de orden de compra.\n¡Haremos todo lo posible para corregir el error!.",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq16-q": {
+    "props": {
+      "text": "¿Puedo cancelar mi orden una vez puesta?",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq16-a": {
+    "props": {
+      "text": "Una vez que se aprobó la compra, tu banco ya nos traspasó el monto total de la transacción, por lo que no podrás cancelar la compra.\nA pesar de esto, contamos con modalidades de devolución parcial o total, las que podrás utilizar al momento de recibir tu pedido.",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq17-q": {
+    "props": {
+      "text": "¿Cómo sé si hay stock de todos los productos incluidos en mi compra?",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq17-a": {
+    "props": {
+      "text": "Siempre que un producto esté sin stock, saldrá señalado en la página del producto y no podrás agregarlo al carro de compras. De todas formas, aunque nos esforzamos por despachar todos los productos de tu orden, excepcionalmente puede suceder que un producto se encuentre sin stock aun cuando en el sitio web no se señaló. En esto casos especiales, te contactaremos para saber si quieres que te despachemos el resto de los productos que compraste o si deseas cancelar tu orden completa. Por supuesto, solo te cobraremos por los productos despachados. Si tu modo de pago fue por tarjeta de débito o Khipu, te haremos una transferencia electrónica por la diferencia del producto no despachado. En el caso de que hayas pagado con tarjeta de crédito, solo te facturaremos por el total realmente despachado.",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq18-q": {
+    "props": {
+      "text": "¿Puedo devolver o cambiar algún producto de mi orden?",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq18-a": {
+    "props": {
+      "text": "Solo podrás hacerlo en caso que el producto presente defectos. Si esto sucediera, tendrás el derecho de optar entre el cambio o la devolución de la cantidad pagada dentro de los 3 meses siguientes a la fecha en que recibiste el producto, siempre que este no se hubiese deteriorado por un hecho que pueda ser considerado como de tu responsabilidad.\nSi el producto es perecible o está naturalmente destinado a ser usado o consumido en un periodo breve, tendrás un plazo de 7 días para solicitar devolución o cambio.\nPara mayor información revisa nuestros términos y condiciones.",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq19-q": {
+    "props": {
+      "text": "¿Cuánto se demorará mi pedido en llegar?",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq19-a": {
+    "props": {
+      "text": "Los tiempos de entrega varían según la cuidad a la cual se despacha. Pincha aquí y encontrarás una tabla con los tiempos máximos de entrega por cuidad contados desde el día en que hiciste la compra. Los días que se indican en la tabla son hábiles.",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq20-q": {
+    "props": {
+      "text": "¿Cómo puedo hacerle seguimiento a mi compra?",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq20-a": {
+    "props": {
+      "text": "Una vez que tu pedido fue despachado, te llegará un mail indicando el número de seguimiento de Blue Express. Puedes ver el status del paquete ingresando el número de seguimiento aquí. Si además estás registrado en el sitio web de Gourmet, también puedes revisar el status de tu orden iniciando sesión, ingresando a “Mi Perfil” y haciendo click en “Mis Compras”.",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq21-q": {
+    "props": {
+      "text": "Hice una compra y necesito saber cuándo vendrán a entregarla para que haya alguien que la reciba.",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq21-a": {
+    "props": {
+      "text": "Lamentablemente, no te podemos dar una hora específica en la que recibirás tu pedido. Si elijes la opción de despachar a una dirección particular, es importante que te asegures que siempre haya alguien para recibir el pedido. Si esto es complicado para ti, tenemos la opción de despacho a una oficina de Blue Express para que así puedas ir a retirar el paquete cuando te acomode dentro de los 5 días hábiles posteriores a la recepción del paquete en la sucursal.",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq22-q": {
+    "props": {
+      "text": "Vinieron a entregar mi pedido, pero no había nadie para recibirlo. ¿Qué puedo hacer?",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq22-a": {
+    "props": {
+      "text": "No te preocupes, ya que Blue Express siempre hace un segundo intento de entrega al día hábil siguiente. Si por segunda vez nadie lo pudo recibir, contáctate con nosotros al mail compras@gourmet.cl para coordinar si prefieres que paquete quede disponible para retiro en una oficina Blue Express o que se realice un tercer intento de despacho, previo pago del costo extra asociado.\n¿Qué puedo hacer si ya pasó el tiempo de despacho y mi orden no ha sido entregada todavía?\nSi bien hacemos lo posible por cumplir con los tiempos de entrega, excepcionalmente puede suceder que un pedido se atrase. Si esto te pasó, de antemano nos disculpamos y te pedimos que te contactes con nosotros al mail compras@gourmet.cl , contándonos del caso y con el número de orden de compra para revisar qué pasó y entregarte la mejor solución.",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq23-q": {
+    "props": {
+      "text": "¿Qué puedo hacer si los productos tienen fallas o son distintos a los que compré?",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq23-a": {
+    "props": {
+      "text": "Primero que todo, te pedimos disculpas por esto. Por favor contáctate con nosotros al mail compras@gourmet.cl , cuéntanos tu caso junto al número de orden de compra. Revisaremos tu caso y buscaremos la mejor solución.",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq24-q": {
+    "props": {
+      "text": "¿Cómo puedo recibir cupones de descuento para comprar en el sitio web?",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq24-a": {
+    "props": {
+      "text": "Lo único que tienes que hacer es ir al final de cualquier página de nuestro sitio web, buscar el recuadro de “Suscríbete aquí”, ingresar tu mail y ¡listo! Ya estás suscrito a nuestro newsletter, por lo que recibirás recetas, novedades, cupones de descuento y tips.",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq25-q": {
+    "props": {
+      "text": "¿Cómo uso un código o cupón de descuento?",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq25-a": {
+    "props": {
+      "text": "Luego que tengas tu compra lista en el carro, se desplegará un recuadro donde podrás ingresar el código de descuento y éste se aplicará al total de tu compra.\nLos descuentos no son combinables ni acumulables con otros descuentos, por lo que si tienes más de uno, debes usar el que más te convenga.",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq26-q": {
+    "props": {
+      "text": "¿Cómo puedo ver mi historial de compras?",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq26-a": {
+    "props": {
+      "text": "Solo puedes ver el historial de compras si estás registrado en Gourmet.cl. Para hacerlo, debes hacer click en la opción “Registrarme” que se encuentra en la parte de arriba de cualquier página del sitio y seguir las instrucciones.\nAl estar registrado, podrás acceder a tu perfil, donde podrás ver todo el historial de tus compras online, el estado de cada una, los productos comprados, etc.",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq27-q": {
+    "props": {
+      "text": "Compré un producto y ahora está más barato en el sitio web. ¿Puedo obtener una devolución de la diferencia?",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq27-a": {
+    "props": {
+      "text": "Lamentablemente esto no es posible. Los precios y promociones pueden ir cambiando constantemente en el sitio y los precios al cual fue hecha la compra son los definitivos.",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq28-q": {
+    "props": {
+      "text": "Agregué unos productos al carro de compras hace unos días y luego, cuando quise finalizar mi compra, ya no había stock de algunos productos y algunos precios habían cambiado. ¿Qué hago?",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq28-a": {
+    "props": {
+      "text": "El agregar un producto al carro de compras no genera una reserva de ese ítem. Esto implica que en el intertanto hasta que hagas la compra, el precio puede variar (hacia arriba o hacia abajo) y el stock se puede acabar. Solo cuando haces el pago y se genera la orden de compra se reserva el stock y se respeta el precio pagado.",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq29-q": {
+    "props": {
+      "text": "¿Cómo me contacto con Servicio al Cliente?",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq29-a": {
+    "props": {
+      "text": "Puedes hacerlo mediante varias formas, según sea tu preferencia:\n1. En la sección de “Contacto” de nuestro sitio hay un formulario que puedes llenar con la consulta que quieras.\n2. Para consultas generales de productos, puedes llamar de lunes a viernes (solo días hábiles) de 8:00 a 16:30 al teléfono 2-29478600. También puedes escribirnos en todo momento al mail: contacto@gourmet.cl .\n3. Para consultas sobre compras, puedes llamar de lunes a viernes (solo días hábiles) de 8:00 a 16:30 al teléfono (2)29478691.También puedes escribirnos en todo momento al mail: compras@gourmet.cl .",
+      "blockClass": "faq-a"
+    }
+  },
+
+  // faq1
+  "rich-text#faq30-q": {
+    "props": {
+      "text": "¿Cómo elimino o desuscribo mi email de la lista de correos que manda Gourmet?",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq30-a": {
+    "props": {
+      "text": "Para dejar de recibir los mails de Gourmet, debes mandar un mail a suscripcion@gourmet.cl solicitando la eliminación de nuestra lista. Por favor danos unos días para que la eliminación se haga efectiva.",
+      "blockClass": "faq-a"
+    }
+  },
+
+    // faq1
+    "rich-text#faq31-q": {
+      "props": {
+        "text": "Ya estoy registrada, pero se me olvidó mi contraseña. ¿Cómo hago para recuperarla?",
+        "blockClass": "faq-q"
+      }
+    },
+    "rich-text#faq31-a": {
+      "props": {
+        "text": "Tienes 2 opciones:\n1. La más fácil es que accedas a “Iniciar Sesión” que se encuentra en la parte superior de cualquier página del sitio y ahí pongas tu email y el botón “olvidé la contraseña”. Automáticamente te enviaremos un mail con las instrucciones a seguir para recuperarla.\n2. Mándanos un mail a contacto@gourmet.cl pidiendo recuperar la contraseña y te responderemos.",
+        "blockClass": "faq-a"
+      }
+    },
+
+      // faq1
+  "rich-text#faq32-q": {
+    "props": {
+      "text": "¿Cómo puedo mantener mi información de registro o la que ingreso al comprar de forma segura?",
+      "blockClass": "faq-q"
+    }
+  },
+  "rich-text#faq32-a": {
+    "props": {
+      "text": "En Gourmet nos tomamos muy en serio la seguridad de los datos. Por esto, nuestro sitio cuenta con barreras tecnológicas para mantener el sitio seguro y proteger los datos que los usuarios nos proveen. Adicionalmente, los datos obtenidos de los usuarios no serán divulgados ni vendidos a terceros bajo ningún término.\nSin embargo, es importante que sepas que ningún sitio web es 100% seguro y que todos están expuestos de alguna forma al robo de información. Para mayor información, ingresa a nuestra sección de “Políticas de Privacidad” aquí.",
+      "blockClass": "faq-a"
+    }
+  }
+
+
+  
+
+}

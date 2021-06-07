@@ -1,5 +1,5 @@
 {
-    // Declarcion del Menú Principal
+    // Declarcion del Menú Principal 
     "vtex.menu@2.x:menu#navegacion": {
         "children": [
             "menu-item#nueva-temporada",

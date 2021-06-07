@@ -111,7 +111,7 @@
       "flex-layout.row#quantity-buy-button",
       "availability-subscriber",
       "flex-layout.row#shelf-outfit",
-      "flex-layout.row#wishlist",
+      // "flex-layout.row#wishlist",
       "product-availability"
     ]
   },
@@ -325,18 +325,18 @@
   },
 
   //Wishlist
-  "flex-layout.row#wishlist": {
-    "props": {
-      "verticalAlign": "middle"
-    },
-    "children": ["flex-layout.col#colWishList"]
-  },
-  "flex-layout.col#colWishList": {
-    "props": {
-      "blockClass": "colWishList"
-    },
-    "children": ["add-to-list-btn"]
-  },
+  // "flex-layout.row#wishlist": {
+  //   "props": {
+  //     "verticalAlign": "middle"
+  //   },
+  //   "children": ["flex-layout.col#colWishList"]
+  // },
+  // "flex-layout.col#colWishList": {
+  //   "props": {
+  //     "blockClass": "colWishList"
+  //   },
+  //   "children": ["add-to-list-btn"]
+  // },
 
 
 
@@ -406,7 +406,7 @@
       "flex-layout.col#stock",
       "sticky-layout#quantity-buy-button",
       "availability-subscriber",
-      "flex-layout.row#wishlist",
+      // "flex-layout.row#wishlist", 
       "flex-layout.row#descriptionPDPmobile",
       "product-availability"
     ]
@@ -417,7 +417,7 @@
     "props": {
       "position": "bottom",
       "props": "fixedCartBar"
-    },
+    }, 
     "children": ["flex-layout.row#quantity-buy-button-Mobile"]
   },
   "flex-layout.row#quantity-buy-button-Mobile": {

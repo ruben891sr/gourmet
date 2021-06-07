@@ -1,4 +1,4 @@
-.quantitySelectorStepper :global(.vtex-numeric-stepper__input){
+.quantitySelectorStepper :global(.vtex-numeric-stepper__input) {
     background: #f1f4f5;
 }
 
@@ -6,13 +6,11 @@
     .quantitySelectorTitle {
         color: transparent;
     }
-
     .quantitySelectorStepper :global(.vtex-numeric-stepper__input) {
         width: 50px;
         height: 41px;
         margin-top: -10px;
     }
-
     .quantitySelectorStepper :global(.vtex-numeric-stepper__minus-button),
     .quantitySelectorStepper :global(.vtex-numeric-stepper__plus-button) {
         width: 30px !important;

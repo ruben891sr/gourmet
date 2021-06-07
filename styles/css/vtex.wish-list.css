@@ -3,9 +3,11 @@
     display: inline-block;
     color: #441e13;
 }
+
 .outline {
-    background:url(assets/img/icon-wishlist.svg);
+    background: url(assets/img/icon-wishlist.svg);
 }
+
 .iconSize {
     background-size: cover;
     background-repeat: no-repeat;
@@ -13,7 +15,7 @@
     height: 28px;
 }
 
-@media (max-width:991.1px){
+@media (max-width:991.1px) {
     .wishlistIconContainer::after {
         font-size: 12px;
     }

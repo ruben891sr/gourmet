@@ -380,7 +380,6 @@
     display: none;
 }
 
-
 .productImage :global(.vtex-relative)::before {
     content: "";
     position: absolute;

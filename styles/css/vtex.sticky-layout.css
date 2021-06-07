@@ -2,8 +2,8 @@
     background-color: #ffffff;
 }
 
-@media (max-width:991.1px){
-    .wrapper--stuck{
+@media (max-width:991.1px) {
+    .wrapper--stuck {
         height: 0!important;
     }
 }

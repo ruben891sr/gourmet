@@ -29,6 +29,7 @@
     text-transform: capitalize;
     font-display: "fallback";
 }
+
 .itemListLink {
     height: fit-content !important;
     text-transform: capitalize !important;
@@ -37,6 +38,7 @@
     margin-top: .7rem !important;
     font-display: "fallback";
 }
+
 .itemListSubItemLink {
     font-size: 12px;
     font-weight: 700;
@@ -53,7 +55,9 @@
     font-display: "fallback";
 }
 
+
 /*Banner Principal*/
+
 .searchBanner--bannerPrincipal {
     position: relative;
     opacity: .75;
@@ -75,5 +79,4 @@
     .biggy-autocomplete-wrapper {
         width: 90vw;
     }
-
 }

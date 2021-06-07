@@ -8,7 +8,6 @@
     background-color: #ede3ce;
 }
 
-
 .caretIcon--carousel-topbar {
     width: 11px;
 }
@@ -35,7 +34,7 @@
     bottom: 1rem;
 }
 
-.paginationDot--carousel{
+.paginationDot--carousel {
     background: #fff;
     border: 1px solid #402117;
     margin: 0 .4rem;

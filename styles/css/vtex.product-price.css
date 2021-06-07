@@ -1,0 +1,40 @@
+.installments--summary {
+    display: none !important;
+}
+
+.sellingPriceValue--summary {
+    font-weight: 800;
+    color: red;
+    font-size: .8em;
+    padding: .5rem 0 .3rem 0;
+    padding-left: 0;
+}
+
+.listPriceValue--summary .currencyContainer--summary {
+    color: #9a9a9a !important;
+    font-size: .85em;
+    display: inline-block;
+    text-decoration: line-through;
+    margin-right: .5rem;
+}
+
+.savings--summary {
+    background: #e67160;
+    border-radius: 7px;
+    padding: .5rem;
+    color: #fff;
+    position: absolute;
+    top: 2px;
+    right: 0;
+    box-shadow: 2px 2px 5px rgb(0 0 0 / 20%);
+}
+  
+.savings--summary-pdp {
+    background: #e67160;
+    border-radius: 7px;
+    padding: .5rem;
+    display: inline-block;
+    margin-bottom: .4rem;
+    color: #fff;
+    box-shadow: 2px 2px 5px rgb(0 0 0 / 20%);
+}

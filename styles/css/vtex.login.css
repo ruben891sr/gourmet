@@ -1,0 +1,186 @@
+.profileIcon {
+    overflow: visible !important;
+    width: 15px;
+    height: auto;
+    fill: #3f2016;
+    margin-top: -4px;
+}
+
+.label {
+    display: none;
+}
+
+.arrowUp {
+    display: none;
+}
+
+.portalContainer--userColHeader {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 999999999999999999 !important;
+    background: rgb(0 0 0 / 50%);
+    display: block;
+    height: 100vh;
+    width: 100vw;
+}
+
+.box {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    padding: 0 2rem;
+    background: #fff;
+    padding-bottom: 1rem;
+    border-radius: 4px;
+}
+
+.formTitle {
+    white-space: pre-line;
+    font-size: 1.5em;
+    color: #3f2016;
+    margin-bottom: 2rem;
+}
+
+.contentContainer {
+    min-width: 100%;
+    min-height: 100%;
+    box-shadow: none;
+    margin: 0;
+}
+
+.formTitle {
+    white-space: pre-line;
+    font-size: 1.5em;
+    color: #3f2016;
+}
+
+.button :global(.vtex-button) {
+    height: 60px;
+    background: #ffaa71;
+    color: #fff;
+}
+
+.button :global(.vtex-button__label) {
+    font-weight: 700 !important;
+}
+
+.facebookOptionBtn :global(.vtex-button) {
+    background-color: #3578e5;
+}
+
+.accountOptions {
+    margin-top: 2rem;
+}
+
+.accountOptions :global(.vtex-button__label .t-action--small) {
+    font-weight: 700;
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: .5rem 0;
+    font-size: 0;
+    color: transparent;
+    position: relative;
+}
+
+.accountOptions :global(.vtex-button__label .t-action--small)::before {
+    content: 'Cerrar Sesión';
+    font-size: 14px !important;
+    color: red !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.accountOptions :global(.mv2.o-30) {
+    display: none !important;
+}
+
+.accountOptions :global(.vtex-button) {
+    border: 1px solid red;
+    display: block;
+    width: 100%;
+}
+
+.accountOptions :global(.b--muted-4) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    text-align: center;
+}
+
+.accountOptions .button {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    align-items: center;
+    width: 100%;
+    background: #3f2016;
+    color: #fff;
+    border: none;
+    padding: .7rem 0;
+}
+
+.googleOptionBtn :global(.vtex-button) {
+    background-color: #fff;
+    border-image-source: linear-gradient(270deg, #f2b910, #ea4335, #3578e5, #ea4335, #f2b910, #36a753, #ea4335);
+    border-radius: 4px;
+    border-image-slice: 1;
+    border-width: 4px;
+}
+
+.googleOptionBtn :global(.vtex-button__label) {
+    color: #3f2016;
+    font-weight: 700 !important;
+}
+
+.optionsListItem {
+    margin-bottom: .7rem;
+}
+
+.options {
+    min-width: 100%;
+}
+
+@media (max-width: 600px) {
+    .contentAlwaysWithOptions::before {
+        content: '';
+        background-color: rgb(0 0 0 / 51%);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+    }
+    .contentAlwaysWithOptions {
+        max-width: 25rem;
+        background: #fff;
+        z-index: 999999999;
+    }
+    .options {
+        background: #fff !important;
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+    .contentForm {
+        width: 100%;
+        background: #fff;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .profileIcon {
+        width: 12px;
+    }
+    .buttonLink {
+        width: 44px;
+        overflow: hidden;
+    }
+}

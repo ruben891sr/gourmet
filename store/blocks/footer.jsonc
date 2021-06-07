@@ -1,0 +1,740 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#titulo-insta",
+      "flex-layout.row#insta",
+      "flex-layout.row#seo",
+      "flex-layout.row#content-footer-general"
+    ]
+  },
+
+  "footer-layout.mobile": {
+    "children": [
+      "flex-layout.row#titulo-insta",
+      "flex-layout.row#insta",
+      "flex-layout.row#seo",
+      "flex-layout.row#content-footer-general"
+    ],
+    "props": {
+      "blockClass": "mainrow-footer-mobile",
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.row#club-pillin": {
+    "children": [
+      "flex-layout.col#title-text-pillin",
+      "flex-layout.col#banners-club-pillin"
+    ],
+    "props": {
+      "blockClass": "clubPillin",
+      "horizontalAlign": "center"
+    }
+  },
+
+  "flex-layout.col#title-text-pillin": {
+    "children": [
+      "rich-text#title-club",
+      "rich-text#text-club",
+      "newsletter-form"
+    ],
+    "props": {
+      "blockClass": "colTitleTextPillin",
+      "width": "30%",
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle"
+    }
+  },
+
+  "flex-layout.col#banners-club-pillin": {
+    "children": [
+      "flex-layout.row#row-banners",
+      "flex-layout.row#row-button"
+    ],
+    "props": {
+      "blockClass": "colBannersPillin",
+      "width": "70%",
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle",
+      "paddingLeft": 10
+    }
+  },
+
+  "flex-layout.row#row-banners": {
+    "children": [
+      "image#club-pillin-1",
+      "image#club-pillin-2",
+      "image#club-pillin-3"
+    ],
+    "props": {
+      "blockClass": "rowBanners"
+    }
+  },
+
+  "flex-layout.row#row-banners-mobile": {
+    "children": [
+      "image#club-pillin-1",
+      "image#club-pillin-2",
+      "image#club-pillin-3"
+    ],
+    "props": {
+      "blockClass": "rowBanners-mobile",
+      "colSizing": "auto"
+    }
+  },
+
+  "flex-layout.row#row-button": {
+    "children": [
+      "rich-text#ver-mas-pillin"
+    ],
+    "props": {
+      "blockClass": "rowButton"
+    }
+  },
+
+
+  "form#club-pillin-footer": {
+    "props": {
+      "entity": "clients",
+      "schema": "person"
+    },
+    "children": [
+      "form-input.text#firstNameClubPillin",
+      "form-input.text#lastNameClubPillin",
+      "form-field-group#addressClubPillin",
+      "form-input.checkbox#agreementClubPillin",
+      "form-submit#ClubPillin"
+    ],
+    "blocks": ["form-success#ClubPillin"]
+  },
+
+  "form-success#ClubPillin": {
+    "children": [
+      "rich-text#successSubmit"
+    ]
+  },
+
+  "rich-text#successSubmit": {
+    "props": {
+      "text": "Succesfully submitted the data!",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "form-input.text#firstNameClubPillin": {
+    "props": {
+      "pointer": "#/properties/firstName"
+    }
+  },
+
+  "form-input.text#lastNameClubPillin": {
+    "props": {
+      "pointer": "#/properties/lastName"
+    }
+  },
+
+  "form-input.checkbox#agreementClubPillin": {
+    "props": {
+      "pointer": "#/properties/agreement",
+      "label": "Do you agree that this is the best form component in the whole wide world?"
+    }
+  },
+
+  "form-field-group#addressClubPillin": {
+    "props": {
+      "pointer": "#/properties/address"
+    }
+  },
+
+  "form-submit#ClubPillin": {
+    "props": {
+      "label": "Submit"
+    }
+  },
+
+
+  "newsletter-form": {
+    "children": [
+      "newsletter-input-email",
+      "newsletter-submit"
+    ]
+  },
+
+  "rich-text#title-club": {
+    "props": {
+      "blockClass": "cp-titleClub",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "### Únete a nuestro Club Pillin"
+    }
+  },
+
+  "rich-text#text-club": {
+    "props": {
+      "blockClass": "cp-textClub",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Al unirte obtendrás un 10% Dcto en tu primera compra. Además accedes a varios beneficios"
+    }
+  },
+
+  "flex-layout.row#club-pillin-mobile": {
+    "children": [
+      "flex-layout.col#title-text-pillin",
+      "flex-layout.col#banners-club-pillin-mobile"
+    ],
+    "props": {
+      "blockClass": "clubPillin-mobile"
+    }
+  },
+
+  "flex-layout.col#banners-club-pillin-mobile": {
+    "children": [
+      "flex-layout.row#row-banners-mobile",
+      "flex-layout.row#row-button"
+    ],
+    "props": {
+      "blockClass": "colBannersPillin-mobile",
+      "verticalAlign": "middle"
+    }
+  },
+
+
+
+  "newsletter": {
+    "props": {
+      "blockClass": "cp-news"
+    }
+  },
+
+  "image#club-pillin-1": {
+    "props": {
+      "blockClass": "cp-image1",
+      "link": "/",
+      "src": "assets/img/club-image-01.jpg",
+      "alt": "Club Pillin Promo 1",
+      "maxWidth": "100%",
+      "width": "100%"
+    }
+  },
+
+  "image#club-pillin-2": {
+    "props": {
+      "blockClass": "cp-image2",
+      "link": "/",
+      "src": "assets/img/club-image-02.jpg",
+      "alt": "Club Pillin Promo 2",
+      "maxWidth": "100%",
+      "width": "100%"
+    }
+  },
+
+  "image#club-pillin-3": {
+    "props": {
+      "blockClass": "cp-image3",
+      "link": "/",
+      "src": "assets/img/club-image-03.jpg",
+      "alt": "Club Pillin Promo 3",
+      "maxWidth": "100%",
+      "width": "100%"
+    }
+  },
+
+
+
+
+
+  "rich-text#ver-mas-pillin": {
+    "props": {
+      "blockClass": "cp-buttonVerMas",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "[Conoce más](#)"
+    }
+  },
+
+
+  // Instagram
+  "flex-layout.row#titulo-insta": {
+    "children": [
+      "rich-text#titulo_insta"
+    ],
+    "props": {
+      "blockClass": "titulo-row-insta"
+    }
+  },
+
+  "flex-layout.row#insta": {
+    "children": [
+      "sandbox.product",
+      "iframe"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "rowInsta"
+    }
+  },
+
+  "sandbox.product": {
+    "props": {
+      "initialContent": "<script src='https://cdn.lightwidget.com/widgets/lightwidget.js'></script>",
+      "allowCookies": true,
+      "blockClass": "scriptInsta",
+      "height": "0px"
+    }
+  },
+
+  "rich-text#titulo_insta": {
+    "props": {
+      "blockClass": "titulo-insta",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Síguenos en Instagram: [@PillinChile](https://www.instagram.com/pillinchile/)"
+    }
+  },
+
+  "iframe": {
+    "props": {
+      "width": "100%",
+      "height": "350px",
+      "src": "//lightwidget.com/widgets/f0b9d22644985bb191865517469b9900.html",
+      "blockClass": "iframeInsta"
+    }
+  },
+
+
+  //SEO
+  "flex-layout.row#seo": {
+    "children": [
+      "rich-text#categorias-mas-buscadas",
+      "rich-text#cat-1",
+      "vtex.menu@2.x:menu#masbuscadas"
+    ],
+    "props": {
+      "blockClass": "rowSeo",
+      "colSizing": "auto"
+    }
+  },
+
+  "vtex.menu@2.x:menu#masbuscadas": {
+    "children": [
+      "menu-item#seo-abrigo_y_chaquetas",
+      "menu-item#seo-bermudas_y_shorts",
+      "menu-item#seo-blusa_y_camisas",
+      "menu-item#seo-buzos_y_conjuntos",
+      "menu-item#seo-chalecos_y_polerones",
+      "menu-item#seo-jardineras_y_enterito",
+      "menu-item#seo-jeans_pantalones_y_calzas",
+      "menu-item#seo-pijamas",
+      "menu-item#seo-poleras",
+      "menu-item#seo-ropa_interior",
+      "menu-item#seo-trajes_de_baño",
+      "menu-item#seo-vestidos_y_faldas",
+      "menu-item#seo-botas_botines_y_bototos",
+      "menu-item#seo-gateadores",
+      "menu-item#seo-reinas_y_ballerinas",
+      "menu-item#seo-sandalias",
+      "menu-item#seo-zapatillas",
+      "menu-item#seo-zapatitos_recién_nacido",
+      "menu-item#seo-zapatos",
+      "menu-item#seo-babero_y_bandanas",
+      "menu-item#seo-calcetines",
+      "menu-item#seo-gorros_y_bufandas",
+      "menu-item#seo-peluches",
+      "menu-item#seo-pinches_y_cintillos",
+      "menu-item#seo-toallas_y_tutos",
+      "menu-item#seo-mochilas"
+    ],
+    "props": {
+      "blockClass": "listaSepCat"
+    }
+  },
+
+  "rich-text#categorias-mas-buscadas": {
+    "props": {
+      "blockClass": "main-titles",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "## Categorías más **Buscadas**",
+      "width": "100%"
+    }
+  },
+
+  "rich-text#cat-1": {
+    "props": {
+      "blockClass": "texto-seo",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "width": "100%",
+      "text": "Porque nos encanta reír, jugar y llenar de magia el mundo, en PILLIN trabajamos con el compromiso y convicción de ser innovadores, para entregar siempre un producto versátil y de calidad que se adapte a las necesidades de nuestros clientes."
+    }
+  },
+
+  // Footer general
+  "flex-layout.row#content-footer-general": {
+    "props": {
+      "blockClass": "footer-general"
+    },
+    "children": ["flex-layout.col#contenido-footer"]
+  },
+  "flex-layout.col#contenido-footer": {
+    "children": ["flex-layout.row#content-menu-footer", "flex-layout.row#content-partner"]
+  },
+  // Main Footer
+  "flex-layout.row#content-menu-footer": {
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "rowMainFooter"
+    },
+    "children": [
+      "flex-layout.col#corp",
+      "flex-layout.col#cuenta",
+      "flex-layout.col#rrss",
+      "flex-layout.col#sac"
+      // "flex-layout.col#simulador-despacho"
+    ]
+  },
+  "flex-layout.col#sac": {
+    "props": {
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+
+    },
+    "children": [
+      "rich-text#title-sac",
+      "flex-layout.col#footer-menu-sac"
+    ]
+  },
+  "flex-layout.col#corp": {
+    "props": {
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+
+    },
+    "children": [
+      "rich-text#title-cor",
+      "flex-layout.col#footer-menu-cor"
+    ]
+  },
+  "flex-layout.col#cuenta": {
+    "props": {
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+
+    },
+    "children": [
+      "rich-text#title-cue",
+      "flex-layout.col#footer-menu-cuenta"
+    ]
+  },
+  "flex-layout.col#rrss": {
+    "props": {
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+
+    },
+    "children": [
+      "rich-text#title-sos",
+      "flex-layout.row#social-network-facebook",
+      "flex-layout.row#social-network-instagram"
+    ]
+  },
+  "flex-layout.col#simulador-despacho": {
+    "props": {
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+
+    },
+    "children": [
+      "rich-text#title-despa",
+      "flex-layout.col#simulador-despacho-col"
+    ]
+  },
+
+  // Servicio Atención al Cliente SAC
+  "rich-text#title-sac": {
+    "props": {
+      "blockClass": "footer-titles",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "### Servicio al Cliente"
+    }
+  },
+  // Menú SAC
+  "flex-layout.col#footer-menu-sac": {
+    "children": [
+      "rich-text#list-tyc",
+      "rich-text#list-despacho",
+      "rich-text#list-cambio",
+      "rich-text#list-retiro",
+      "rich-text#list-faq"
+    ],
+    "props": {
+      "preventHorizontalStretch": true
+    }
+  },
+  "rich-text#list-tyc": {
+    "props": {
+      "blockClass": "footer-list",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "- [Términos y Condiciones](/terminos-condiciones)"
+    }
+  },
+  "rich-text#list-despacho": {
+    "props": {
+      "blockClass": "footer-list",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "- [Despachos](/despachos)"
+    }
+  },
+  "rich-text#list-cambio": {
+    "props": {
+      "blockClass": "footer-list",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "- [Cambios y Devoluciones](/cambios-devoluciones)"
+    }
+  },
+  "rich-text#list-retiro": {
+    "props": {
+      "blockClass": "footer-list",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "- [Retiro en tienda](/retiro-en-tienda)"
+    }
+  },
+  "rich-text#list-faq": {
+    "props": {
+      "blockClass": "footer-list",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "- [Preguntas Frecuentes](/preguntas-frecuentes)"
+    }
+  },
+
+  // Corporativo COR
+  "rich-text#title-cor": {
+    "props": {
+      "blockClass": "footer-titles",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "### Corporativo"
+    }
+  },
+  // Menu COR
+  "flex-layout.col#footer-menu-cor": {
+    "children": [
+      "rich-text#list-nosotros",
+      "rich-text#list-tiendas",
+      "rich-text#list-contacto",
+      "rich-text#list-trabaja"
+    ]
+  },
+  "rich-text#list-nosotros": {
+    "props": {
+      "blockClass": "footer-list",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "- [Nosotros](/nosotros)"
+    }
+  },
+  "rich-text#list-tiendas": {
+    "props": {
+      "blockClass": "footer-list",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "- [Tiendas](/stores)"
+    }
+  },
+  "rich-text#list-contacto": {
+    "props": {
+      "blockClass": "footer-list",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "- **[Contacto](/contacto)**"
+    }
+  },
+  "rich-text#list-trabaja": {
+    "props": {
+      "blockClass": "footer-list",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "- [Trabaja con Nosotros](/trabaja-con-nosotros)"
+    }
+  },
+
+  // Mi Cuenta CUE
+  "rich-text#title-cue": {
+    "props": {
+      "blockClass": "footer-titles",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "### Mi Cuenta"
+    }
+  },
+  //Menu Cuenta CUE
+  "flex-layout.col#footer-menu-cuenta": {
+    "children": [
+      "rich-text#list-registro",
+      "rich-text#list-sesion",
+      "rich-text#list-recuperar",
+      "rich-text#list-favoritos"
+    ]
+  },
+  "rich-text#list-registro": {
+    "props": {
+      "blockClass": "footer-list",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "- [Regístrate](/login)"
+    }
+  },
+  "rich-text#list-sesion": {
+    "props": {
+      "blockClass": "footer-list",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "- [Iniciar Sesión](/login)"
+    }
+  },
+  "rich-text#list-recuperar": {
+    "props": {
+      "blockClass": "footer-list",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "- [Recuperar Contraseña](/login)"
+    }
+  },
+  "rich-text#list-favoritos": {
+    "props": {
+      "blockClass": "footer-list",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "- [Mis Favoritos](/login)"
+    }
+  },
+  // Redes Sociales SOS
+  "rich-text#title-sos": {
+    "props": {
+      "blockClass": "footer-titles",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "### Redes Sociales"
+    }
+  },
+
+  // Facebook
+  "flex-layout.row#social-network-facebook": {
+    "children": [
+      "rich-text#text-facebook"
+    ]
+  },
+
+  "rich-text#text-facebook": {
+    "props": {
+      "blockClass": "footer-list-face",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "- [Facebook](https://www.facebook.com/PillinChile)"
+    }
+  },
+  // Instagram
+  "flex-layout.row#social-network-instagram": {
+    "children": [
+      "rich-text#text-instagram"
+    ]
+  },
+
+  "rich-text#text-instagram": {
+    "props": {
+      "blockClass": "footer-list-insta",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "- [Instagram](https://www.instagram.com/pillinchile/)"
+    }
+  },
+
+
+  // Simulador de Despacho
+  "flex-layout.col#simulador-despacho-col": {
+    "children": [
+      "rich-text#text-envio-domicilio",
+      "rich-text#text-venta-asistida"
+    ]
+  },
+
+
+  "rich-text#title-despa": {
+    "props": {
+      "blockClass": "footer-titles",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "### Simulador de Despacho"
+    }
+  },
+
+  "rich-text#text-envio-domicilio": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "- [Envío a Domicilio](#)",
+      "blockClass": "footer-list-envio"
+    }
+  },
+
+  "rich-text#text-venta-asistida": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "- [Venta Asistida](/checkout#/cart)",
+      "blockClass": "footer-list-asistida"
+    }
+  },
+
+
+
+  // PARTNER DE PILLIN
+  "flex-layout.row#content-partner": {
+    "props": {
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "horizontalAlign": "CENTER",
+      "blockClass": "row-partner-footer"
+    },
+    "children": ["flex-layout.col#image-partner"]
+  },
+  "flex-layout.col#image-partner": {
+    "props": {
+      "horizontalAlign": "CENTER",
+      "verticalAlign": "CENTER",
+      "blockClass": "col-partner-footer"
+    },
+    "children": ["image#sr-consultores", "image#logo-vtex"]
+  },
+  "image#sr-consultores": {
+    "props": {
+      "src": "assets/img/logo-sr.png",
+      "maxWidth": "100%",
+      "maxHeight": "100%",
+      "alt": "SR Consultores",
+      "blockClass": "logo-sr",
+      "width": "40px"
+    }
+  },
+  "image#logo-vtex": {
+    "props": {
+      "src": "assets/img/logo-vtex.png",
+      "maxWidth": "100%",
+      "maxHeight": "100%",
+      "alt": "SR Consultores",
+      "blockClass": "logo-vtex",
+      "width": "65px"
+    }
+  }
+}

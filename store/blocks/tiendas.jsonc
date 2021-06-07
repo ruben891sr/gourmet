@@ -1,0 +1,24 @@
+{
+  "store.custom#tiendas": {
+    "blocks": [
+      "flex-layout.row#ContentTiendas"
+    ]
+  },
+
+  "flex-layout.row#ContentTiendas": {
+    "props":{
+      "blockClass": "rowContentTiendas"
+    },
+    "children":[
+      "sandbox.product#htmlMapa"
+    ]
+  },
+
+  "sandbox.product#htmlMapa":{
+    "props":{
+      "allowCookies": true,
+      "initialContent": "<body><div id='cont'><div id='form'><h1>Nuestras Tiendas</h1><label>Seleccione la región</label><select id='address_region' title='Seleccionar región'> </select> <label>Seleccione la comuna</label> <select id='address_commune' title='Seleccionar comuna' disabled='disabled'> </select> <label>Seleccione la tienda</label> <select id='address_store' title='Seleccionar tienda' disabled='disabled'> </select> <table id='store_info'> <tr> <th>Nombre tienda</th> </tr><tr> <td id='slot_name'></td></tr><tr> <th>Dirección</th> </tr><tr> <td id='slot_address'></td></tr><tr> <th>Horario</th> </tr><tr> <td id='slot_schedule'></td></tr><tr> <th>Contacto</th> </tr><tr> <td id='slot_contact'></td></tr></table> </div><div id='map'><div></div></div></div></body> <script async src='https://pillin.myvtex.com/files/pillin-custom.js'></script>"
+    }
+  }
+
+}

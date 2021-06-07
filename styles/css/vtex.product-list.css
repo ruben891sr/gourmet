@@ -1,0 +1,60 @@
+.productVariationsItem {
+    display: none;
+}
+
+.productVariationsItem:first-child {
+    display: block !important;
+    font-size: .85em;
+    font-weight: 600;
+}
+
+.productVariationsItem:nth-child(2n) {
+    display: block !important;
+    font-size: .85em;
+    font-weight: 600;
+}
+
+.productVariationsItem:last-child {
+    display: none !important;
+}
+
+.productVariationsContainer {
+    height: 34px;
+    overflow: hidden;
+}
+
+.productBrandName {
+    display: none;
+}
+
+.deleteIcon {
+    color: #3f2016;
+}
+
+.productName {
+    font-weight: 700;
+}
+
+.productImageAnchor {
+    position: relative;
+    display: block;
+}
+
+.productImageAnchor::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: block; 
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.productImage {
+    padding: 1rem .3rem;
+    box-sizing: border-box;
+}
+
+.price {
+    color: red;
+    font-weight: 700;
+}

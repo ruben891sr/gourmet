@@ -1,0 +1,88 @@
+.menu {
+    margin-top: 13rem;
+    width: 25%;
+    border-right: 1px solid #ccc;
+    margin-right: 5rem;
+}
+
+.addressEdit,
+.addressList,
+.profile {
+    margin-top: 5rem;
+}
+
+
+.menu::before {
+    content: 'Mi Cuenta';
+    top: calc(12rem + 175px);
+    margin-left: 5rem;
+    color: #402117;
+    font-weight: 700;
+    position: absolute;
+    font-size: 2.2em;
+}
+
+.menu::after {
+    background-image: url(assets/img/orderplaced.jpg);
+    content: "";
+    display: block;
+    position: absolute;
+    top: 6rem;
+    height: 200px;
+    background-position: 0 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    left: 0;
+}
+
+.userGreeting {
+    font-weight: 500;
+    color: #402117;
+    margin: 0;
+}
+
+.userName {
+    font-weight: 700;
+    font-size: 1.7em;
+}
+
+.menuLinks :global(.vtex-account_menu-link) {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #402117;
+    opacity: .7;
+    padding-top: .4rem;
+    padding-bottom: .4rem;
+}
+
+.menuLinks :global(.vtex-account_menu-link.b--action-primary) {
+    border-left: 8px solid #b4bf9b;
+    opacity: 1;
+    font-weight: 700;
+    padding-left: 2rem;
+}
+
+.boxContainer {
+    background: #f6f9f3;
+}
+
+@media (max-width: 991.1px) {
+    .menu {
+        margin-top: 10rem;
+        width: 100%;
+        border-right: none;
+        margin-right: 0;
+        padding: 8rem 2rem 0 2rem;
+    }
+
+    .addressBox {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .boxContainerBody {
+        padding: 0;
+    }
+}

@@ -1,0 +1,46 @@
+.sliderLayoutContainer--carousel {
+    max-width: 100vw;
+    margin: 0;
+    padding: 0 !important;
+}
+
+.slideChildrenContainer--carousel-topbar {
+    background-color: #ede3ce;
+}
+
+
+.caretIcon--carousel-topbar {
+    width: 11px;
+}
+
+.sliderLayoutContainer--carouselMobile {
+    max-width: 90rem;
+    margin: 0rem auto 1rem auto;
+    padding: 0 1rem !important;
+}
+
+.caretIcon--carousel,
+.caretIcon--carouselMobile {
+    background: #fff;
+    width: 20px;
+    color: #3f2016;
+    height: 20px;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    box-shadow: 0 0 11px rgb(0 0 0 / 40%);
+}
+
+.paginationDotsContainer--carousel {
+    bottom: 1rem;
+}
+
+.paginationDot--carousel{
+    background: #fff;
+    border: 1px solid #402117;
+    margin: 0 .4rem;
+}
+
+.paginationDot--isActive {
+    transform: scale(1.4) !important;
+}

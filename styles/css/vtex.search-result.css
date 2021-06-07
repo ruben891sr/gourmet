@@ -1,0 +1,250 @@
+.orderByText {
+    font-weight: 800;
+    color: #3f2016;
+    margin-right: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.orderByText::after {
+    content: ":";
+    display: inline-block;
+    font-size: 14px;
+}
+
+.orderByButton {
+    border: none;
+    padding: 10px;
+}
+
+.orderByOptionsContainer,
+.orderByOptionItem {
+    min-width: 180px;
+    max-width: 300px;
+    background-color: #f9f9f9;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    font-display: "fallback";
+}
+
+.orderByOptionItem:hover {
+    background: #ede3ce;
+}
+
+.searchResultContainer {
+    padding-top: 0;
+    max-width: 100%;
+}
+
+
+/*PLP*/
+
+.galleryTitle--layout {
+    padding-left: 0;
+    color: #402117;
+    text-shadow: 0px 0px 2px #ece3ce;
+}
+
+.filterItem {
+    font-weight: 500;
+}
+
+.filter__container--agrupacion,
+.filter__container--category-1,
+.filter__container--category-2,
+.filter__container--brand,
+.filter__container--guiatallas {
+    display: none!important;
+}
+
+.filterPopupTitle {
+    position: relative
+}
+
+.filterPopupTitle::after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    right: -40px;
+    background: #4040401c;
+    border-radius: 3px;
+    width: 70%;
+    height: 24px;
+}
+
+.galleryItem--normal {
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.filterItem--ninos--4-a-16-:last-child,
+.filterItem--bebe--18m-a-3-:last-child,
+.filterItem--recien-nacido--00-a-12m-:last-child {
+    display: none !important;
+}
+
+.buttonShowMore--layout {
+    margin-bottom: 15px;
+}
+
+.totalProducts--layout {
+    font-weight: 600;
+    color: #441e13;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.totalProductsMessage{
+    color: #441e13;
+    font-weight: 400;
+}
+
+.totalProductsMessage::after {
+    content: "en total en esta Categoría";
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: none;
+    padding-left: 5px;
+}
+
+
+/*Media Queries*/
+
+@media (max-width:768px) {
+    .galleryTitle--layout {
+        font-size: 35px;
+        padding-left: 15px;
+        padding-top: 35px;
+    }
+    .filterAccordionBreadcrumbs {
+        border-bottom: 1px solid #441e13;
+    }
+    .filtersWrapperMobile .filterPopupTitle,
+    .orderByDropdown .filterPopupTitle {
+        display: flex;
+        justify-content: center;
+        font-weight: 700;
+    }
+    .filtersWrapperMobile .filterPopupArrowIcon,
+    .orderByDropdown .filterPopupArrowIcon {
+        display: none
+    }
+    .orderByButton {
+        padding: 12px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .filtersWrapperMobile .filterPopupTitle::before {
+        content: "";
+        background: url(assets/img/icon-filter.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: inline-block;
+        width: 13px;
+        height: 13px;
+        margin-right: 10px;
+        top: 0;
+    }
+    .orderByDropdown .filterPopupTitle::after {
+        position: absolute;
+        content: "";
+        background: url(assets/img/icon-orderBy.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: inline-block;
+        width: 13px;
+        height: 13px;
+        margin-left: 10px;
+        top: 0;
+        right: -15px;
+    }
+    .filterAccordionItemBox {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .accordionFilterContent {
+        padding-bottom: 0;
+    }
+    .filterPopupButton {
+        padding-top: 0;
+        padding-bottom: 0;
+        height: 42px;
+    }
+    .galleryItem--small {
+        padding-left: .4rem;
+        padding-right: .4rem;
+        padding-bottom: .1rem;
+    }
+}
+
+@media (max-width:990px) {
+    .filterPopupTitle::after {
+        display: none;
+    }
+    /*PLP*/
+    .accordionFilterContainer--departamento,
+    .accordionFilterContainer--marca {
+        display: none!important;
+    }
+    .filterBreadcrumbsContent {
+        width: 45%!important;
+    }
+    .filterBreadcrumbsItem {
+        width: 55%!important;
+    }
+    .filterBreadcrumbsItem .caretIcon {
+        overflow: visible;
+        margin-bottom: 5px;
+        width: 10px;
+    }
+    .filterBreadcrumbsText {
+        color: #441e13;
+    }
+    .filterBreadcrumbsItemName {
+        font-size: 1.3em!important;
+        display: -webkit-box!important;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+        -webkit-line-clamp: 1;
+    }
+    .filterBreadcrumbsText::before {
+        content: "";
+        background: url(https://pillin.vteximg.com.br/arquivos/chevron-left-pillin.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: inline-block;
+        width: 13px;
+        height: 13px;
+        padding-right: 3px;
+    }
+    .filterClearButtonWrapper :global(.vtex-button) {
+        border: 1px solid #ede3ce;
+        border-radius: 3px;
+    }
+    .filterClearButtonWrapper :global(.vtex-button):hover {
+        background: #ede3ce;
+    }
+    .filterApplyButtonWrapper :global(.vtex-button) {
+        background: #3f2016;
+        color: white;
+    }
+    .filterApplyButtonWrapper :global(.vtex-button):hover {
+        background: #481f14bf;
+        color: #fff6e0;
+    }
+    .accordionFilterItemTag :global(.vtex-tag) {
+        background: #ede3ce;
+        color: #3f2016;
+    }
+    .filterPopupTitle,
+    .orderByText,
+    .orderByText::after {
+        font-size: 12px;
+        margin-right: 5px;
+    }
+}

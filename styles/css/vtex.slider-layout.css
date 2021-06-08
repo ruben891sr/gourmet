@@ -29,6 +29,20 @@
 }
 
 
+/*TopBar*/
+
+.sliderLayoutContainer--carousel-topbar {
+    margin-top: 11px;
+    background: #474747;
+    padding: .4rem;
+}
+
+.caretIcon--carousel-topbar {
+    color: #fff;
+    width: 15px;
+}
+
+
 /*Versión Mobile*/
 
 @media (max-width: 1025px) {

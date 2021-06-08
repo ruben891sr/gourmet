@@ -202,6 +202,13 @@
 .infoCardContainer--info-card-example {
     background-size: 85% !important;
     border-bottom: 0;
+    transition: all .4s ease-in-out;
+    box-shadow: 3px 3px 11px transparent;
+}
+
+.infoCardContainer--info-card-example:hover {
+    transition: all .4s ease-in-out;
+    box-shadow: 3px 3px 11px rgb(0 0 0 / 30%);
 }
 
 .infoCardTextContainer--info-card-example {

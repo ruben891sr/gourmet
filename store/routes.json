@@ -24,7 +24,19 @@
     },
 
     "store.custom#recetas": {
-        "path": "/contacto"
+        "path": "/recetas"
+    },
+
+    "store.custom#videos": {
+        "path": "/videos"
+    },
+
+    "store.custom#menu-semanal": {
+        "path": "/menu-semanal"
+    },
+
+    "store.custom#blog": {
+        "path": "/blog"
     }
 
 }

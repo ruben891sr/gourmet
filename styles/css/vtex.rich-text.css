@@ -96,6 +96,18 @@
     position: relative;
 }
 
+
+/*Topbar*/
+
+.paragraph--sliderTopBarItem {
+    color: #fff;
+}
+
+.link--sliderTopBarItem {
+    color: #fff;
+    margin-left: .1rem;
+}
+
 @media only screen and (min-width: 640px) {
     .container--question .strong {
         font-size: 40px;

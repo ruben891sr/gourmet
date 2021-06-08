@@ -7,15 +7,15 @@
     "children": [
       "menu-item#inicio",
       "menu-item#recetas",
-      "menu-item#catalogo"
-      // "menu-item#compras-lote"
-      // "menu-item#videos",
-      // "menu-item#regalos",
-      // "menu-item#food-service",
+      "menu-item#catalogo",
+      "menu-item#videos",
+      "menu-item#regalos",
+      "menu-item#food-service",
+      "menu-item#blog",
+      "menu-item#menu-semanal",
+      "menu-item#compras-lote"
       // "menu-item#cotizacion",
       // "menu-item#contacto"
-      // "menu-item#blog",
-      // "menu-item#menu-semanal"
     ]
   },
 
@@ -74,12 +74,13 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
+      "blockClass": "boton-menu",
       "itemProps": {
         "type": "internal",
-        "href": "/quickorder",
+        "href": "https://b2b.gourmet.cl/",
         "noFollow": false,
         "tagTitle": "compras-lote",
-        "text": "Compra rápida"
+        "text": "Compras por mayor"
       }
     }
   },
@@ -92,7 +93,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/quickorder",
+        "href": "/videos",
         "noFollow": false,
         "tagTitle": "videos",
         "text": "Videos"
@@ -108,7 +109,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/orderquote",
+        "href": "/",
         "noFollow": false,
         "tagTitle": "regalos",
         "text": "Regalos"

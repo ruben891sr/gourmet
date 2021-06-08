@@ -1,40 +1,26 @@
 {
-
-// General
+  // General
   "header": {
-    "blocks": [
-      "header-layout.desktop",
-      "header-layout.mobile"
-    ]
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
   "header.full": {
-    "blocks": [
-      "header-layout.desktop",
-      "header-layout.mobile"
-    ]
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
-
 
   // General versiones Mobile Desktop
   "header-layout.desktop": {
-    "children": [
-      "sticky-layout#header"
-    ]
+    "children": ["sticky-layout#header", "slider-layout#top-bar"]
   },
   "header-layout.mobile": {
-    "children": ["sticky-layout#1-mobile"]
+    "children": ["sticky-layout#1-mobile", "slider-layout#top-bar"]
   },
-
 
   // Desktop
   "sticky-layout#header": {
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": [
-      "flex-layout.row#top-bar",
-      "flex-layout.row#main-header"
-    ]
+    "children": ["flex-layout.row#top-bar", "flex-layout.row#main-header"]
   },
 
   // Desktop - Top Bar
@@ -60,6 +46,43 @@
     "props": {
       "text": "[Registrarme](/account)",
       "blockClass": "topbar-text"
+    }
+  },
+
+  "slider-layout#top-bar": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel-topbar",
+      "showPaginationDots": "never",
+      "width": "40%"
+    },
+    "children": ["rich-text#info-1", "rich-text#info-2", "rich-text#info-3"]
+  },
+
+  "rich-text#info-1": {
+    "props": {
+      "text": "Para ver más información haga click aquí [Aquí](/stores)",
+      "blockClass": "sliderTopBarItem"
+    }
+  },
+
+  "rich-text#info-2": {
+    "props": {
+      "text": "Para ver más información haga click aquí [Aquí](/stores)",
+      "blockClass": "sliderTopBarItem"
+    }
+  },
+
+  "rich-text#info-3": {
+    "props": {
+      "text": "Para ver más información haga click aquí [Aquí](/stores)",
+      "blockClass": "sliderTopBarItem"
     }
   },
 
@@ -121,16 +144,13 @@
     }
   },
 
-
-
-
   "sticky-layout#1-mobile": {
     "children": ["flex-layout.row#1-mobile"]
   },
   "flex-layout.row#1-mobile": {
     "children": [
       "drawer",
-      "logo#mobile", 
+      "logo#mobile",
       "flex-layout.col#spacer",
       "login",
       "minicart.v2"
@@ -152,7 +172,6 @@
     }
   },
 
-
   "login": {
     "props": {
       "emailAndPasswordTitle": "LOG-IN",
@@ -166,5 +185,4 @@
       "acessCodePlaceholder": "Ingresa tu código de acceso"
     }
   }
-
 }

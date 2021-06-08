@@ -6,7 +6,7 @@
   // General versiones Mobile Desktop
   "responsive-layout.desktop": {
     "children": [
-      "flex-layout.row#infoBar",
+      // "flex-layout.row#infoBar",
       "list-context.image-list#slider",
       "__fold__.experimentalLazyAssets",
       // "flex-layout.row#bn-dcto",

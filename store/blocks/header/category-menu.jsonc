@@ -6,6 +6,7 @@
     },
     "children": [
       "menu-item#inicio",
+      "menu-item#recetas",
       "menu-item#catalogo"
       // "menu-item#compras-lote"
       // "menu-item#videos",
@@ -30,6 +31,22 @@
         "noFollow": false,
         "tagTitle": "inicio",
         "text": "Inicio"
+      }
+    }
+  },
+
+  "menu-item#recetas": {
+    "props": {
+      "id": "menu-item-recetas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/recetas",
+        "noFollow": false,
+        "tagTitle": "inicio",
+        "text": "Recetas"
       }
     }
   },

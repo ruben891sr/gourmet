@@ -21,6 +21,10 @@
 
     "store.custom#contacto": {
         "path": "/contacto"
+    },
+
+    "store.custom#recetas": {
+        "path": "/contacto"
     }
 
 }

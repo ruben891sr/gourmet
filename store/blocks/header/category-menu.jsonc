@@ -200,17 +200,21 @@
   // Submenu Tiendas
   "vtex.menu@2.x:submenu#tienda": {
     "children": [
-      "menu-item#reposteria",
       "menu-item#hierbas-especias",
-      "menu-item#basas-salsas",
-      "menu-item#cremas-sopas",
       "menu-item#caldos",
+      "menu-item#cremas-sopas",
+      "menu-item#basas-salsas",
+      "menu-item#gourmet-natural",
       "menu-item#salsas-condimientadas",
+      "menu-item#reposteria",
+      "menu-item#esencias",
+      "menu-item#salsas-postres",
       "menu-item#alinos-ensaladas",
       "menu-item#salsa-untar",
-      "menu-item#salsas-postres",
       "menu-item#delicatesen",
-      "menu-item#esencias"
+      "menu-item#food-service-mn",
+      "menu-item#regalos-cocina",
+      "menu-item#todo-gourmet"
     ],
     "props": {
       "orientation": "vertical",
@@ -243,7 +247,8 @@
     },
     "children": [
       "menu-item#caldos-polvo-mas-natural",
-      "menu-item#hamburguesas-granos-legumbres"
+      "menu-item#hamburguesas-granos-legumbres",
+      "menu-item#gourmet-natural-todo"
     ]
   },
 
@@ -281,6 +286,235 @@
     }
   },
 
+  "menu-item#gourmet-natural-todo": {
+    "props": {
+      "id": "menu-item-gourmet-natural-todo",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/gourmet-mas-natural/",
+        "noFollow": false,
+        "tagTitle": "gourmet-natural-todo",
+        "text": "Todo Gourmet más natural"
+      }
+    }
+  },
+
+
+
+  "menu-item#food-service-mn": {
+    "props": {
+      "id": "menu-item-food-service-mn",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/food-service",
+        "noFollow": false,
+        "tagTitle": "food-service-mn",
+        "text": "Food Service"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#food-service-mn"]
+  },
+  "vtex.menu@2.x:submenu#food-service-mn": {
+    "props": {
+      "blockClass": "subSubMenu"
+    },
+    "children": [
+      "menu-item#caldos-food-service-mn",
+      "menu-item#delicatessen-food-service-mn",
+      "menu-item#alinos-ensa-food-service-mn",
+      "menu-item#bases-salsas-food-service-mn",
+      "menu-item#esencias-food-service-mn",
+      "menu-item#hierbas-especias-food-service-mn",
+      "menu-item#reposteria-food-service-mn",
+      "menu-item#salsa-condi-food-service-mn",
+      "menu-item#salsa-postre-food-service-mn",
+      "menu-item#primera-food-service-mn"
+    ]
+  },
+  "menu-item#caldos-food-service-mn": {
+    "props": {
+      "id": "menu-item-caldos-food-service-mn",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "caldos-food-service-mn",
+        "text": "Caldos Food Service"
+      }
+    }
+  },
+
+"menu-item#delicatessen-food-service-mn": {
+      "props": {
+      "id": "menu-item-delicatessen-food-service-mn",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "delicatessen-food-service-mn",
+        "text": "Delicatessen Food Service "
+      }
+    }
+}
+,
+"menu-item#alinos-ensa-food-service-mn": {
+      "props": {
+      "id": "menu-item-alinos-ensa-food-service-mn",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "alinos-ensa-food-service-mn",
+        "text": "Aliños para Ensaladas Food Service"
+      }
+    }
+}
+,
+"menu-item#bases-salsas-food-service-mn": {
+      "props": {
+      "id": "menu-item-bases-salsas-food-service-mn",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "bases-salsas-food-service-mn",
+        "text": "Bases y Salsas Deshidratadas Food Service"
+      }
+    }
+}
+,
+"menu-item#esencias-food-service-mn": {
+      "props": {
+      "id": "menu-item-esencias-food-service-mn",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "esencias-food-service-mn",
+        "text": "Esencias Food Service"
+      }
+    }
+}
+,
+"menu-item#hierbas-especias-food-service-mn": {
+      "props": {
+      "id": "menu-item-hierbas-especias-food-service-mn",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "hierbas-especias-food-service-mn",
+        "text": "Hierbas y Especias Food Service"
+      }
+    }
+}
+,
+"menu-item#reposteria-food-service-mn": {
+      "props": {
+      "id": "menu-item-reposteria-food-service-mn",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "reposteria-food-service-mn",
+        "text": "Repostería Food Service"
+      }
+    }
+}
+,
+"menu-item#salsa-condi-food-service-mn": {
+      "props": {
+      "id": "menu-item-salsa-condi-food-service-mn",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "salsa-condi-food-service-mn",
+        "text": "Salsa Condimentadas Food Service"
+      }
+    }
+}
+,
+"menu-item#salsa-postre-food-service-mn": {
+      "props": {
+      "id": "menu-item-salsa-postre-food-service-mn",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "salsa-postre-food-service-mn",
+        "text": "Salsas para Postres Food Service"
+      }
+    }
+}
+,
+"menu-item#primera-food-service-mn": {
+      "props": {
+      "id": "menu-item-primera-food-service-mn",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "primera-food-service-mn",
+        "text": "Productos La Primera Food Service"
+      }
+    }
+}
+,
+
+
+
+
+
+
   "menu-item#regalos-cocina": {
     "props": {
       "id": "menu-item-regalos-cocina",
@@ -298,7 +532,6 @@
     },
     "blocks": ["vtex.menu@2.x:submenu#regalos-cocina"]
   },
-
   "vtex.menu@2.x:submenu#regalos-cocina": {
     "props": {
       "blockClass": "subSubMenu"
@@ -307,10 +540,10 @@
       "menu-item#articulos-accesorios",
       "menu-item#accesorios-mesa",
       "menu-item#delantales-bolsos",
-      "menu-item#packs-regalos"
+      "menu-item#packs-regalos",
+      "menu-item#regalos-cocina-todo"
     ]
   },
-
   "menu-item#articulos-accesorios": {
     "props": {
       "id": "menu-item-articulos-accesorios",
@@ -379,6 +612,43 @@
     }
   },
 
+  "menu-item#regalos-cocina-todo": {
+    "props": {
+      "id": "menu-item-regalos-cocina-todo",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/regalos-para-la-cocina",
+        "noFollow": false,
+        "tagTitle": "regalos-cocina-todo",
+        "text": "Ver todo Regalos para la Cocina"
+      }
+    }
+  },
+
+
+
+
+  "menu-item#todo-gourmet": {
+    "props": {
+      "id": "menu-item-todo-gourmet",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "todo-gourmet",
+        "text": "Todo Gourmet"
+      }
+    }
+  },
+
   "menu-item#hierbas-especias": {
     "props": {
       "id": "menu-item-hierbas-especias",
@@ -405,10 +675,11 @@
       "menu-item#condimentos-premium",
       "menu-item#hierbas-cocinar",
       "menu-item#especias-cocinar",
-      "menu-item#pimientas",
       "menu-item#ajo-cebolla",
-      // "menu-item#sales-cocinar",
-      "menu-item#mezclas-otras"
+      "menu-item#pimientas",
+      "menu-item#sales-cocinar",
+      "menu-item#mezclas-otras",
+      "menu-item#hierbas-especias-todo"
     ]
   },
  
@@ -531,6 +802,23 @@
     }
   },
 
+  "menu-item#hierbas-especias-todo": {
+    "props": {
+      "id": "menu-item-hierbas-especias-todo",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/hierbas-y-especias",
+        "noFollow": false,
+        "tagTitle": "mezclas-otras",
+        "text": "Ver todo Hierbas y Especias"
+      }
+    }
+  },
+
 
   "menu-item#caldos": {
     "props": {
@@ -557,7 +845,8 @@
       "menu-item#caldos-polvo-natural",
       "menu-item#caldos-concentrados-premium",
       "menu-item#caldos-polvos",
-      "menu-item#sofrito"
+      "menu-item#sofrito",
+      "menu-item#caldos-todo"
     ]
   },
 
@@ -625,6 +914,24 @@
       }
     }
   },
+  
+  "menu-item#caldos-todo": {
+    "props": {
+      "id": "menu-item-caldos-todo",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/caldos",
+        "noFollow": false,
+        "tagTitle": "caldos-todo",
+        "text": "Ver todo Caldos"
+      }
+    }
+  },
+
 
   "menu-item#basas-salsas": {
     "props": {
@@ -651,7 +958,8 @@
       "menu-item#mix",
       "menu-item#salsas-deshidratadas",
       "menu-item#bases-deshidratadas",
-      "menu-item#sazonadores-mexicanos"
+      "menu-item#sazonadores-mexicanos",
+      "menu-item#basas-salsas-todo"
     ]
   },
 
@@ -719,6 +1027,22 @@
       }
     }
   },
+  "menu-item#basas-salsas-todo": {
+    "props": {
+      "id": "menu-item-basas-salsas-todo",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/bases-y-salsas-deshidratadas",
+        "noFollow": false,
+        "tagTitle": "basas-salsas-todo",
+        "text": "Ver todo Bases y Salsas Deshidratadas"
+      }
+    }
+  },
 
   "menu-item#cremas-sopas": {
     "props": {
@@ -745,7 +1069,8 @@
     "children": [
       "menu-item#sopas-familiares",
       "menu-item#cremas-premium",
-      "menu-item#sopas-uno"
+      "menu-item#sopas-uno",
+      "menu-item#sopas-todo"
     ]
   },
   "menu-item#sopas-familiares": {
@@ -796,6 +1121,23 @@
     }
   },
 
+  "menu-item#sopas-todo": {
+    "props": {
+      "id": "menu-item-sopas-todo",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuSubSubitemsTienda",
+      "itemProps": {
+        "type": "internal",
+        "href": "/cremas-y-sopas/",
+        "noFollow": false,
+        "tagTitle": "sopas-todo",
+        "text": "Ver todo Cremas y Sopas"
+      }
+    }
+  },
+
   "menu-item#reposteria": {
     "props": {
       "id": "menu-item-reposteria",
@@ -824,7 +1166,7 @@
       "menu-item#bases-reposteria",
       "menu-item#otros-reposteria",
       "menu-item#chocolate-reposteria",
-      "menu-item#foodservice-reposteria"
+      "menu-item#reposteria-todo"
     ]
   },
   "menu-item#mezclas-listas": {
@@ -907,19 +1249,19 @@
       }
     }
   },
-  "menu-item#foodservice-reposteria": {
+  "menu-item#reposteria-todo": {
     "props": {
-      "id": "menu-item-foodservice-reposteria",
+      "id": "menu-item-reposteria-todo",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "blockClass": "menuSubSubitemsTienda",
       "itemProps": {
         "type": "internal",
-        "href": "/productos-de-reposteria-para-cocinar/food-service",
+        "href": "/productos-de-reposteria-para-cocinar/",
         "noFollow": false,
-        "tagTitle": "foodservice-reposteria",
-        "text": "Food Service"
+        "tagTitle": "reposteria-todo",
+        "text": "Ver todo Repostería"
       }
     }
   },
@@ -940,8 +1282,8 @@
         "tagTitle": "salsas-postres",
         "text": "Salsas para postres"
       }
-    },
-    "blocks": ["vtex.menu@2.x:submenu#salsas-postres"]
+    }
+    // "blocks": ["vtex.menu@2.x:submenu#salsas-postres"]
   },
 
   "vtex.menu@2.x:submenu#salsas-postres": {
@@ -988,8 +1330,8 @@
         "tagTitle": "alinos-ensaladas",
         "text": "Aliños para ensaladas"
       }
-    },
-    "blocks": ["vtex.menu@2.x:submenu#alinos-ensaladas"]
+    }
+    // "blocks": ["vtex.menu@2.x:submenu#alinos-ensaladas"]
   },
   "vtex.menu@2.x:submenu#alinos-ensaladas": {
     "props": {
@@ -1051,8 +1393,8 @@
         "tagTitle": "salsas-condimientadas",
         "text": "Salsas condimientadas para cocinar"
       }
-    },
-    "blocks": ["vtex.menu@2.x:submenu#salsas-condimientadas"]
+    }
+    // "blocks": ["vtex.menu@2.x:submenu#salsas-condimientadas"]
   },
 
   "vtex.menu@2.x:submenu#salsas-condimientadas": {
@@ -1115,8 +1457,8 @@
         "tagTitle": "delicatesen",
         "text": "Delicatessen y otros"
       }
-    },
-    "blocks": ["vtex.menu@2.x:submenu#delicatesen"]
+    }
+    // "blocks": ["vtex.menu@2.x:submenu#delicatesen"]
   },
 
   "vtex.menu@2.x:submenu#delicatesen": {
@@ -1163,8 +1505,8 @@
         "tagTitle": "esencias",
         "text": "Esencias"
       }
-    },
-    "blocks": ["vtex.menu@2.x:submenu#esencias"]
+    }
+    // "blocks": ["vtex.menu@2.x:submenu#esencias"]
   },
 
 

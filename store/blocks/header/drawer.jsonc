@@ -359,11 +359,11 @@
       "menu-item#decoraciones",
       "menu-item#bases-reposteria",
       "menu-item#otros-reposteria",
-      "menu-item#chocolate-reposteria",
-      "menu-item#foodservice-reposteria"
+      "menu-item#chocolate-reposteria"
+      // "menu-item#foodservice-reposteria"
     ],
     "props": {
-      "orientation": "vertical"
+      "orientation": "vertical" 
     }
   },
   "vtex.menu@2.x:menu#salsas-condimientadas-mobile": {

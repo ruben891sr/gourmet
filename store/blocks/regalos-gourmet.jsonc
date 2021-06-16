@@ -1,0 +1,80 @@
+{
+  "store.custom#regalos-gourmet": {
+    "children": [
+      "flex-layout.row#hero-regalos",
+      "flex-layout.row#breadcrumb-regalos",
+      "flex-layout.row#calugas-regalos",
+      "flex-layout.row#shelf-title",
+      "list-context.product-list#home"
+      // "flex-layout.row#shelf-regalos"
+    ]
+  },
+
+  // Hero Regalos
+  "flex-layout.row#hero-regalos": {
+    "children": ["list-context.image-list#hero-regalos"],
+    "props": {
+      "blockClass": "row__hero-regalos"
+    }
+  },
+
+  "list-context.image-list#hero-regalos": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 550,
+      "blockClass": "sliderImageNew",
+      "images": [
+        {
+          "image": "assets/img/hero-regalos.jpg",
+          "mobileImage": "assets/img/hero-regalos.jpg"
+        }
+      ]
+    }
+  },
+
+  // Breadcrumb Regalos
+  "flex-layout.row#breadcrumb-regalos": {
+    "children": [
+        "breadcrumb"
+    ],
+    "props": {
+      "blockClass": "row__breadcrumb-regalos"
+    }
+  },
+
+  // Calugas Regalos
+  "flex-layout.row#calugas-regalos": {
+    "children": [
+        "info-card#cal-regalos-1",
+        "info-card#cal-regalos-1",
+        "info-card#cal-regalos-1",
+        "info-card#cal-regalos-1"
+    ],
+    "props": {
+      "blockClass": "row__calugas-regalos"
+    }
+  },
+
+  "info-card#cal-regalos-1": {
+    "props": {
+      "id": "info-card-food-service",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "assets/img/cat-1-gourmet.jpg",
+      "callToActionText": "Food Service",
+      "callToActionUrl": "/food-service",
+      "callToActionMode": "link",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  },
+
+  // Shelf Regalos
+  "flex-layout.row#shelf-regalos": {
+    "children": [
+    ],
+    "props": {
+      "blockClass": "row__shelf-regalos"
+    }
+  }
+}

@@ -37,6 +37,10 @@
 
     "store.custom#blog": {
         "path": "/blog"
+    },
+
+    "store.custom#regalos-gourmet": {
+        "path": "/regalos-gourmet"
     }
 
 }

@@ -12,17 +12,20 @@
 
   "vtex.menu@2.x:menu#drawer": {
     "children": [
-      "menu-item#reposteria-mobile",
       "menu-item#hierbas-especias-mobile",
-      "menu-item#basas-salsas-mobile",
-      "menu-item#cremas-sopas-mobile",
       "menu-item#caldos-mobile",
+      "menu-item#cremas-sopas-mobile",
+      "menu-item#basas-salsas-mobile",
       "menu-item#salsas-condimientadas-mobile",
+      "menu-item#reposteria-mobile",
+      "menu-item#esencias-mobile",
+      "menu-item#salsas-postres-mobile",
       "menu-item#alinos-ensaladas-mobile",
       "menu-item#salsa-untar-mobile",
-      "menu-item#salsas-postres-mobile",
-      "menu-item#delicatesen-mobile",
-      "menu-item#esencias-mobile"
+      "menu-item#delicatesen-mobile"
+
+
+
     ],
     "props": {
       "orientation": "vertical",
@@ -312,8 +315,8 @@
       "menu-item#condimentos-premium",
       "menu-item#hierbas-cocinar",
       "menu-item#especias-cocinar",
-      "menu-item#pimientas",
       "menu-item#ajo-cebolla",
+      "menu-item#pimientas",
       // "menu-item#sales-cocinar",
       "menu-item#mezclas-otras"
     ],

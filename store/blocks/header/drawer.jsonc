@@ -16,16 +16,17 @@
       "menu-item#caldos-mobile",
       "menu-item#cremas-sopas-mobile",
       "menu-item#basas-salsas-mobile",
+      "menu-item#gourmet-natural-mobile",
       "menu-item#salsas-condimientadas-mobile",
       "menu-item#reposteria-mobile",
       "menu-item#esencias-mobile",
       "menu-item#salsas-postres-mobile",
       "menu-item#alinos-ensaladas-mobile",
       "menu-item#salsa-untar-mobile",
-      "menu-item#delicatesen-mobile"
-
-
-
+      "menu-item#delicatesen-mobile",
+      "menu-item#food-service-mobile",
+      "menu-item#regalos-cocina-mobile",
+      "menu-item#todo-gourmet-mobile"
     ],
     "props": {
       "orientation": "vertical",
@@ -181,8 +182,8 @@
         "tagTitle": "salsas-condimientadas-mobile",
         "text": "Salsas condimientadas para cocinar"
       }
-    },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#salsas-condimientadas-mobile"]
+    }
+    // "blocks": ["vtex.menu@2.x:submenu.accordion#salsas-condimientadas-mobile"]
   },
   "menu-item#alinos-ensaladas-mobile": {
     "props": {
@@ -196,8 +197,8 @@
         "tagTitle": "alinos-ensaladas-mobile",
         "text": "Aliños para ensaladas"
       }
-    },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#alinos-ensaladas-mobile"]
+    }
+    // "blocks": ["vtex.menu@2.x:submenu.accordion#alinos-ensaladas-mobile"]
   },
   "menu-item#salsas-postres-mobile": {
     "props": {
@@ -211,8 +212,8 @@
         "tagTitle": "salsas-postres-mobile",
         "text": "Salsas para postres"
       }
-    },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#salsas-postres-mobile"]
+    }
+    // "blocks": ["vtex.menu@2.x:submenu.accordion#salsas-postres-mobile"]
   },
   "menu-item#delicatesen-mobile": {
     "props": {
@@ -226,8 +227,8 @@
         "tagTitle": "delicatesen-mobile",
         "text": "Delicatesen y otros"
       }
-    },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#delicatesen-mobile"]
+    }
+    // "blocks": ["vtex.menu@2.x:submenu.accordion#delicatesen-mobile"]
   },
   "menu-item#esencias-mobile": {
     "props": {
@@ -241,8 +242,23 @@
         "tagTitle": "esencias-mobile",
         "text": "Esencias"
       }
+    }
+    // "blocks": ["vtex.menu@2.x:submenu.accordion#esencias-mobile"]
+  },
+  "menu-item#food-service-mobile": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "menu-mobile-item",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "food-service-mobile",
+        "text": "Food Service"
+      }
     },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#esencias-mobile"]
+    "blocks": ["vtex.menu@2.x:submenu.accordion#food-service-mobile"]
   },
 
 
@@ -285,6 +301,9 @@
   "vtex.menu@2.x:submenu.accordion#esencias-mobile": {
     "children": ["vtex.menu@2.x:menu#esencias-mobile"]
   },
+  "vtex.menu@2.x:submenu.accordion#food-service-mobile": {
+    "children": ["vtex.menu@2.x:menu#food-service-mobile"]
+  },
 
 
 
@@ -293,7 +312,8 @@
   "vtex.menu@2.x:menu#gourmet-natural-mobile": {
     "children": [
       "menu-item#caldos-polvo-mas-natural",
-      "menu-item#hamburguesas-granos-legumbres"
+      "menu-item#hamburguesas-granos-legumbres",
+      "menu-item#gourmet-natural-todo"
     ],
     "props": {
       "orientation": "vertical"
@@ -304,7 +324,8 @@
       "menu-item#articulos-accesorios",
       "menu-item#accesorios-mesa",
       "menu-item#delantales-bolsos",
-      "menu-item#packs-regalos"
+      "menu-item#packs-regalos",
+      "menu-item#regalos-cocina-todo"
     ],
     "props": {
       "orientation": "vertical"
@@ -317,8 +338,9 @@
       "menu-item#especias-cocinar",
       "menu-item#ajo-cebolla",
       "menu-item#pimientas",
-      // "menu-item#sales-cocinar",
-      "menu-item#mezclas-otras"
+      "menu-item#sales-cocinar",
+      "menu-item#mezclas-otras",
+      "menu-item#hierbas-especias-todo"
     ],
     "props": {
       "orientation": "vertical"
@@ -329,7 +351,8 @@
       "menu-item#caldos-polvo-natural",
       "menu-item#caldos-concentrados-premium",
       "menu-item#caldos-polvos",
-      "menu-item#sofrito"
+      "menu-item#sofrito",
+      "menu-item#caldos-todo"
     ],
     "props": {
       "orientation": "vertical"
@@ -340,7 +363,8 @@
       "menu-item#mix",
       "menu-item#salsas-deshidratadas",
       "menu-item#bases-deshidratadas",
-      "menu-item#sazonadores-mexicanos"
+      "menu-item#sazonadores-mexicanos",
+      "menu-item#basas-salsas-todo"
     ],
     "props": {
       "orientation": "vertical"
@@ -350,7 +374,8 @@
     "children": [
       "menu-item#sopas-familiares",
       "menu-item#cremas-premium",
-      "menu-item#sopas-uno"
+      "menu-item#sopas-uno",
+      "menu-item#sopas-todo"
     ],
     "props": {
       "orientation": "vertical"
@@ -362,8 +387,8 @@
       "menu-item#decoraciones",
       "menu-item#bases-reposteria",
       "menu-item#otros-reposteria",
-      "menu-item#chocolate-reposteria"
-      // "menu-item#foodservice-reposteria"
+      "menu-item#chocolate-reposteria",
+      "menu-item#reposteria-todo"
     ],
     "props": {
       "orientation": "vertical" 
@@ -411,6 +436,24 @@
       "orientation": "vertical"
     }
   },
+  "vtex.menu@2.x:menu#food-service-mobile": {
+    "children": [
+      "menu-item#caldos-food-service-mn",
+      "menu-item#delicatessen-food-service-mn",
+      "menu-item#alinos-ensa-food-service-mn",
+      "menu-item#bases-salsas-food-service-mn",
+      "menu-item#esencias-food-service-mn",
+      "menu-item#hierbas-especias-food-service-mn",
+      "menu-item#reposteria-food-service-mn",
+      "menu-item#salsa-condi-food-service-mn",
+      "menu-item#salsa-postre-food-service-mn",
+      "menu-item#primera-food-service-mn",
+      "menu-item#todo-food-service-mn"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
 
 
 
@@ -426,6 +469,21 @@
         "noFollow": false,
         "tagTitle": "salsa-untar-mobile",
         "text": "Salsa para untar"
+      }
+    }
+  },
+
+  "menu-item#todo-gourmet-mobile": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "menu-mobile-item",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "todo-gourmet-mobile",
+        "text": "Ver todos los productos Gourmet"
       }
     }
   },
@@ -449,4 +507,4 @@
       "blockClass": "searchmobile"
     }
   }
-}
+} 

@@ -627,6 +627,10 @@
     margin-bottom: 1rem;
 }
 
+.flexRowContent--rowDrawer .stretchChildrenWidth {
+    width: auto !important;
+}
+
 
 /* .flexRowContent--qttyPrice-row {
     display: flex;

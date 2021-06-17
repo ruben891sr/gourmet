@@ -14,7 +14,8 @@
   "flex-layout.row#hero-regalos": {
     "children": ["list-context.image-list#hero-regalos"],
     "props": {
-      "blockClass": "row__hero-regalos"
+      "blockClass": "row__hero-regalos",
+      "fullWidth": true
     }
   },
 
@@ -46,9 +47,9 @@
   "flex-layout.row#calugas-regalos": {
     "children": [
         "info-card#cal-regalos-1",
-        "info-card#cal-regalos-1",
-        "info-card#cal-regalos-1",
-        "info-card#cal-regalos-1"
+        "info-card#cal-regalos-2",
+        "info-card#cal-regalos-3",
+        "info-card#cal-regalos-4"
     ],
     "props": {
       "blockClass": "row__calugas-regalos"
@@ -57,12 +58,54 @@
 
   "info-card#cal-regalos-1": {
     "props": {
-      "id": "info-card-food-service",
+      "id": "info-card-cal-1",
       "isFullModeStyle": true,
       "textPosition": "center",
-      "imageUrl": "assets/img/cat-1-gourmet.jpg",
-      "callToActionText": "Food Service",
-      "callToActionUrl": "/food-service",
+      "imageUrl": "assets/img/cal-1.png",
+      "callToActionText": "Artículos y accesorios para la cocina",
+      "callToActionUrl": "/",
+      "callToActionMode": "link",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  },
+
+  "info-card#cal-regalos-2": {
+    "props": {
+      "id": "info-card-cal-2",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "assets/img/cal-2.png",
+      "callToActionText": "Accesorios para la mesa",
+      "callToActionUrl": "/",
+      "callToActionMode": "link",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  },
+
+  "info-card#cal-regalos-3": {
+    "props": {
+      "id": "info-card-cal-3",
+      "isFullModeStyle": true, 
+      "textPosition": "center",
+      "imageUrl": "assets/img/cal-3.jpg",
+      "callToActionText": "Delantales de cocina y bolsos",
+      "callToActionUrl": "/",
+      "callToActionMode": "link",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  },
+
+  "info-card#cal-regalos-4": {
+    "props": {
+      "id": "info-card-cal-4",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "assets/img/cal-4.jpg",
+      "callToActionText": "Packs de regalos",
+      "callToActionUrl": "/",
       "callToActionMode": "link",
       "blockClass": "info-card-example",
       "textAlignment": "center"
